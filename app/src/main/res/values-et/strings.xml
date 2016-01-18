@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Tõrvikuke</string>
+    <string name="activity_settings">Tõrvikukese seaded</string>
+    <string name="service_torchiequick_name">Kiire Tõrvik</string>
+    <string name="accessibility_service_description">Kui \'Kiire Tõrvikuke\' on sisse lülitatud vajuta mõlemat helinuppu, et lülitada sisse/välja välku.</string>
+
+    <string name="torchie_functionality">Tõrvikukese funktsionaalsus</string>
+    <string name="screen_on">Ekraan sees</string>
+    <string name="screen_lock">Lukustusekraan</string>
+    <string name="screen_off">Ekraan väljas</string>
+    <string name="miscellaneous">Varia</string>
+    <string name="optimize_led_screen">AMOLED ekraani optimisatsioon</string>
+    <string name="battery_drain_warn">Võib kurnata akut</string>
+
+    <string name="donate">Anneta</string>
+    <string name="tellfriend">Jaga</string>
+    <string name="rate">Hinda</string>
+    <string name="about">Info</string>
+    <string name="settings">Seaded</string>
+    <string name="help_feedback">Abi &amp; Tagasiside</string>
+    <string name="enable">Lülita sisse</string>
+    <string name="later">Hiljem</string>
+    <string name="loading">Laeb</string>
+    <string name="select_donation_amount">Vali <b>annetuse</b> summa</string>
+    <string name="thank_you">Täname!</string>
+    <string name="donate_via_paypal">Anneta Paypali kaudu</string>
+    <string name="ok">Olgu</string>
+    <string name="proceed">Jätka</string>
+    <string name="dismiss">Keeldu</string>
+    <string name="share">Jaga</string>
+
+    <string name="share_info">Lülita välk sisse/välja vajutades mõlemat helinuppu korraga kasutades Tõrvikukest. Lae Tõrvikuke alla nüüd! </string>
+    <string name="share_via">Jaga läbi</string>
+
+    <string name="welcome"><b>Tere tulemast!</b></string>
+    <string name="welcome_note">Tee enda elu lihtsamaks <b>Tõrvikukesega</b>! \nLülita sisse <b>\'Tõrvikukese funktsionaalsus\'</b> , et kasutada välku vajutades mõlemat helinuppu.!\n\nViimistle Tõrvikukest <b>Seadetes</b>!</string>
+    <string name="got_it">Sain aru</string>
+    <string name="permission_note">Lülita sisse <b>\'Kiire Tõrvikuke\' Juurdepääsu seadetest</b>, et kogeda Tõrvikukese elamust.</string>
+    <string name="permission_warn"><b>Loa kohta - </b> Tõrvikukesel pole luba saata ega võtta vastu infot. Tõrvikuke ei saa lugeda, mida kirjutad klaviatuuri peal(vanemate riistvaraliste klaviatuuride kui ka BlackBerry Privi puhul), see kasutab ainult riistvaraliste nuppude(helinupustik) lube. Tõrvikuke on ülimalt turvaline. Lülita julgelt sisse Tõrvikukese funktsionaalsus! <a href="https://torchieapp.wordpress.com/help/">Loe rohkem:</a> </string>
+    <string name="permission">Lülita sisse Tõrvikukese funktsionaalsus?</string>
+
+    <string name="about_note"><i>Tõrvikuke - saagu puudutusega valgus &#169; 2016</i> \n<b>Tõrvikuke</b> on loodud kahe arendajast \nvenna Merbin J. Anselmi ja \nRebin J. Anselmi poolt. \nKontakt - anselmbros@gmail.com\n\nSuured tänud südamlikele inimestele, kes aitavad tõlkida Tõrvikukest.</string>
+    <string name="about_anselm">Arendaja kohta</string>
+    <string name="official_website">Külasta ametlikku lehte</string>
+    <string name="join_community">Liitu Beta kogukonnaga</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Me oleme veetnud palju <b>tunde</b> tuues Teieni Tõrvikuke, et Te ei kaotaks <b>sekunditki</b> välgu sisse lülitamisega!\nToeta Tõrvikukest annetades meile:</string>
+    <string name="thank_you_note">Sinu annetused motiveerivad meid!\n\nJaga Tõrvikukest pere ja sõpradega!</string>
+    <string name="donation_error">Ups! Annetamisel tekkis viga!</string>
+    <string name="proceed_paypal">Jätka Paypalis?</string>
+
+</resources>

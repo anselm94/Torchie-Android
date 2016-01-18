@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorWhite">
+    <item>
+        <shape android:shape="oval">
+            <size
+                android:width="@dimen/but_flash_size"
+                android:height="@dimen/but_flash_size" />
+            <solid android:color="#33FFFFFF" />
+        </shape>
+    </item>
+</ripple>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/toolbarImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorIndigo500"
+            android:elevation="4dp"
+            android:src="@drawable/torchie_head_norm" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:elevation="4dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            app:theme="@style/ThemeOverlay.AppCompat"></android.support.v7.widget.Toolbar>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_below="@id/toolbar"
+            android:background="@color/colorGrey700"
+            android:elevation="2dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_func_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_below="@id/toolbar"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="88dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/torchie_functionality"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <android.support.v7.widget.SwitchCompat
+                android:id="@+id/sw_func_toggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:clickable="false" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/fl_flash_toggle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_func_toggle"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:id="@+id/but_flash_pto"
+                android:layout_width="@dimen/but_flash_size"
+                android:layout_height="@dimen/but_flash_size"
+                android:layout_gravity="center"
+                android:background="@drawable/sw_flash"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:src="@drawable/but_ripple"
+                android:translationZ="6dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:src="@drawable/ic_donate"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_anchor="@id/toolbar"
+        app:layout_anchorGravity="bottom|left|end"
+        app:pressedTranslationZ="6dp"
+        app:rippleColor="@color/colorRippleWhite" />
+</android.support.design.widget.CoordinatorLayout>

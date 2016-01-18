@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="func_screen_lock">false</bool>
+    <bool name="v_true">true</bool>
+    <bool name="v_false">false</bool>
+</resources>

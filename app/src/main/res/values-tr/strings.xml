@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie Ayarları</string>
+    <string name="service_torchiequick_name">Hızlı Torchie</string>
+    <string name="accessibility_service_description">\'Hızlı Torchie\' etkinleştirildiğinde, flaş ışığını açmak ve kapatmak için ses tuşlarına birlikte basabilirsiniz</string>
+
+    <string name="torchie_functionality">Torchie\'nin yetenekleri hangi durumlarda kullanılabilir?</string>
+    <string name="screen_on">Ekran Açıkken</string>
+    <string name="screen_lock">Ekran Kilitliyken</string>
+    <string name="screen_off">Ekran Kapalıyken</string>
+    <string name="miscellaneous">Çeşitli</string>
+    <string name="optimize_led_screen">AMOLED ekran optimizasyonu</string>
+    <string name="battery_drain_warn">Pil tüketimine yol açabili</string>
+
+    <string name="donate">Bağış Yapın</string>
+    <string name="tellfriend">Arkadaşınıza söyleyin</string>
+    <string name="rate">Oy Verin</string>
+    <string name="about">Hakkında</string>
+    <string name="settings">Ayarlar</string>
+    <string name="help_feedback">Yardım &amp; Geri Bildirim</string>
+    <string name="enable">Etkinleştir</string>
+    <string name="later">Daha Sonra</string>
+    <string name="loading">yükleniyor</string>
+    <string name="select_donation_amount">Bir <b>bağış</b> miktarı seçin</string>
+    <string name="thank_you">Teşekkürler!</string>
+    <string name="donate_via_paypal">Paypal ile bağış yap</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Devam Et</string>
+    <string name="dismiss">Vazgeç</string>
+    <string name="share">Paylaş</string>
+
+    <string name="share_info">Torchie ile ses tuşlarına birlikte basarak flaş ışığını açın. Şimdi Torchie uygulamasını indirin! </string>
+    <string name="share_via">Torchie hakkındaki sözlerinizi paylaşın</string>
+
+    <string name="welcome"><b>Hoş Geldiniz</b></string>
+    <string name="welcome_note"><b>Torchie</b> ile hayatınızı kolaylaştırın! \n\n<b>Ses tuşlarına birlikte basarak</b> flaşı açmak ve kapatmak için <b>\'Torchie\'nin yeteneklerini\'</b> etkinleştirin!\n\nTorchie <b>Ayarlar</b>\'ına bakmayı unutmayın!</string>
+    <string name="got_it">Anladım</string>
+    <string name="permission_note">Torchie ile bir deneyim yaşamak için <b>Erişilebilirlik</b>\'ten <b>\'Hızlı Torchie\'</b> etkinleştirin.</string>
+    <string name="permission_warn"><b>İZİN hakkında - </b> \"<i>...girdiğiniz yazıları gözlemleyin &amp; eylemlerinizi gözlemleyin...</i>\"\nHey! Bu bir tehdit! Android sadece bir DONANIM TUŞUNA basıldığında \'Tuş Etkinliğini\' çalıştırır. Buna rağmen Torchie iki ses tuşuna birden basılmasını algılar. Ancak üzerinde klavye bulunmayan cihazlarda (üzerinde klavyesi olan eski Android cihazlar ve Blackberry Priv dışında) bir uyarının gösterilmesi Android\'in <i>kusurudur</i>. Bu izin olmadan Torchie yeteneğini tasarlamak imkansızdır.
+        \nAyrıca, Torchie <b>İNTERNET İZNİ GEREKTİRMEZ</b>. Bu yüzden bir başkasına herhangi bir şey <i>göndermek</i> imkansızdır.\n\n Torchie herhangi bir bilgi <i>TOPLAYAMAZ</i>. Torchie yeteneğini etkinleştirmekten çekinmeyin! <a href="https://torchieapp.wordpress.com/help/">Daha fazla bilgi edinin</a> </string>
+    <string name="permission">Torchie yetenekleri etkinleştirilsin mi?</string>
+
+    <string name="about_note"><i>Torchie - Flaş ışığı için dokunun &#169; 2016</i> \n\n<b>Torchie</b> iki kardeş\nMerbin J Anselm ve Rebin J Anselm\ntarafından geliştirilmiştir.\nanselmbros@gmail.com\n\nTorchie\'nin farklı dillere çevrilmesine yardımcı olan mükemmel kalplere sahip insanlara çok teşekkürler</string>
+    <string name="about_anselm">Anselm &amp; Anselm Hakkında</string>
+    <string name="official_website">Resmi siteyi ziyaret edin</string>
+    <string name="join_community">Beta topluluğuna katılın</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Flaş ışığını açarken <b>bir saniye kaybetmemeniz için</b> ortaya çıkardığımız Torchie uygulamasını geliştirirken <b>saatlerimizi</b> harcadık!\nBize bağış yaparak Torchie çalışmalarına destek olun</string>
+    <string name="thank_you_note">İlginiz bizi motive ediyor!\n\nAileniz ve arkadaşlarınız ile Torchie hakkındaki düşüncelerinizi paylaşın!</string>
+    <string name="donation_error">Hey! Sevginizi bizimle paylaşırken hata meydana geldi!</string>
+    <string name="proceed_paypal">Paypal ile devam edilsin mi?</string>
+
+</resources>

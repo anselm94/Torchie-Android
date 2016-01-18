@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie Inställningar</string>
+    <string name="service_torchiequick_name">Torchie Snabbåtkomst</string>
+    <string name="accessibility_service_description">När du har igång \'Torchie Snabbåtkomst\' kan du slå på/av ficklampan genom att hålla ned båda volymknapparna.</string>
+
+    <string name="torchie_functionality">Torchie Funktionalitet</string>
+    <string name="screen_on">Skärm på</string>
+    <string name="screen_lock">Låsskärm</string>
+    <string name="screen_off">Skärm av</string>
+    <string name="miscellaneous">Övrigt</string>
+    <string name="optimize_led_screen">AMOLED skärms optimering</string>
+    <string name="battery_drain_warn">Kan leda till att batteriet laddas ur</string>
+
+    <string name="donate">Donera</string>
+    <string name="tellfriend">Dela med en vän</string>
+    <string name="rate">Betygsätt Torchie</string>
+    <string name="about">Om</string>
+    <string name="settings">Inställningar</string>
+    <string name="help_feedback">Hjälp &amp; Respons</string>
+    <string name="enable">Aktivera</string>
+    <string name="later">Senare</string>
+    <string name="loading">laddar</string>
+    <string name="select_donation_amount">Välj belopp</string>
+    <string name="thank_you">Tackar!</string>
+    <string name="donate_via_paypal">Donera via Paypal</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Fortsätt</string>
+    <string name="dismiss">Avfärda</string>
+    <string name="share">Dela</string>
+
+    <string name="share_info">Sätt enkelt igång din ficklampan genom att hålla ned volymknapparna med Torchie. Ladda ned Torchie nu! </string>
+    <string name="share_via">Dela med dig ett ord om Torchie via</string>
+
+    <string name="welcome"><b>Välkommen</b></string>
+    <string name="welcome_note">Gör ditt liv enklare med Torchie! \n\nAktivera \'Torchie funktionalitet\' för att slå på/av ficklampan genom att hålla ned volymknapparna! \n\nÄndra mer i Torchie inställningarna!</string>
+    <string name="got_it">Uppfattat</string>
+    <string name="permission_note">Aktivera \'Torchie Snabbåtkomst\' i Tillgänglighets Tjänster för att använda Torchie fullt ut.</string>
+    <string name="permission_warn">Om TILLSTÅNDET - \"..iaktta text som du skriver och observera dina handlingar..\" Det må låta illa men Android skickar \'Knapp-händelser\' enbart när en hårdvaruknapp trycks ned. Det är på detta sätt Torchie vet att volymknapparna har tryckts ned. Men det är ett problem i Android då de visar samma varning även för telefoner utan hårdvarutangentbord (Förutom i väldigt gamla Android enheter och Blackberry Priv som faktiskt använder sig av hårdvaruknappar för att skiva.. duh). Uppenbarligen är det omöjligt för Torchie att fungera utan detta tillstånd.
+Torchie ANVÄNDER SIG INTE HELLER AV INTERNET TILLSTÅND, så det är omöjligt att skicka vidare privat information från din enhet. Så du kan aktivera Torchie funktionaliteter utan att oroa dig! <a href="https://torchieapp.wordpress.com/help/">Läs mer</a> </string>
+    <string name="permission">Aktivera \'Torchie Funktionaliteter\'?</string>
+
+    <string name="about_note"><i>Torchie - Touch to Torch &#169; 2016</i> \n\n<b>Torchie</b> is made by two brothers\nMerbin J Anselm and Rebin J Anselm\nanselmbros@gmail.com\n\nEtt stort tack till de som hjälpte till att översätta Torchie</string>
+    <string name="about_anselm">Om Anselm &amp; Anselm</string>
+    <string name="official_website">Besök den officiella hemsidan</string>
+    <string name="join_community">Gå med i Beta gruppen</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Vi har ägnat många timmar till att göra Torchie, för att du inte ska förlora en enda sekund för att slå på ficklampan!\n\nHjälp till med framtida uppdateringar av Torchie genom att donera till oss</string>
+    <string name="thank_you_note">Din omsorg motiverar oss! Dela med dig ett ord om Torchie med din familj och vänner!</string>
+    <string name="donation_error">Hoppsan! Ett fel uppstod när du skulle dela din kärlek med oss!</string>
+    <string name="proceed_paypal">Fortsätt till Paypal?</string>
+
+</resources>

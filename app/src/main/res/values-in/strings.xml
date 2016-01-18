@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Pengaturan</string>
+    <string name="service_torchiequick_name">Torchie Cepat</string>
+    <string name="accessibility_service_description">Apabila \'Torchie Cepat\' diaktifkan, anda dapat menghidupkan/mematikan senter dengan menekan kedua tombol volume secara bersamaan</string>
+
+    <string name="torchie_functionality">Fungsionalitas Torchie</string>
+    <string name="screen_on">Layar Hidup</string>
+    <string name="screen_lock">Kunci Layar</string>
+    <string name="screen_off">Layar Mati</string>
+    <string name="miscellaneous">Lain-lain</string>
+    <string name="optimize_led_screen">Optimisasi layar AMOLED</string>
+    <string name="battery_drain_warn">Dapat mengurangi waktu siaga</string>
+
+    <string name="donate">Donasi</string>
+    <string name="tellfriend">Beri Rekomendasi</string>
+    <string name="rate">Beri Penilaian</string>
+    <string name="about">Tentang</string>
+    <string name="settings">Pengaturan</string>
+    <string name="help_feedback">Bantuan &amp; Umpan Balik</string>
+    <string name="enable">Aktifkan</string>
+    <string name="later">Nanti Saja</string>
+    <string name="loading">Memuat</string>
+    <string name="select_donation_amount">Pilih jumlah <b>donasi</b></string>
+    <string name="thank_you">Terima Kasih!</string>
+    <string name="donate_via_paypal">Donasi lewat Paypal</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Lanjutkan</string>
+    <string name="dismiss">Batalkan</string>
+    <string name="share">Bagikan</string>
+
+    <string name="share_info">Hidupkan senter cukup dengan menekan tombol volume bersamaan dengan Torchie. Unduh Torchie sekarang! </string>
+    <string name="share_via">Bagikan kabar tentang Torchie lewat</string>
+
+    <string name="welcome"><b>Selamat Datang</b></string>
+    <string name="welcome_note">Buat hidup anda lebih mudah dengan <b>Torchie</b>! \n\nAktifkan <b>\'Fungsionalitas Torchie\'</b> untuk menghidup-matikan senter dengan <b> menekan tombol volume bersamaan</b>!\n\nSesuaikan lebih lanjut pada <b>Settings</b>!</string>
+    <string name="got_it">Saya paham</string>
+    <string name="permission_note">Aktifkan <b>\'Torchie Cepat\'</b> pada <b>Layanan</b> Aksesibilitas untuk menikmati fungsi Torchie.</string>
+    <string name="permission_warn"><b>Tentang PERIZINAN - </b> \"<i>...melihat teks yang anda ketik &amp; mengamati kegiatan anda...</i>\"\nOh tidak! Sepertinya mencurigakan! Secara default, Android melempar \'Key Event\' hanya saat TOMBOL FISIK ditekan. Hanya dengan cara ini Torchie dapat mengenali penekanan tombol volume. Namun ini adalah <i>kesalahan</i> pada Android yang juga menampilkan peringatan pada telepon TANPA PAPAN TOMBOL FISIK (kecuali telepon model lama dan Blackberry Priv yang memiliki papan tombol ketik fisik). Kesimpulannya, Torchie tidak akan dapat bekerja tanpa memanfaatkan fitur Android ini.
+        \nSelain itu Torchie <b>TIDAK MEMILIKI PERIZINAN INTERNET</b>, sehingga tidak mungkin bagi Torchie untuk <i>mengirim</i> apapun pada siapapun\n\n Torchie TIDAK DAPAT <i>MENGUMPULKAN</i> apapun dari siapapun. Anda tidak perlu khawatir untuk menggunakan Torchie! <a href="https://torchieapp.wordpress.com/help/">Pelajari lebih lanjut</a> </string>
+    <string name="permission">Aktifkan Fungsionalitas Torchie?</string>
+
+    <string name="about_note"><i>Torchie - Tekan untuk Senter &#169; 2016</i> \n\n<b>Torchie</b> dibuat oleh dua bersaudara\nMerbin J Anselm dan Rebin J Anselm\nanselmbros@gmail.com\n\nTerima kasih pada para sukarelawan yang telah membantu menterjemahkan Torchie</string>
+    <string name="about_anselm">Tentang Anselm &amp; Anselm</string>
+    <string name="official_website">Kunjungi Laman Resmi</string>
+    <string name="join_community">Bergabung Komunitas Beta</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Kami telah menghabiskan <b>berjam-jam</b> membuat Torchie, sehingga anda tidak kehilangan <b>satu detikpun</b> untuk menghidupkan senter!\nDukung pengembangan Torchie dengan melakukan donasi untuk kami</string>
+    <string name="thank_you_note">Kepedulian anda memotivasi kami!\n\nSebarkan kabar tentang Torchie pada teman dan keluarga anda!</string>
+    <string name="donation_error">Oops! Galat terjadi saat membagi cinta untuk kami!</string>
+    <string name="proceed_paypal">Lanjutkan ke Paypal?</string>
+
+</resources>

@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie Settings</string>
+    <string name="service_torchiequick_name">Torchie Quick</string>
+    <string name="accessibility_service_description">When \'Torchie Quick\' is enabled, turn on/off Torch just by holding Volume Buttons together</string>
+
+    <string name="torchie_functionality">Torchie functionality</string>
+    <string name="screen_on">Screen On</string>
+    <string name="screen_lock">Lock Screen</string>
+    <string name="screen_off">Screen Off</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="optimize_led_screen">AMOLED display optimization</string>
+    <string name="cause_battery_drain_lock" translatable="false">@string/battery_drain_warn</string>
+    <string name="cause_battery_drain_off" translatable="false">@string/battery_drain_warn</string>
+    <string name="battery_drain_warn">Will cause battery drain</string>
+
+    <string name="donate">Donate</string>
+    <string name="tellfriend">Tell a friend</string>
+    <string name="rate">Rate Torchie</string>
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+    <string name="help_feedback">Help &amp; Feedback</string>
+    <string name="enable">Enable</string>
+    <string name="later">Later</string>
+    <string name="loading">loading</string>
+    <string name="select_donation_amount">Select a <b>donation</b> amount</string>
+    <string name="thank_you">Thank You!</string>
+    <string name="donate_via_paypal">Donate via Paypal</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Proceed</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="share">Share</string>
+
+    <string name="share_info">Turn on torch just by holding volume buttons together with Torchie. Download Torchie now! </string>
+    <string name="share_via">Share a word about Torchie via</string>
+
+    <string name="welcome"><b>Welcome</b></string>
+    <string name="welcome_note">Make your life easier with <b>Torchie</b>! \n\nEnable <b>\'Torchie functionality\'</b> to turn on/off torch just by <b>holding volume buttons together</b>!\n\nTweak more in Torchie <b>Settings</b>!</string>
+    <string name="got_it">Got It</string>
+    <string name="permission_note">Enable <b>\'Torchie Quick\'</b> from Accessibility <b>Services</b> to experience Torchie.</string>
+    <string name="permission_warn"><b>About the PERMISSION - </b> \"<i>...observe text that you type &amp; observe your actions...</i>\"\nAlas! It\'s threatening! Android throws a \'Key Event\' only when a HARDWARE KEY is pressed. It is by this way, Torchie captures Volume Key presses. But It is Android\'s <i>flaw</i>, showing the same WARNING even for NON-HARDWARE KEYBOARD ENABLED PHONES (except very old Android devices and Blackberry Priv which had/have hardware keyboard for typing). It is impossible to design Torchie Functionality without this permission
+        \nAlso, Torchie <b>DOES NOT HAVE INTERNET PERMISSION</b>, so it is impossible to <i>send</i> anything to anyone\n\n Torchie CANNOT <i>COLLECT</i> anything from anyone. Feel free to enable Torchie functionality! <a href="https://torchieapp.wordpress.com/help/">Learn more</a> </string>
+    <string name="permission">Enable Torchie Functionality?</string>
+
+    <string name="about_note"><i>Torchie - Touch to Torch &#169; 2016</i> \n\n<b>Torchie</b> is made by two brothers\nMerbin J Anselm and Rebin J Anselm\nanselmbros@gmail.com\n\nMany thanks to following great hearts, who helped to translate Torchie</string>
+    <string name="about_anselm">About Anselm &amp; Anselm</string>
+    <string name="official_website">Visit official site</string>
+    <string name="join_community">Join Beta Community</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">We\'ve spent lot\'s of <b>hours</b> making Torchie, that you may not <b>loose a second</b> turning on torch!\nSupport the work of Torchie by donating us</string>
+    <string name="thank_you_note">Your care motivates us!\n\nShare a word about Torchie with your family and friends!</string>
+    <string name="donation_error">Oops! Error while sharing love with us!</string>
+    <string name="proceed_paypal">Proceed to Paypal?</string>
+
+</resources>

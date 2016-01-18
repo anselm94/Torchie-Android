@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Настройки Torchie</string>
+    <string name="service_torchiequick_name">Torchie Quick</string>
+    <string name="accessibility_service_description">При активированном \'Torchie Quick\' включайте/отключайте фонарик, просто удерживая нажатие на обеих кнопках громкости одновременно</string>
+
+    <string name="torchie_functionality">Функционал Torchie</string>
+    <string name="screen_on">Экран вкл</string>
+    <string name="screen_lock">Экран блокировки</string>
+    <string name="screen_off">Экран выкл</string>
+    <string name="miscellaneous">Разное</string>
+    <string name="optimize_led_screen">Оптимизация AMOLED</string>
+    <string name="battery_drain_warn">Может быть причиной разряда батареи</string>
+
+    <string name="donate">Пожертвовать</string>
+    <string name="tellfriend">Рассказать другу</string>
+    <string name="rate">Оценить Torchie</string>
+    <string name="about">О приложении</string>
+    <string name="settings">Настройки</string>
+    <string name="help_feedback">Помощь и обратная связь</string>
+    <string name="enable">Включить</string>
+    <string name="later">Позже</string>
+    <string name="loading">загрузка</string>
+    <string name="select_donation_amount">Выберите сумму <b>пожертвования</b></string>
+    <string name="thank_you">Спасибо!</string>
+    <string name="donate_via_paypal">Пожертвовать через Paypal</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Вперед</string>
+    <string name="dismiss">Отмена</string>
+    <string name="share">Поделиться</string>
+
+    <string name="share_info">Включайте фонарик с Torchie, просто удерживая нажатие на кнопках громкости. Загрузите Torchie прямо сейчас! </string>
+    <string name="share_via">Расскажите всему миру о Torchie с помощью</string>
+
+    <string name="welcome"><b>Добро пожаловать</b></string>
+    <string name="welcome_note">Сделайте жизнь проще с <b>Torchie</b>! \n\nАктивируйте <b>\' функционал Torchie\'</b>, чтобы включать/отключать фонарик <b>удержанием нажатия на кнопках громкости</b>!\n\nБольше параметров в <b>настройках</b> Torchie!</string>
+    <string name="got_it">Понятно</string>
+    <string name="permission_note">Включите <b>\'Torchie Quick\'</b> в службе <b>специальных возможностей</b> для работы Torchie.</string>
+    <string name="permission_warn"><b>о РАЗРЕШЕНИИ - </b> \"<i>...читайте текст, который Вы вводите и следите за своими действиями...</i>\"\nОго! Звучит угрожающе! Андроид фиксирует \'Key Event\' только при нажатии АППАРАТНОЙ КНОПКИ. По этому способу Torchie и работает с нажатием кнопок громкости. Но это <i>особенность</i> Андроида, который показывает то же самое ПРЕДУПРЕЖДЕНИЕ даже для ТЕЛЕФОНОВ БЕЗ ФИЗИЧЕСКИХ КНОПОК (за исключением очень старых устройств Андроид и Blackberry Priv, у которых имелись физические кнопки для печати). Создать функционал Torchie без данного разрешения было невозможно
+        \nКроме того, у Torchie <b>НЕТ РАЗРЕШЕНИЯ НА ИНТЕРНЕТ</b>, поэтому приложение не может ничего никому <i>отправить</i>\n\n Torchie НЕ МОЖЕТ <i>СОБИРАТЬ</i> чьи-либо данные. НЕ опасайтесь, включайте функционал Torchie! <a href="https://torchieapp.wordpress.com/help/">Подробнее</a> </string>
+    <string name="permission">Включить функционал Torchie?</string>
+
+    <string name="about_note"><i>Torchie - нажмите для фонарика &#169; 2016</i> \n\n<b>Torchie</b> создано двумя братьями\nMerbin J Anselm и Rebin J Anselm\nanselmbros@gmail.com\n\nОгромное спасибо следующим людям, от всего сердца помогавшим мне с
+переводом Torchie</string>
+    <string name="about_anselm">Об Anselm &amp; Anselm</string>
+    <string name="official_website">Посетить официальный сайт</string>
+    <string name="join_community">Присоединиться к бета-сообществу</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Мы тратим много <b>часов</b>, работая над Torchie, чтобы Вы не <b>теряли ни секунды</b>, включая фонарик!\nПоддержите работу над Torchie, сделав пожертвование</string>
+    <string name="thank_you_note">Ваше участие мотивирует нас!\n\nПоделитесь Torchie со всем миром, с Вашей семьёй и друзьями!</string>
+    <string name="donation_error">Опа! Ошибка в процессе выражения нам признательности!</string>
+    <string name="proceed_paypal">Перейти к Paypal?</string>
+
+</resources>

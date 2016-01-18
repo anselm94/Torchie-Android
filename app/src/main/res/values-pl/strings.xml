@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="about">Informacje</string>
+    <string name="about_anselm">Informacje o Anselm &amp; Anselm</string>
+    <string name="battery_drain_warn">Może spowodować drenaż baterii</string>
+    <string name="activity_settings">Ustawienia</string>
+    <string name="accessibility_service_description">Gdy "Szybkie uruchomienie" jest włączone, wł./wył. latarkę, przytrzymując obydwa przyciski regulacji głośności</string>
+    <string name="dismiss">Odłóż</string>
+    <string name="donate_via_paypal">Wesprzyj przez PayPal</string>
+    <string name="thank_you">Dziękuje!</string>
+    <string name="tellfriend">Opowiedz znajomemu</string>
+    <string name="donate">Wspomóż</string>
+    <string name="join_community">Dołącz do społeczeństwa beta testerów</string>
+    <string name="later">Później</string>
+    <string name="loading">wczytywanie</string>
+    <string name="miscellaneous">więcej</string>
+    <string name="official_website">Odwiedź oficjalną witrynę</string>
+    <string name="ok">Ok</string>
+    <string name="optimize_led_screen">optymalizacja AMOLED</string>
+    <string name="permission_warn">Informacje o uprawnieniach.. Obserwuj wpisywany tekst i swoje działania.. Niestety, to niebezpieczne! Android jest w stanie wywołać wybrane wydarzenie w momencie naciśnięcia odpowiedniego przycisku fizycznego. Z tego rozwiązania korzysta Torchie, rejestruje naciśnięcie przycisku regulacji głośności. To również wada Androida, bo pokazuje to samo ostrzeżenie podczas używania fizycznej klawiatury (z wyjątkiem starszych urządzeń z Androidem i BlackBerry Priv). Nie możemy przygotować działającej aplikacji bez tej zgody. \n\nTorchie pozbawione jest uprawnień sieciowych, więc nie może wysyłać informacji do innych użytkowników, ani ich pobierać. Polecam włączyć funkcje Torchie! <a href="https://torchieapp.wordpress.com/help/">Dowiedz się więcej</a></string>
+    <string name="proceed">Kontynuuj</string>
+    <string name="proceed_paypal">Wykorzystać PayPal?</string>
+    <string name="rate">Oceń</string>
+    <string name="screen_on">Włącz wyświetlacz</string>
+    <string name="screen_off">Wyłącz wyświetlacz</string>
+    <string name="screen_lock">Zablokowany ekran</string>
+    <string name="select_donation_amount">Uzgodnij ilość darowizny</string>
+    <string name="service_torchiequick_name">Szybkie uruchomienie</string>
+    <string name="settings">Ustawienia</string>
+    <string name="share">Udostępnij</string>
+    <string name="share_info">Włącz latarkę przytrzymując obydwa przyciski regulacji głośności. Pobierz Torchie teraz!</string>
+    <string name="share_via">Szepnij słówko o Torchie przez</string>
+    <string name="welcome">Witaj</string>
+    <string name="got_it">Rozumiem</string>
+    <string name="welcome_note">Włącz "\'Szybkie uruchomienie\'\' z usług Ułatwienia dostępu, aby wypróbować Torchie.</string>
+    <string name="donation_note">Spędziliśmy sporo czasu podczas pracy nad Torchie, więc nie stracicie dodatkowych sekund na wł./wył. latarki.</string>
+    <string name="donation_error">Oops! Wystąpił błąd podczas udostępniania informacji!</string>
+    <string name="enable">Włącz</string>
+    <string name="help_feedback">Pomoc &amp; Opinie</string>
+    <string name="torchie_functionality">Funkcje</string>
+    <string name="permission">Włączyć funkcje?</string>
+    <string name="permission_note">Włącz "\'Szybkie uruchomienie\'\' z usług Ułatwienia dostępu, aby wypróbować Torchie.</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+    <string name="thank_you_note">Wasz wkład motywuje nas do działania, pamiętajcie o rozpowszechnieniu informacji o naszej aplikacji</string>
+    <string name="about_note"><i>Torchie - stuknij, aby włączyć latarkę &#169; 2016</i>Autorem <b>Torchie</b> jest rodzeństwo \nMerbin J Anselm i Rebin J Anselm\nanselmbros@gmail.com\n\nPodziękowania dla wszystkich, odpowiedzialnych za lokalizację Torchie</string>
+</resources>

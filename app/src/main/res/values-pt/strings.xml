@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie Definições</string>
+    <string name="service_torchiequick_name">Torchie Quick</string>
+    <string name="accessibility_service_description">Quando \'Torchie Quick\' está activo, liga/desliga a tocha ao pressionar ambos os botões de volume ao mesmo tempo</string>
+
+    <string name="torchie_functionality">Funcionalidade Torchie</string>
+    <string name="screen_on">Activar ecrã</string>
+    <string name="screen_lock">Ecrã de bloqueio</string>
+    <string name="screen_off">Desactivar ecrã</string>
+    <string name="miscellaneous">Vários</string>
+    <string name="optimize_led_screen">Optimizações para ecrã AMOLED</string>
+    <string name="battery_drain_warn">Irá provocar consumo de bateria</string>
+
+    <string name="donate">Doar</string>
+    <string name="tellfriend">Partilha com os teus amigos</string>
+    <string name="rate">Avalia Torchie</string>
+    <string name="about">Sobre</string>
+    <string name="settings">Definições</string>
+    <string name="help_feedback">Ajuda &amp; Feedback</string>
+    <string name="enable">Activa</string>
+    <string name="later">Mais Tarde</string>
+    <string name="loading">a carregar</string>
+    <string name="select_donation_amount">Seleciona o montante a <b>doar</b> </string>
+    <string name="thank_you">Obrigado!</string>
+    <string name="donate_via_paypal">Doar via Paypal</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Prosseguir</string>
+    <string name="dismiss">Dispensar</string>
+    <string name="share">Partilhar</string>
+
+    <string name="share_info">Liga a tocha ao pressionares nos botões de volume ao mesmo tempo com o Torchie. Faz download do Torchie agora! </string>
+    <string name="share_via">Partilha connosco o que achas do Torchie via</string>
+
+    <string name="welcome"><b>Bem vindo</b></string>
+    <string name="welcome_note">Faz com que a tua vida se torne mais fácil com o <b>Torchie</b>! \n\nActiva <b>\'Funcionalidades Torchie\'</b> podes desligar/ligar a tocha se <b>pressionares os botões de volume ao mesmo tempo</b>!\n\nTweaka o Torchie mais <b>Definições</b>!</string>
+    <string name="got_it">Percebi!</string>
+    <string name="permission_note">Activa <b>\'Torchie Quick\'</b> através da Acessibilidade <b>Serviços</b> para poderes usufruir do Torchie.</string>
+    <string name="permission_warn"><b>Sobre as PERMISSÕES - </b> \"<i>...observa o texto que escreves &amp; observa as tuas acções...</i>\"\nAlas! É ASSUSTADOR! O Android apenas activa um \'Key Event\' apenas quando uma HARDWARE KEY é usada. É desta forma que o Torchie captura o uso do botão de volume. Mas a <i>falha</i> de se verificar um WARNING para NON-HARDWARE KEYBOARD ENABLED PHONES é do Android. Daí a necessidade da permissão caso contrário seria impossivel desenvolver o Torchie.
+    \nAlso, Torchie <b>NÃO TEM PERMISSÕES DE INTERNET</b>, por isso é impossivel <i>enviar</i> algo para alguém\n\n O Torchie NÃO <i>COLECTA</i> nada de ninguém. Por isso acitva o Torchie agora! <a href="https://torchieapp.wordpress.com/help/">Sabe mais</a> </string>
+    <string name="permission">Activar a funcionalidade Torchie?</string>
+
+    <string name="about_note"><i>Torchie - Toca para iluminar &#169; 2016</i> \n\n<b>Torchie</b> é desenvolvido por 2 irmãos\nMerbin J Anselm and Rebin J Anselm\nanselmbros@gmail.com\n\nMuito obrigado a todos que ajudaram a traduzir o Torchie</string>
+    <string name="about_anselm">Sobre Anselm &amp; Anselm</string>
+    <string name="official_website">Visita o site oficial</string>
+    <string name="join_community">Junta-te Beta Community</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Nós perdemos muitas <b>horas</b> a desenvolver o Torchie, de forma a que tu nunca <b>percas um segundo</b> a acender a tocha que é o teu telemóvel!\nSuporta este trabalho do Torchie através de doações</string>
+    <string name="thank_you_note">As tuas avaliações interessam-nos!\n\nPartilha-as com a tua familia e amigos!</string>
+    <string name="donation_error">Oops! Erro enquanto estavas a ser nosso amigo!</string>
+    <string name="proceed_paypal">Seguir para o Paypal?</string>
+
+</resources>

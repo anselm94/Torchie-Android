@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie Postavke</string>
+    <string name="service_torchiequick_name">Brzi Torchie</string>
+    <string name="accessibility_service_description">Kada je \'Brzi Torchie\' omogućen, moguće je uključiti/isključiti Svjetiljku samo istovremenim pritiskom na obje tipke za glasnoću.</string>
+
+    <string name="torchie_functionality">Torchie funkcionalnosti</string>
+    <string name="screen_on">Uključen zaslon</string>
+    <string name="screen_lock">Zaključan zaslon</string>
+    <string name="screen_off">Isključen zaslon</string>
+    <string name="miscellaneous">Razno</string>
+    <string name="optimize_led_screen">Optimizacija AMOLED ekrana</string>
+    <string name="battery_drain_warn">Moguć drain baterije</string>
+
+    <string name="donate">Doniraj</string>
+    <string name="tellfriend">Podijeli s prijateljem</string>
+    <string name="rate">Ocijeni Torchie</string>
+    <string name="about">O aplikaciji</string>
+    <string name="settings">Postavke</string>
+    <string name="help_feedback">Pomoć &amp; Podrška</string>
+    <string name="enable">Omogući</string>
+    <string name="later">Kasnije</string>
+    <string name="loading">učitavanje</string>
+    <string name="select_donation_amount">Izaberite veličinu <b>donacije</b></string>
+    <string name="thank_you">Hvala Vam!</string>
+    <string name="donate_via_paypal">Doniraj koristeći Paypal</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Nastavi</string>
+    <string name="dismiss">Otkaži</string>
+    <string name="share">Podijeli</string>
+
+    <string name="share_info">Uključi svjetiljku samo istovremenim pritiskom na obje tipke za glasnoću. Preuzmi Torchie sada! </string>
+    <string name="share_via">Podijeli koju riječ o Torchie aplikaciji koristeći</string>
+
+    <string name="welcome"><b>Dobrodošli</b></string>
+    <string name="welcome_note">Olakšaj si život koristeći <b>Torchie</b>! \n\nOmogući <b>\'Torchie funkcionalnost\'</b> da bi uključio/isključio svjetiljku samo <b>istovremenim pritiskom na obje tipke za glasnoću</b>!\n\nPodesi više u Torchie <b>postavkama</b>!</string>
+    <string name="got_it">Shvaćam</string>
+    <string name="permission_note">Omogući <b>\'Brzi Torchie\'</b> iz postavki <b>Pristupačnosti</b> da bi doživio Torchie.</string>
+    <string name="permission_warn"><b>O DOZVOLAMA - </b> \"<i>...promatra tekst koji upisujete i promatra vaše akcije...</i>\"\nJao! Prijetnja! Android samo šalje \'Key Event\' kada je pritisnuta HARDWARE TIPKA. Na ovaj način Torchie hvata kada je pritisnuta tipka za glasnoću. To je <i>mana</i> Androida, koji pokazuje UPOZORENJE čak i za UREĐAJE BEZ VIZIČKIH TIPKI (osim za jako stare Android uređaje i Blackberry Priv koji ima fizičku tipkovnicu). Nije moguće dizajnirati Torcie funkcionalnosti bez ovih dozvola \nTakođer, Torchie <b>NEMA DOZVOLU ZA PRISTUP INTERNETU</b>, stoga nije moguće <i>slati</i> ništa nikome.\n\n Torchie NE MOŽE <i>PRIKUPLJATI</i> nikakve podatke ni od koga. Osjećajte se slobodnim omogućiti Torchie funkcionalnosti! <a href="https://torchieapp.wordpress.com/help/">Nauči više</a> </string>
+    <string name="permission">Omogući Torchie funkcionalnosti?</string>
+
+    <string name="about_note"><i>Torchie - Dodirni za Svjetiljku &#169; 2016</i> \n\n<b>Torchie</b> su napravila braća\nMerbin J Anselm i Rebin J Anselm\nanselmbros@gmail.com\n\nMnogo hvala sljedećima velikog srca, koji su pomogli prevesti Torchie</string>
+    <string name="about_anselm">O Anselm &amp; Anselm</string>
+    <string name="official_website">Posjeti službene stranice</string>
+    <string name="join_community">Pristupi Beta Zajednici</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Mi smo potrošili mnogo <b>sati</b> u izradi Torchie aplikacije, kako vi ne biste <b>izgubili ni sekunde</b> uključivajući svjetiljku!\nPodržite rad Torchie aplikacije donirajući nama</string>
+    <string name="thank_you_note">Vaša briga nas motivira!\n\nPodijeli koju riječ o Torchie aplikaciji sa obitelji i prijateljima!</string>
+    <string name="donation_error">Ups! Greška dijeleći svoje ljubavi s nama!</string>
+    <string name="proceed_paypal">Nastavi na Paypal?</string>
+
+</resources>

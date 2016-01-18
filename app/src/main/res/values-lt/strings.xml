@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie Nustatymai</string>
+    <string name="service_torchiequick_name">Torchie Greitai</string>
+    <string name="accessibility_service_description">Kai \'Torchie Greitai\' yra įjungtas, Jūs galite ijungti ir išjungti žibintuvėlį vien tik palaikius viršutinų ir apatinų garso mygtukus.</string>
+
+    <string name="torchie_functionality">Torchie funkcionalumas</string>
+    <string name="screen_on">Ekranas atrakintas</string>
+    <string name="screen_lock">Ekranas užrakintas</string>
+    <string name="screen_off">Ekranas išjungtas</string>
+    <string name="miscellaneous">Įvairūs</string>
+    <string name="optimize_led_screen">AMOLED ekranų optimizacija</string>
+    <string name="battery_drain_warn">Padidės baterijos sąnaudos</string>
+
+    <string name="donate">Paaukok</string>
+    <string name="tellfriend">Pranešk draugui</string>
+    <string name="rate">Įvertink Torchie</string>
+    <string name="about">Apie</string>
+    <string name="settings">Nustatymai</string>
+    <string name="help_feedback">Pagalba ir Atsiliepimai</string>
+    <string name="enable">Įgalinti</string>
+    <string name="later">Vėliau</string>
+    <string name="loading">kraunasi</string>
+    <string name="select_donation_amount">Pasirinkite <b>aukojimo</b> sumą</string>
+    <string name="thank_you">Ačiū!</string>
+    <string name="donate_via_paypal">Paaukokite per Paypal</string>
+    <string name="ok">Gerai</string>
+    <string name="proceed">Tęsti</string>
+    <string name="dismiss">Nutraukti</string>
+    <string name="share">Dalintis</string>
+
+    <string name="share_info">Torchie: Įjunk savo telefono žibintuvelų vos garso mygtuko paspaudimu!</string>
+    <string name="share_via">Papasakok savo draugams:</string>
+
+    <string name="welcome"><b>Sveiki</b></string>
+    <string name="welcome_note">Padarykite savo gyvenimą lengvesnį su <b>Torchie</b>! \n\nĮjunti <b>\'Torchie funkcionalumas\'</b> įjungti galite vos <b>palaike abu garso mygtukus</b>!\n\nReguliuokite <b>Nustatymuose</b>!</string>
+    <string name="got_it">Supratau</string>
+    <string name="permission_note">Įjungti <b>\'Torchie Greitai\'</b> per Pasiekiamumo <b>Servisus</b> <i>Tai privaloma Torchie veikimui!</i>.</string>
+    <string name="permission_warn"><b>Apie Saugumą</b>Torchie prašo tik vieno leidimo, jis suteikia galimybe stebėti mygtukų paspaudimus.<i>Taigi jūsų rašomas tekstas ir veiksmai nėra sekami.</i></string>
+    <string name="permission">Įjungti Torchie?</string>
+
+    <string name="about_note"><i>Torchie - Touch to Torch &#169; 2016</i> \n\n<b>Torchie</b> Buvo sukurtas dviejų brolių\nMerbin J Anselm air Rebin J Anselm\nanselmbros@gmail.com\n\nEsame labai dėkingi žmonėms kurie išvertė mūsų programeles</string>
+    <string name="about_anselm">Apie Anselm &amp; Anselm</string>
+    <string name="official_website">Apsilankyti oficialiame tinklapyje</string>
+    <string name="join_community">Prisijunkti į Beta grupę</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Mes praleidome daugybe <b>laiko</b> kurdami Torchie, jog jūs neprarastumėte  <b>nė sekundes</b> įjunginėjant žibintuvėlį!\nPadėkite mums paaukodami!</string>
+    <string name="thank_you_note">Jūsų rūpestis mus motyvuoja kurto toliau!\n\nPasidalinkite Torchie su savo draugais ir šeima!</string>
+    <string name="donation_error">Kažkas ivyko ne taip!</string>
+    <string name="proceed_paypal">Atidaryti su Paypal?</string>
+
+</resources>

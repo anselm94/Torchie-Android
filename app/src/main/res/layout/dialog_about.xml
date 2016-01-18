@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="24dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:lineSpacingExtra="5dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="24dp"
+        android:text="@string/about" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_about_note"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="email"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/about_note" />
+
+            <TextView
+                android:id="@+id/tv_translator_note"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/translators_list" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_about_anselm"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?selectableItemBackground"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/about_anselm"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTealA200" />
+
+        <TextView
+            android:id="@+id/tv_visit_site"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?selectableItemBackground"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/official_website"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTealA200" />
+
+        <TextView
+            android:id="@+id/tv_join_community"
+            style="@style/TextAppearance.AppCompat.Button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="?selectableItemBackground"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/join_community"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTealA200" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/tv_facebook"
+                style="@style/TextAppearance.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/facebook"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTealA200" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="48dp" />
+
+            <TextView
+                android:id="@+id/tv_googleplus"
+                style="@style/TextAppearance.AppCompat.Button"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:background="?selectableItemBackground"
+                android:clickable="false"
+                android:gravity="center"
+                android:text="@string/google_plus"
+                android:textAllCaps="true"
+                android:textColor="@color/colorTealA200" />
+
+            <Space
+                android:layout_width="8dp"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Nastavení</string>
+    <string name="service_torchiequick_name">Torchie Quick</string>
+    <string name="accessibility_service_description">Pokud je \'Torchie Quick\' zapnuté, lze svítilnu zapnout jednoduchým držením obou tlačítek hlasitosti najednou</string>
+
+    <string name="torchie_functionality">Možnosti Torchie</string>
+    <string name="screen_on">Zapnutá obrazovka</string>
+    <string name="screen_lock">Zamykací obrazovka</string>
+    <string name="screen_off">Vypnutá obrazovka</string>
+    <string name="miscellaneous">Různé</string>
+    <string name="optimize_led_screen">Optimalizace pro AMOLED obrazovky</string>
+    <string name="battery_drain_warn">Může způsobit rychlejší vybíjení baterie</string>
+
+    <string name="donate">Přispěj</string>
+    <string name="tellfriend">Sdílej přátelům</string>
+    <string name="rate">Ohodnoť Torchie</string>
+    <string name="about">O aplikaci</string>
+    <string name="settings">Nastavení</string>
+    <string name="help_feedback">Nápověda &amp; Zpětná vazba</string>
+    <string name="enable">Povolit</string>
+    <string name="later">Později</string>
+    <string name="loading">načítání</string>
+    <string name="select_donation_amount">Vyber částku <b>příspěvku</b></string>
+    <string name="thank_you">Děkujeme!</string>
+    <string name="donate_via_paypal">Přispět přes PayPal</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Provést</string>
+    <string name="dismiss">Odmítnout</string>
+    <string name="share">Sdílet</string>
+
+    <string name="share_info">Zapni svítilnu pouhým držením obou tlačítek hlasitosti najednou díky Torchie. Stáhni si Torchie nyní!</string>
+    <string name="share_via">Sděl něco o Torchie přes</string>
+
+    <string name="welcome"><b>Vítej</b></string>
+    <string name="welcome_note">Udělej si život jednoduší s <b>Torchie</b>! \n\nPovol <b>\'Možnosti Torchie\'</b> pro zapínání svítilny pouhým  <b>držením tlačítek hlasitosti najednou</b>!\n\nDalší možnosti najdeš v <b>Nastavení</b>!</string>
+    <string name="got_it">Chápu</string>
+    <string name="permission_note">Povol <b>\'Torchie Quick\'</b> přes Přístupnost - <b>Služby</b> pro pravý zážitek s Torchie.</string>
+    <string name="permission_warn"><b>O OPRÁVNĚNÍ - </b> \"<i>...sleduje text, který píšeš &amp; sleduje tvé akce...</i>\"\nAlas! To vypadá nebezpečně! Android vyhazuje \'Key Event\' pouze pokud je zmáčknuta HARDWAROVÁ KLÁVESA. Funguje to následovně, Torchie zaznamená, když je máčknuto tlačítko hlasitosti. Je ale <i>chyba</i> Androidu, že zobrazuje to samé VAROVÁNÍ i pro SOFTWAROVÉ KLÁVESNICE TELEFONŮ (kromě velmi starých zařízení s Androidem a Blackberry Privm který má/měl hardwarovou klávesnici). Je velmi těžké udělat Torchie bez tohoto oprávnění.
+        \nJenže, Torchie <b>NEMÁ OPRÁVNĚNÍ PRO PŘÍSTUP K INTERNETU</b>, takže je nemožné, aby <i>posílal</i> cokoliv komukoliv.\n\n Torchie NEMŮŽE <i>SBÍRAT</i> cokoliv od kohokoliv. Nebojte se Možnosti Torchie povolit! <a href="https://torchieapp.wordpress.com/help/">Nastuduj si více</a> </string>
+    <string name="permission">Povolit Možnosti Torchie?</string>
+
+    <string name="about_note"><i>Torchie - Dotykem ke světlu &#169; 2015</i> \n\n<b>Torchie</b> je vytvořena dvěma bratry\nMerbin J Anselm a Rebin J Anselm\nanselmbros@gmail.com\n\nVelmi děkujeme následujícím skvělým srdíčkům, která pomohla s překladem Torchie</string>
+    <string name="about_anselm">O Anselm &amp; Anselm</string>
+    <string name="official_website">Navštiv oficiální stránku</string>
+    <string name="join_community">Připoj se k Beta komunitě</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Strávili jsme spousty <b>hodin</b> na tvorbě Torchie, abys ty nemusel <b>ztratit už ani vteřinu</b> zapínáním svítilny!\nPodpoř naši práci na Torchie přispěním nám</string>
+    <string name="thank_you_note">Tvoje péče nás motivuje!\n\nŘekni o Torchie své rodině a přátelům!</string>
+    <string name="donation_error">Oops! Chyba během šíření lásky!</string>
+    <string name="proceed_paypal">Pokračovat na PayPal?</string>
+
+</resources>

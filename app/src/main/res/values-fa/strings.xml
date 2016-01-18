@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">تورچی</string>
+    <string name="activity_settings">تنظیمات تورچی</string>
+    <string name="service_torchiequick_name">تورچی سریع</string>
+    <string name="accessibility_service_description">با روشن  بودن /"تورچی سریع/" میتونید با نگه داشتن دکمه های صدا چراغ قوه گوشی رو روشن/خاموش کنید</string>
+
+    <string name="torchie_functionality">تورچی فعال</string>
+    <string name="screen_on">صفحه روشن</string>
+    <string name="screen_lock">صفحه قفل</string>
+    <string name="screen_off">صفحه خاموش</string>
+    <string name="miscellaneous">تنظیمات دیگر...</string>
+    <string name="optimize_led_screen">بهینه سازی برای صفحه های AMOLED</string>
+    <string name="battery_drain_warn">ممکن است باعث مصرف زیاد باطری شود</string>
+
+    <string name="donate">کمک مالی</string>
+    <string name="tellfriend">به دوستان بگویید</string>
+    <string name="rate">به تورچی امتیاز دهید</string>
+    <string name="about">درباره برنامه</string>
+    <string name="settings">تنظیمات</string>
+    <string name="help_feedback">کمک و بازخورد</string>
+    <string name="enable">روشن</string>
+    <string name="later">بعدا</string>
+    <string name="loading">در حال بارگیری</string>
+    <string name="select_donation_amount">مقدار <b>کمک مالی</b>را انتخاب کنید</string>
+    <string name="thank_you">با تشکر!</string>
+    <string name="donate_via_paypal">کمک مالی از طریق پی پال</string>
+    <string name="ok">باشه</string>
+    <string name="proceed">ادامه</string>
+    <string name="dismiss">رد کن</string>
+    <string name="share">به اشتراک گزاری</string>
+
+    <string name="share_info">با تورچی چراغ قوه گوشیتو فقط با نگه داشتن دکمه های صدا روشن کن! همین الان تورچی رو دانلود کن! </string>
+    <string name="share_via">تورچی رو به اشتراک بزارید از طریق:</string>
+
+    <string name="welcome"><b>خوش آمدید</b></string>
+    <string name="welcome_note">با<b> تورچی </b>زندگی رو اسون تر کنید! \n\nبا فعال کردن <b>\"تورچی\"</b> چراغ قوه گوشی رو فقط با <b>نگه داشتن دکمه های صدا با هم</b> روشن کن!\n\nدر <b>تنظیمات</b>تورچی رو بیشتر دستکاری کن!</string>
+    <string name="got_it">فهمیدم</string>
+    <string name="permission_note"><b>\"تورچی سریع\"</b> رو از <b>Accessibility Services</b> روشن کنید تا تورچی رو تجربه کنید.</string>
+    <string name="permission_warn"><b>در مورد اجازه ها - </b> \"<i>...دیدن متنی که تایپ میکنید و دیدن اعمال شما...</i>\"\nالبته! این نگران کنندست! اندروید فقط وقتی یه "key event" ارسال میکنه که یه دکمه سخت افزاری فشار داده بشه. تورچی از این راه فشار دادن دکمه های صدا رو تشخیص میده. ولی این <i>ایراد</i> اندرویده که همون هشدار رو برای گوشی هایی که کیبرد سخت افزاری ندارن هم نشون مسده (جز گوشی های اندروید خیلی قدیمی که کیبرد سخت افزاری داشتن). غیر ممکنه بشه کارکرد تورچی رو بدون این دسترسی پیاده کرد.
+        \nهمچنین, تورچی <b> دسترسی اینترنت نداره</b>, پس غیر ممکنه که بشه این اطلاعات رو به کسی فرستاد.\n\n تورچی نمیتونه اطلاعاتی رو از کسی<i> ذخیره</i> کنه. در استفاده از تورچی راحت باشید! <a href="https://torchieapp.wordpress.com/help/">اطلاعات بیشتر</a> </string>
+    <string name="permission">تورچی فعال شود؟</string>
+
+    <string name="about_note"><i>تورچی - لمس برای نور &#169; 2016</i> \n\n<b>تورچی</b> توسط دو برادر به نام های\nMerbin J Anselm و Rebin J Anselm ساخته شده.
+\nanselmbros@gmail.com\n\nتشکر فراوان از کسانی که در ترجمه تورچی به ما کمک کردند</string>
+    <string name="about_anselm">درباره Anselm &amp; Anselm</string>
+    <string name="official_website">رفتن به سایت رسمی</string>
+    <string name="join_community">پیوستن به گروه نسخه آزمایشی(بتا)</string>
+    <string name="facebook">فیس بوک</string>
+    <string name="google_plus">گوگل پلاس</string>
+
+    <string name="donation_note">ما  <b>ساعت ها</b> وقت صرف ساخت تورچی کردیم, تا شما <b>یک لحظه هم</b> برای روشن کردن چراغ قوه تاخیر نداشته باشید!\nبا کمک خودتون از تورچی حمایت کنید</string>
+    <string name="thank_you_note">اهمیت شما به ما انرژی میده!\n\nدر مورد تورچی به دوستان و آشنا هاتون بگید!</string>
+    <string name="donation_error">اوه! مشکلی تو حمایتتون از ما به وجود اومد!</string>
+    <string name="proceed_paypal">بریم پی پال؟</string>
+
+</resources>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorGrey400">#bdbdbd</color>
+    <color name="colorGrey500">#9e9e9e</color>
+    <color name="colorGrey600">#757575</color>
+    <color name="colorGrey700">#616161</color>
+    <color name="colorGrey800">#424242</color>
+    <color name="colorGrey900">#212121</color>
+
+    <color name="colorIndigo700">#303f9f</color>
+    <color name="colorIndigo500">#3f51b5</color>
+
+    <color name="colorPinkA200">#FF4081</color>
+
+    <color name="colorTeal">#009688</color>
+    <color name="colorTealA200">#80cbc4</color>
+
+    <color name="colorRed400">#ef5350</color>
+    <color name="colorRed500">#f44336</color>
+    <color name="colorRed600">#e53935</color>
+
+    <color name="colorGreen400">#66bb6a</color>
+    <color name="colorGreen500">#4caf50</color>
+    <color name="colorGreen600">#43a047</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorRippleWhite">#88FFFFFF</color>
+</resources>

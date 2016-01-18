@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Bakljica</string>
+    <string name="activity_settings">Podešavanja</string>
+    <string name="service_torchiequick_name">Brza Bakljica</string>
+    <string name="accessibility_service_description">Kada je \'Brza Bakljica\' omogućena, upali/ugasi blic držanjem oba dugmeta za zvuk u isto vreme</string>
+
+    <string name="torchie_functionality">Funkcionalnost Bakljice</string>
+    <string name="screen_on">Uključen ekran</string>
+    <string name="screen_lock">Ekran za zaključavanje</string>
+    <string name="screen_off">Isključen ekran</string>
+    <string name="miscellaneous">Ostalo</string>
+    <string name="optimize_led_screen">Optimizacija za AMOLED displej</string>
+    <string name="battery_drain_warn">Dovodi do bržeg pražnjenja baterije</string>
+
+    <string name="donate">Doniraj</string>
+    <string name="tellfriend">Podeli</string>
+    <string name="rate">Oceni Bakljicu</string>
+    <string name="about">Info</string>
+    <string name="settings">Podešavanja</string>
+    <string name="help_feedback">Pomoć &amp; Ocene</string>
+    <string name="enable">Omogući</string>
+    <string name="later">Kasnije</string>
+    <string name="loading">učitavanje</string>
+    <string name="select_donation_amount">Izaberi iznos za <b>donaciju</b></string>
+    <string name="thank_you">Hvala!</string>
+    <string name="donate_via_paypal">Doniraj preko servisa Paypal</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Nastavi</string>
+    <string name="dismiss">Skloni</string>
+    <string name="share">Podeli</string>
+
+    <string name="share_info">Uključi blic držanjem oba dugmeta za zvuk pomoću Bakljice. Preuzmi Bakljicu sada! </string>
+    <string name="share_via">Podeli Bakljicu preko</string>
+
+    <string name="welcome"><b>Dobrodošli</b></string>
+    <string name="welcome_note">Olakšajte sebi život sa <b>Bakljicom</b>! \n\nOmogući <b>\'funkcionalnost Bakljice\'</b> kako bi palio/gasio blic <b>držanjem oba dugmeta za zvuk</b>!\n\nNađi još mogućnosti u <b>Podešavanjima</b>!</string>
+    <string name="got_it">Razumeo</string>
+    <string name="permission_note">Omogući <b>\'Bezu Bakljicu\'</b> u servisima <b>pristupačnosti</b> kako bi iskusio ovu aplikaciju.</string>
+    <string name="permission_warn"><b>O DOZVOLI - </b> \"<i>...posmatra tekst koji unosiš &amp; posmatra tvoje akcije...</i>\"\nPazi! Android daje \'Key Event\' samo kada se pritisne HARDVERSKO DUGME. Time Bakljica prima pritisak dugmeta za zvuk. Ali to je Android-ova <i>greška</i>, jer prikazuje isto upozorenje čak i za NE-HARDVERSKE DUGMIĆE, KAO ŠTO SU SLOVA NA TASTATURI (ne važi za stare Android uređaje i Blackberry Priv telefone sa fizičkim tastaturama). Nemoguće je napraviti funkcionalnu Bakljicu bez ove dozvole.
+        \nTakođe, Bakljica <b>NE TRAŽI DOZVOLU ZA PRISTUP INTERNETU</b>, tako da neće <i>slati</i> bilo šta bilo kome\n\n Bakljica NE <i>SAKUPLJA</i> bilo kakve informacije. Slobodno omogućite Bakljicu! <a href="https://torchieapp.wordpress.com/help/">Saznaj više (na engleskom)</a> </string>
+    <string name="permission">Omogući funkcionalnost Bakljice?</string>
+
+    <string name="about_note"><i>Bakljica - Pritisni za blic &#169; 2016</i> \n\n<b>Bakljicu</b> su kreirala dva brata\nMerbin J Anselm i Rebin J Anselm\nanselmbros@gmail.com\n\nHvala svima koji su pomogli u prevodu Bakljice!</string>
+    <string name="about_anselm">O Anselmu &amp; Anselm</string>
+    <string name="official_website">Poseti zvaničan sajt</string>
+    <string name="join_community">Pridruži se Beta zajednici</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Mnogo <b>sati</b> je otišlo pri pravljenju Bakljice, samo da ne biste <b>izgubili ni sekundu više</b> pri uključivanju blica!\nPodržite nas donacijom!</string>
+    <string name="thank_you_note">Tvoja briga nas motiviše!\n\nPodeli Bakljicu sa prijateljima i porodicom!</string>
+    <string name="donation_error">Ups! Greška u deljenju!</string>
+    <string name="proceed_paypal">Nastavi na Paypal?</string>
+
+</resources>

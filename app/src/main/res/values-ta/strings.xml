@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">டார்ச்சி</string>
+    <string name="activity_settings">டார்ச்சி அமைப்பு</string>
+    <string name="service_torchiequick_name">டார்ச்சி குயிக்</string>
+    <string name="accessibility_service_description">\'டார்ச்சி குயிக்\' பயன்பாட்டை செயல்படுத்தினால், கைபேசியில் உள்ள விளக்கை (flash) எரிய செய்ய ஒலியின்-அளவுக்கான பொத்தான்கள் (volume buttons) இரண்டையும் இணைத்துப்பிடித்தாலே போதுமானது</string>
+
+    <string name="torchie_functionality">டார்ச்சி பயன்பாடு</string>
+    <string name="screen_on">ஆன் திரை (Screen On)</string>
+    <string name="screen_lock">பூட்டு திரை (Lock Screen)</string>
+    <string name="screen_off">ஆஃப் திரை (Screen Off)</string>
+    <string name="miscellaneous">இதர அமைப்புகள்</string>
+    <string name="optimize_led_screen">AMOLED திரைகளுக்கான மேம்பாடு</string>
+    <string name="battery_drain_warn">பேட்டரி விரையம் ஆகலாம்</string>
+
+    <string name="donate">நன்கொடை</string>
+    <string name="tellfriend">நண்பரிடம் பகிர</string>
+    <string name="rate">டார்ச்சியை மதிப்பிட</string>
+    <string name="about">எங்களைப் பற்றி</string>
+    <string name="settings">அமைப்புகள்</string>
+    <string name="help_feedback">உதவி &amp; விமர்சனம்</string>
+    <string name="enable">செயல்படுத்துக</string>
+    <string name="later">பிறகு</string>
+    <string name="loading">loading</string>
+    <string name="select_donation_amount"><b>நன்கொடை</b> அளவை தேர்வு செய்க</string>
+    <string name="thank_you">மிக்க நன்றி!</string>
+    <string name="donate_via_paypal">Paypal வழியாக</string>
+    <string name="ok">சரி</string>
+    <string name="proceed">தொடர்க</string>
+    <string name="dismiss">ரத்து</string>
+    <string name="share">பகிரு</string>
+
+    <string name="share_info">டார்ச்சி என்ற ஆன்ட்ராய்டு அப்ளிகேஷன் மூலம் உங்கள் ஆன்ட்ராய்டு கைபேசியில் உள்ள விளக்கை (flash) எரிய செய்ய ஒலியின்-அளவுக்கான பொத்தான்கள் (volume buttons) இரண்டையும் இணைத்துப்பிடித்தாலே போதுமானது! டார்ச்சியை உடனே டவுன்லோடு செய்யுங்கள்!  </string>
+    <string name="share_via">டார்ச்சி பற்றிய செய்தியை பகிர</string>
+
+    <string name="welcome"><b>வணக்கம்</b></string>
+    <string name="welcome_note">உங்கள் வாழ்க்கையை, தமிழ் மைந்தர்கள் உருவாக்கியுள்ள <b>டார்ச்சியைக்</b> கொண்டு எளிமை ஆக்குங்கள்! \n\nமுதலாவதாக, \'டார்ச்சி பயன்பாட்டை\' செயல்படுத்துங்கள்!</string>
+    <string name="got_it">புரிந்து கொண்டேன்</string>
+    <string name="permission_note">\'டார்ச்சி குயிக்\' என்ற அணுகல் சேவையை செயல்படுத்துவதன் மூலம் டார்ச்சியின் பயன்பாட்டை உணருங்கள்!</string>
+    <string name="permission_warn"><b>அனுமதி பற்றிய அறிவிப்பு - </b> \"<i>...நீங்கள் உள்ளிடும் எழுத்துக்களை கவனிக்கவும் &amp; உங்கள் செயல்பாடுகளை கவனிக்கவும்... (...observe text that you type &amp; observe your actions...)</i>\"\nஆ! அதிர்ச்சிக்குரிய தகவல் அல்லவா? ஆன்ட்ராய்டு கட்டமைப்பின் படி, \'வன்பொருள் விசைகளை\' (Hardware Keys) அழுத்தும் போது மட்டும் \'விசை நிகழ்வு\' (Key Event) நேரிடும். இந்த விசை நிகழ்வுகளை பயன்படுத்தி, டார்ச்சி ஒலி-அளவுக்கான பொத்தான்களின் (Volume Buttons) அழுத்தத்தை அறிந்து, விளக்கை எரிய செய்கிறது. ஆனால், ஆன்ட்ராய்டு கட்டமைப்பில் உள்ள ஒரு சிறிய <i>குறைபாட்டால்</i>, இந்த எச்சரிக்கையை \'வன்பொருள்-விசைப்பலகை இல்லாத கைப்பேசிகளிலும்\' (Non-Hardware keyboard enabled phones) காட்டுகிறது. வன்பொருள்-விசைப்பலகை (Hardware Keyboard) பிளாக்பெர்ரி பிரிவ் (Blackberry Priv) மற்றும் மிகவும் பழமையான ஆன்ட்ராய்டு கைபேசிகளில் மட்டுமே உள்ளது. இந்த அனுமதி இல்லாமல் டார்ச்சியை உருவாக்கவும் செயல்படுத்தவும் இயலாது!
+        \n\nமேலும் டார்ச்சிக்கு <b>\'இணைய அணுகல்\' (Internet Permission) அனுமதி கிடையாது</b>. அதனால், எதையும் எவரிடமும் அனுப்ப முடியாது!\n\n<b>தயங்கவேண்டாம்! டார்ச்சியால் எதையும் சேகரிக்க முடியாது.</b> எனவே டார்ச்சி பயன்பாட்டை செயல்படுத்தி வாழ்க்கையை எளிமையாக்குங்கள்! <a href="https://torchieapp.wordpress.com/help/">மேலும் அறிய</a> </string>
+    <string name="permission">டார்ச்சி பயன்பாட்டை செயல்படுத்தலாமா?</string>
+
+    <string name="about_note"><i>Torchie © 2016</i> \n\n<b>டார்ச்சி</b>யானது \nமெர்பின் ஜே. ஆன்செலம் மற்றும் ரெபின் ஜே. ஆன்செலம்\n - இரு தமிழ் சகோதரர்களால் உருவாக்கப்பட்டுள்ளது\nanselmbros@gmail.com\n\nடார்ச்சியை மொழிமாற்றம் செய்ய உதவிய பின்வரும் பாராட்டிற்குரிய உள்ளங்களுக்கு நன்றி</string>
+    <string name="about_anselm">ஆன்செலம் மற்றும் ஆன்செலம் பற்றி</string>
+    <string name="official_website">இணையதளம்</string>
+    <string name="join_community">பீட்டா சமூகத்தில் இணைக</string>
+    <string name="facebook">முகநூல் பக்கம்</string>
+    <string name="google_plus">கூகுள்+ பக்கம்</string>
+
+    <string name="donation_note">எங்களது பல மணி நேர கடின உழைப்பினால், நாங்கள் டார்ச்சியை உருவாக்கியுள்ளோம். எதற்காக தெரியுமா?\nநீங்கள் விளக்கை ஒரு நொடி பொழுதில் பயன்படுத்துவதற்காகத்தான்!\n\nஎங்களது உழைப்பை உங்களது பங்களிப்பினால் ஆதரியுங்கள். நன்றி!</string>
+    <string name="thank_you_note">உங்களது அன்பு எங்களை உற்சாகப் படுத்தியுள்ளது! டார்ச்சி பற்றிய செய்தியை நண்பர்கள் மற்றும் உறவினர்களோடு பகிருங்கள்!</string>
+    <string name="donation_error">எங்களோடு அன்பை பகிரும்போது தடங்கல் ஏற்பட்டுவிட்டது!</string>
+    <string name="proceed_paypal">Paypal இணைப்பக்கத்துக்கு தொடரலாமா?</string>
+
+</resources>

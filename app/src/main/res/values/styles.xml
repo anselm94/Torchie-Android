@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorIndigo500</item>
+        <item name="colorPrimaryDark">@color/colorIndigo700</item>
+        <item name="colorAccent">@color/colorPinkA200</item>
+
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorGreen400</item>
+        <item name="colorControlHighlight">@color/colorRippleWhite</item>
+        <item name="colorButtonNormal">@color/colorTeal</item>
+        <item name="colorSwitchThumbNormal">@color/colorRed400</item>
+
+        <item name="android:colorForeground">@color/colorGrey400</item>
+
+        <item name="preferenceTheme">@style/MyPreferenceTheme</item>
+    </style>
+
+    <style name="MyPreferenceTheme" parent="PreferenceThemeOverlay.v14.Material">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

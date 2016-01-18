@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie Einstellungen</string>
+    <string name="service_torchiequick_name">Torchie Quick</string>
+    <string name="accessibility_service_description">Wenn \'Torchie Quick\' eingeschaltet ist, kann die Taschenlampe durch drücken der beiden Lautstärketasten ein-/ausgeschaltet werden</string>
+
+    <string name="torchie_functionality">Torchie Funktionen</string>
+    <string name="screen_on">Bildschirm an</string>
+    <string name="screen_lock">Sperrbildschirm</string>
+    <string name="screen_off">Bildschirm aus</string>
+    <string name="miscellaneous">Verschiedenes</string>
+    <string name="optimize_led_screen">AMOLED display Einstellungen</string>
+    <string name="battery_drain_warn">Kann Batterieverbrauch erhöhen</string>
+
+    <string name="donate">Spenden</string>
+    <string name="tellfriend">Weitersagen</string>
+    <string name="rate">Torchie Bewerten</string>
+    <string name="about">Über</string>
+    <string name="settings">Einstellungen</string>
+    <string name="help_feedback">Hilfe &amp; Feedback</string>
+    <string name="enable">Einschalten</string>
+    <string name="later">Später</string>
+    <string name="loading">lädt</string>
+    <string name="select_donation_amount">Wähle die <b>donation</b>-Menge</string>
+    <string name="thank_you">Vielen Dank!</string>
+    <string name="donate_via_paypal">Spenden mit PayPal</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Fortfahren</string>
+    <string name="dismiss">Abbrechen</string>
+    <string name="share">Teilen</string>
+
+    <string name="share_info">Einschalten der Taschenlampe durch Drücken der beiden Lautstärketasten. Probiere es aus! </string>
+    <string name="share_via">Weitersagen über Torchie via</string>
+
+    <string name="welcome"><b>Willkommen</b></string>
+    <string name="welcome_note">Mach Dein Leben einfacher mit <b>Torchie</b>! \n\nEinschalten <b>\'Torchie Funktionen\'</b> durch <b>Drücken der beiden Lautstärketasten</b>!\n\nSchau Dich um in Torchie <b>Settings</b>!</string>
+    <string name="got_it">Got It</string>
+    <string name="permission_note">Einschalten von <b>\'Torchie Quick\'</b> über Benachrichtigungen <b>Services</b> um Torchie auszuprobieren.</string>
+    <string name="permission_warn"><b>Über die Erlaubnis - </b> \"<i>...überwachen von Texten die man schreibt &amp; Aktionen überwachen...</i>\"\n Das stimmt so nicht! Android registriert ein \'Key Event\' nur wenn ein HARDWARE KNOPF gedrückt wird. Da das so ist, registriert Android, dass ein Hardwareknopf betätigt wird. Es ist aber Android\'s <i>Fehler</i>, dass die selbe WARNUNG gezeigt wird, auch wenn reine Displaykeyboards (ausser bei alten Androidversionen und Blackberry Priv welche Hardwaretastaturen haben). Es ist unmöglich ohne diese Erlaubnis die App Torchie zu erstellen.
+        \nAusserdem, Torchie <b>HAT KEINEN INTERNET ZUGRIFF</b>, es ist also unmöglich <i>etwas zu senden</i> an irgendwen\n\n Torchie KANN NICHT <i>DATEN SAMMELN</i> weder von Dir noch anderen. Probiere die Torchie Funktionen aus! <a href="https://torchieapp.wordpress.com/help/">Mehr darüber!</a> </string>
+    <string name="permission">Einschalten der Torchie Funktionen?</string>
+
+    <string name="about_note"><i>Torchie - Touch to Torch &#169; 2015</i> \n\n<b>Torchie</b> wurde von 2 Brüdern programmiert\nMerbin J Anselm and Rebin J Anselm\nanselmbros@gmail.com\n\nVielen Dank an folgende Leute, die uns auch bei der Übersetzung geholfen haben</string>
+    <string name="about_anselm">Über Anselm &amp; Anselm</string>
+    <string name="official_website">Besuche unsere offizielle Webseite</string>
+    <string name="join_community">Bei der Beta-Version mitmachen</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Wir haben viele <b>Stunden</b> in Torchie gesteckt, damit Du keine <b>Sekunde</b> verlierst, die Taschenlampe einzuschalten!\nUnterstütze uns durch spenden</string>
+    <string name="thank_you_note">Deine Spende motiviert uns!\n\nErzähle es Freunden und Familie weiter</string>
+    <string name="donation_error">Oops! Ein Fehler während du uns unterstützen wolltest!</string>
+    <string name="proceed_paypal">Weiter zu PayPal?</string>
+
+</resources>

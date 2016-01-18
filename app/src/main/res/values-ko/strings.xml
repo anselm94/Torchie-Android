@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie 설정</string>
+    <string name="service_torchiequick_name">빠른 Torchie</string>
+    <string name="accessibility_service_description">\'빠른 Torchie\'가 설정되어 있을 경우, 볼륨 버튼을 동시에 누르셔서 전등을 키고 끄세요</string>
+
+    <string name="torchie_functionality">Torchie 기능</string>
+    <string name="screen_on">화면 켜짐</string>
+    <string name="screen_lock">화면 잠그기</string>
+    <string name="screen_off">화면 끄기</string>
+    <string name="miscellaneous">기타</string>
+    <string name="optimize_led_screen">아몰레드 화면 최적화</string>
+    <string name="battery_drain_warn">배터리 소모가 일어납니다</string>
+
+    <string name="donate">기부하기</string>
+    <string name="tellfriend">공유하기</string>
+    <string name="rate">Torchie 리뷰하기</string>
+    <string name="about">정보</string>
+    <string name="settings">설정</string>
+    <string name="help_feedback">도움 &amp; 피드백</string>
+    <string name="enable">설정</string>
+    <string name="later">나중에</string>
+    <string name="loading">로드중</string>
+    <string name="select_donation_amount"><b>기부</b> 금액을 입력해 주세요</string>
+    <string name="thank_you">감사합니다!</string>
+    <string name="donate_via_paypal">PayPal로 기부하기</string>
+    <string name="ok">OK</string>
+    <string name="proceed">확인</string>
+    <string name="dismiss">취소</string>
+    <string name="share">공유</string>
+
+    <string name="share_info">Torchie로 볼륨 버튼만을 이용해서 전등을 키세요!지금 다운로드 받으세요! </string>
+    <string name="share_via">Torchie를 이 방법으로 공유합니다..</string>
+
+    <string name="welcome"><b>환영합니다</b></string>
+    <string name="welcome_note"><b>Torchie</b>로 전등을 쉽게 키세요! \n\n<b>\'Torchie 기능\'</b>을 설정하셔서 전등을 키고 끄세요. <b>볼륨 버튼만 사용하시면 됩니다</b>!\n\nTorchie <b>설정</b>에서 더 많은 기능을 편집하세요!</string>
+    <string name="got_it">알겠습니다</string>
+    <string name="permission_note"><b>\'빠른 Torchie\'</b>를 사용하시기 위해서는 접근성 <b>서비스</b>에서 Torchie를 활성화시켜 주세요.</string>
+    <string name="permission_warn"><b>권한에 대해서- </b> \"<i>...입력하는 텍스트 살펴보기 &amp; 작업 살펴보기...</i>\"\n아.. 위험해 보일 수 있습니다! 안드로이드는 \'키 이벤트\'를 하드웨어 키가 눌렸을 때에만 표시합니다. 이 방식으로 Torchie가 볼륨키의 눌림 여부를 확인합니다. 하지만 안드로이드의 <i>실수로</i>, 하드웨어 키보드가 없는 폰에서도 이 경고가 나타납니다. (매우 낡은 안드로이드 폰과 블랙베리 Priv를 빼고 말이죠..). 이 권한이 없으면 Torchie 기능을 제작하기가 어렵습니다.
+        \n그리고, Torchie는 <b>인터넷 권한이 없어서</b>, 아무것도 누구한테나 <i>보낼 수</i> 없습니다.\n\n Torchie는 아무한테서도 데이타를 <i>수집</i>할 수 없습니다. Torchie 기능을 활성화해도 안전합니다! <a href="https://torchieapp.wordpress.com/help/">더 알아보기</a> </string>
+    <string name="permission">Torchie 기능을 활성화시킬까요?</string>
+
+    <string name="about_note"><i>Torchie - 눌러서 전등키기 &#169; 2016</i> \n\n<b>Torchie</b>는 두 형제가 만들었습니다\nMerbin J Anselm 과 Rebin J Anselm\nanselmbros@gmail.com\n\Torchie를 번역해주신 분들께 감사의 말씀 드립니다</string>
+    <string name="about_anselm">Anselm &amp; Anselm에 대하여</string>
+    <string name="official_website">공식 사이트 방문</string>
+    <string name="join_community">베타 그룹 가입</string>
+    <string name="facebook">페이스북</string>
+    <string name="google_plus">구글+</string>
+
+    <string name="donation_note">저희는 많은 <b>시간</b>을 들여서 Torchie를 제작해서, 여러분들이 전등을 키는데 <b>1초도 낭비하지 않게</b> 했습니다!\nTorchie의 성장과 개발을 도우실려면 기부해주세요.</string>
+    <string name="thank_you_note">감사합니다!\n\n친구와 가족분들께 Torchie를 알려주세요!</string>
+    <string name="donation_error">아차! 기부를 하다가 오류가 발생한 것 같네요!</string>
+    <string name="proceed_paypal">PayPal로 진행할까요?</string>
+
+</resources>
