@@ -10,8 +10,6 @@
     <string name="screen_off">Дэлгэц унтраалттай үед</string>
     <string name="miscellaneous">Бусад зүйлс</string>
     <string name="optimize_led_screen">AMOLED дэлгэцийн удиртлага</string>
-    <string name="cause_battery_drain_lock" translatable="false">@string/battery_drain_warn</string>
-    <string name="cause_battery_drain_off" translatable="false">@string/battery_drain_warn</string>
     <string name="battery_drain_warn">Цэнэг хурдан үрэгдэнэ</string>
 
     <string name="donate">Хандив өгөх</string>
