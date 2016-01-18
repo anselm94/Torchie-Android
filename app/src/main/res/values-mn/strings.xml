@@ -1,55 +1,57 @@
 <resources>
-    <string name="app_name">Гэрэлтэгч</string>
-    <string name="activity_settings">Гэрэлтэгчийн Тохиргоо</string>
-    <string name="service_torchiequick_name">Гэрэлтэгч Түргэн</string>
-    <string name="accessibility_service_description">\'Гэрэлтэгч Түргэн\' идвэхжсэн үед дууны товчнуудыг зэрэг дараад гэрлээ удирдана</string>
+    <string name="app_name">Гэрэлтүүлэгч</string>
+    <string name="activity_settings">Гэрэлтүүлэгчийн тохиргоо</string>
+    <string name="service_torchiequick_name">Түргэн гэрэлтүүлэгч</string>
+    <string name="accessibility_service_description">\'Түргэн гэрэлтүүлэгч\' идэвхэжсэн үед дууны товчнуудыг зэрэг дараад гэрлээ удирдана</string>
 
-    <string name="torchie_functionality">Гэрэлтэгчийн үйл ажиллагаа</string>
+    <string name="torchie_functionality">Гэрэлтүүлэгчийн үйл ажиллагаа</string>
     <string name="screen_on">Дэлгэц ассан үед</string>
     <string name="screen_lock">Түгжигдсэн үед</string>
     <string name="screen_off">Дэлгэц унтраалттай үед</string>
     <string name="miscellaneous">Бусад зүйлс</string>
     <string name="optimize_led_screen">AMOLED дэлгэцийн удиртлага</string>
+    <string name="cause_battery_drain_lock" translatable="false">@string/battery_drain_warn</string>
+    <string name="cause_battery_drain_off" translatable="false">@string/battery_drain_warn</string>
     <string name="battery_drain_warn">Цэнэг хурдан үрэгдэнэ</string>
 
     <string name="donate">Хандив өгөх</string>
     <string name="tellfriend">Найздаа санал болгох</string>
-    <string name="rate">Гэрэлтэгчийг үнэлэх</string>
+    <string name="rate">Үнэлэхнэлэх</string>
     <string name="about">Тухай</string>
     <string name="settings">Тохиргоо</string>
     <string name="help_feedback">Тусламж &amp; Санал хүсэлт</string>
-    <string name="enable">Идвэхжүүлэх</string>
+    <string name="enable">Идэвхжүүлэх</string>
     <string name="later">Дараа</string>
-    <string name="loading">уншиж байна...</string>
-    <string name="select_donation_amount"><b>Хандив</b>аа сонгох</string>
+    <string name="loading">уншиж байна</string>
+    <string name="select_donation_amount"><b>Хандив аа</b>сонгох</string>
     <string name="thank_you">Баярлалаа!</string>
-    <string name="donate_via_paypal">Paypal ашиглан хандив өгөх</string>
-    <string name="ok">OK</string>
+    <string name="donate_via_paypal">Paypal-ээр хандив өгөх</string>
+    <string name="ok">За</string>
     <string name="proceed">Зөвшөөрөх</string>
     <string name="dismiss">Орхих</string>
     <string name="share">Түгээх</string>
 
-    <string name="share_info">Гэрэлтэгчийг ашиглан дууны товчнуудыг зэрэг дараад гэрлээ удирдана. Гэрэлтэгчийг татаарай! </string>
-    <string name="share_via">Гэрэлтэгчийг бусдад түгээх</string>
+    <string name="share_info">Гэрэлтүүлэгчийг ашиглан дууны товчнуудыг зэрэг дараад гэрлээ удирдана. Гэрэлтүүлэгчийг татаарай! </string>
+    <string name="share_via">Гэрэлтүүлэгчийг бусдад түгээх</string>
 
     <string name="welcome"><b>Тавтай морил</b></string>
-    <string name="welcome_note"><b>Гэрэлтэгч</b>ийг ашиглаад амьдралаа амар болго! \n\n <b>\'Гэрэлтэгчийн үйл ажиллагаа\'</b>г идвэхжүүлэн <b>дууны товчоо зэрэг даран</b> гэрлээ асааж унтраа!\n\nГэрэлтэгчийг тохируулах бол <b>Тохиргоо</b>руу ор!</string>
+    <string name="welcome_note"><b>Гэрэлтүүлэгч</b>ийг ашиглаад амьдралаа амар болго! \n\n <b>\'Гэрэлтүүлэгчийн үйл ажиллагаа\'</b>г идэвхжүүлэн <b>дууны товчоо зэрэг даран</b> гэрлээ асааж унтраа!\n\nГэрэлтүүлэгчийг тохируулах бол <b>тохиргоо</b>руу ор!</string>
     <string name="got_it">Ойлголоо</string>
-    <string name="permission_note"><b>\'Гэрэлтэгч Түргэн\'</b>г Accessibility-ын <b>Services</b> хэсэгт идвэхжүүл.</string>
-    <string name="permission_warn"><b>PERMISSION-ын хувьд - </b> \"<i>...observe text that you type &amp; observe your actions...</i>\"\nэнэ нь утасны товч дарагдахыг хянах учир ашиглаж байгаа. Дууны товчнууд маань үүнд орно. Гэхдээ энэ Android системийн анхааруулга бөгөөд дууны товчгүй утсанд ч гэсэн ингэж анхааруулах болно.. Энэ permission-гүй бол Гэрэлтэгч ажиллахгүй.
+    <string name="permission_note"><b>\'Түргэн гэрэлтүүлэгч\'</b>г Accessibility-ын <b>Services</b> хэсэгт идвэхжүүл.</string>
+    <string name="permission_warn"><b>PERMISSION-ын хувьд - </b> \"<i>...observe text that you type &amp; observe your actions...</i>\"\nэнэ нь утасны товч дарагдахыг хянах учир ашиглаж байгаа. Дууны товчнууд маань үүнд орно. Гэхдээ энэ Android системийн анхааруулга бөгөөд дууны товчгүй утсанд ч гэсэн ингэж анхааруулах болно.. Энэ permission-гүй бол Гэрэлтүүлэгч ажиллахгүй.
         \nМөн, <b>Интернетэд холбогдох эрх</b>гүй бол Гэрэлтэгчийг бусдад түгээх, хандив өгөх зэрэг нь боломжгүй болох юм. Гэрэлтэгчийн үйл ажиллагааг идвэхжүүлээд чөлөөтэй байдлыг мэдрээрэй! <a href="https://torchieapp.wordpress.com/help/">Илүү ихийг</a> </string>
-    <string name="permission">Гэрэлтэгчийн үйл ажиллагааг идвэхжүүлэх үү?</string>
+    <string name="permission">Гэрэлтүүлэгчийн үйл ажиллагааг идвэхжүүлэх үү?</string>
 
-    <string name="about_note"><i>Гэрэлтэгч - Хүрээд гэрэлтүүл &#169; 2016</i> \n\n<b>Гэрэлтэгч</b> нь хоёр ах дүүгийн бүтээл юм\nMerbin J Anselm болон Rebin J Anselm\nanselmbros@gmail.com\n\nБиднийг дэмжсэнд болон орчуулахад тусласанд баярлалаа</string>
+    <string name="about_note"><i>Гэрэлтүүлэгч - Хүрээд гэрэлтүүл &#169; 2016</i> \n\n<b>Гэрэлтүүлэгч</b> нь ах дүү хоёрын бүтээл юм\nMerbin J Anselm болон Rebin J Anselm\nanselmbros@gmail.com\n\nБиднийг дэмжсэнд болон орчуулахад тусалсанд баярлалаа</string>
     <string name="about_anselm">Anselm-ийн тухай &amp; Anselm</string>
-    <string name="official_website">Албан ёсны сайтад зочилох</string>
-    <string name="join_community">Beta Community-д нэгдэх</string>
+    <string name="official_website">Албан ёсны сайтад зочлох</string>
+    <string name="join_community">Туршигчдын хөдөлгөөнд нэгдэх</string>
     <string name="facebook">Facebook</string>
     <string name="google_plus">Google+</string>
 
-    <string name="donation_note">Бид маш их <b>цаг</b>ийг таныг гэрлээ асаахад <b>үрэх секундыг</b> болиулахын тулд Гэрэлтэгчийг бүтээхэд зарцуулсан!\nБидэнд хандив өгөн дэмжиж туслаарай</string>
-    <string name="thank_you_note">Таны дэмжлэг бидний хөдлөх хүч болно!\n\nГэрэлтэгчийн талаар анд нөхөд гэр бүлийхэндээ хэлээрэй!</string>
-    <string name="donation_error">Өө яанаа! Бидэнд туслах дэмжлэгд алдаа гарлаа!</string>
+    <string name="donation_note">Бид маш их <b>цаг</b>ийг, таныг гэрлээ асаахад <b>үрэх секундыг</b> болиулахын тулд Гэрэлтүүлэгчийг бүтээхэд зарцууллаа!\nБидэнд хандив өгөн дэмжиж туслаарай</string>
+    <string name="thank_you_note">Таны дэмжлэг бидний хөдлөх хүч болно!\n\nГэрэлтүүлэгчийн талаар анд нөхөд гэр бүлийхэндээ хэлээрэй!</string>
+    <string name="donation_error">Өө яана аа! Бидэнд туслах дэмжлэгт алдаа гарлаа!</string>
     <string name="proceed_paypal">Paypal ашиглахдаа итгэлтэй байна уу?</string>
 
 </resources>
