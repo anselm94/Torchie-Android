@@ -34,3 +34,7 @@ captures/
 #App unit-testing files
 test/
 androidTest/
+
+# Android Studio specific
+.idea/workspaces.xml
+.idea/tasks.xml
