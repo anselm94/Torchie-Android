@@ -32,5 +32,5 @@ proguard/
 captures/ 
 
 #App unit-testing files
-app/src/test/
-app/src/androidTest/
+test/
+androidTest/
