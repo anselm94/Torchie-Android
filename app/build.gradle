@@ -8,7 +8,7 @@ android {
         applicationId "in.blogspot.anselmbros.torchie"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 17
+        versionCode 18
         versionName "1.0.4"
     }
     buildTypes {
