@@ -86,7 +86,6 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
 
     @Override
     public void onInterrupt() {
-        Log.d(TAG, "Interrupt occured!");
     }
 
     @Override
@@ -154,16 +153,16 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
 
     public class ScreenReceiver extends BroadcastReceiver {
 
-        TorchieConstants.ScreenState screenState = TorchieConstants.ScreenState.KrULoCdw;
+        TorchieConstants.ScreenState screenState = TorchieConstants.ScreenState.SCREEN_UNLOCK;
 
         @Override
         public void onReceive(Context context, Intent intent) {
             if (intent.getAction().equals(Intent.ACTION_SCREEN_OFF)) {
-                screenState = TorchieConstants.ScreenState.AhOFjLt;
+                screenState = TorchieConstants.ScreenState.SCREEN_OFF;
             } else if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
-                screenState = TorchieConstants.ScreenState.XgLOCtk;
+                screenState = TorchieConstants.ScreenState.SCREEN_LOCK;
             } else if (intent.getAction().equals(Intent.ACTION_USER_PRESENT)) {
-                screenState = TorchieConstants.ScreenState.KrULoCdw;
+                screenState = TorchieConstants.ScreenState.SCREEN_UNLOCK;
             }
             mTorchieActionManager.notifyScreenState(screenState);
         }

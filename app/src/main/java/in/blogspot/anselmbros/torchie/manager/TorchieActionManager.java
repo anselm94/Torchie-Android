@@ -21,7 +21,7 @@ public class TorchieActionManager implements VolumeKeyComboListener {
     private boolean flagScreenLock;     //User Settings
     private boolean flagScreenUnlocked; //User Settings
 
-    private TorchieConstants.ScreenState currentScreenState = TorchieConstants.ScreenState.KrULoCdw; //Current State of screen
+    private TorchieConstants.ScreenState currentScreenState = TorchieConstants.ScreenState.SCREEN_UNLOCK; //Current State of screen
     private KeyComboMode currentKeyComboMode;
 
     private VolumeKeyComboListener mListener;
@@ -79,7 +79,7 @@ public class TorchieActionManager implements VolumeKeyComboListener {
     }
 
     public void handleVolumeValues(int prevValue, int currentValue) {
-        if ((currentKeyComboMode == KeyComboMode.KEYCOMBO_COMPAT) || ((currentScreenState == TorchieConstants.ScreenState.AhOFjLt) && flagScreenOff)) {
+        if ((currentKeyComboMode == KeyComboMode.KEYCOMBO_COMPAT) || ((currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF) && flagScreenOff)) {
             mKeyComboCompatManager.pushVolumeToBuffer(prevValue, currentValue);
         }
     }
@@ -91,21 +91,23 @@ public class TorchieActionManager implements VolumeKeyComboListener {
     }
 
     private void notifyWakelock() {
-        if (this.currentKeyComboMode == KeyComboMode.KEYCOMBO) {
-            if (flagScreenOff && (currentScreenState == TorchieConstants.ScreenState.AhOFjLt)) {
-                wakeLock.acquire(mContext);
+        if (flagScreenOff && (currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF)) {
+            wakeLock.acquire(mContext);
+            if (this.currentKeyComboMode == KeyComboMode.KEYCOMBO) {
                 if (mKeyComboCompatManager == null)
                     initKeyComboCompatManager();
-            } else if (currentScreenState == TorchieConstants.ScreenState.XgLOCtk) {
-                wakeLock.release();
+            }
+        } else if (currentScreenState == TorchieConstants.ScreenState.SCREEN_LOCK) {
+            wakeLock.release();
+            if (this.currentKeyComboMode == KeyComboMode.KEYCOMBO) {
                 mKeyComboCompatManager = null;
             }
-        } else if (this.currentKeyComboMode == KeyComboMode.KEYCOMBO_COMPAT) {
-            if (currentScreenState == TorchieConstants.ScreenState.AhOFjLt) {
-                if (flagScreenOff || flagScreenLock) {
-                    wakeLock.acquire(mContext);
-                }
-            } else if (currentScreenState == TorchieConstants.ScreenState.KrULoCdw) {
+        }
+        //To optimize battery in Android 4.2.2 or lesser
+        if (this.currentKeyComboMode == KeyComboMode.KEYCOMBO_COMPAT) {
+            if (currentScreenState == TorchieConstants.ScreenState.SCREEN_LOCK) {
+                wakeLock.acquire(mContext);
+            } else if (currentScreenState == TorchieConstants.ScreenState.SCREEN_UNLOCK){
                 wakeLock.release();
             }
         }
@@ -122,7 +124,7 @@ public class TorchieActionManager implements VolumeKeyComboListener {
     }
 
     private boolean isAccessProvided() {
-        return (flagScreenOff && (currentScreenState == TorchieConstants.ScreenState.AhOFjLt)) || (flagScreenLock && (currentScreenState == TorchieConstants.ScreenState.XgLOCtk)) || (flagScreenUnlocked && (currentScreenState == TorchieConstants.ScreenState.KrULoCdw));
+        return (flagScreenOff && (currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF)) || (flagScreenLock && (currentScreenState == TorchieConstants.ScreenState.SCREEN_LOCK)) || (flagScreenUnlocked && (currentScreenState == TorchieConstants.ScreenState.SCREEN_UNLOCK));
     }
 
     @Override
