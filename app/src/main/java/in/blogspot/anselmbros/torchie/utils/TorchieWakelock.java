@@ -4,6 +4,7 @@ import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.PowerManager;
+import android.util.Log;
 
 import in.blogspot.anselmbros.torchie.R;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
