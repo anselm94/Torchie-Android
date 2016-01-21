@@ -8,10 +8,13 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
 
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
+import in.blogspot.anselmbros.torchie.service.TorchieQuick;
 
 public class RockerReceiver extends BroadcastReceiver {
 
     public String TAG = TorchieConstants.INFO;
+
+    TorchieQuick torchieQuickService;
 
     public RockerReceiver() {
         TAG = this.getClass().getName();
@@ -25,18 +28,22 @@ public class RockerReceiver extends BroadcastReceiver {
             int prev_volume = intent.getIntExtra("android.media.EXTRA_PREV_VOLUME_STREAM_VALUE", 0);
             int current_volume = intent.getIntExtra("android.media.EXTRA_VOLUME_STREAM_VALUE", 0);
 
-            AccessibilityManager accessibilityManager = (AccessibilityManager) context.getSystemService(Context.ACCESSIBILITY_SERVICE);
-            if (accessibilityManager != null && accessibilityManager.isEnabled()) {
-                AccessibilityEvent e = AccessibilityEvent.obtain();
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                    e.setEventType(AccessibilityEvent.TYPE_ANNOUNCEMENT);
-                }
-                e.setClassName(TorchieConstants.ACC_VOLUME_CHANGE); //define type of broadcast event
-                e.setPackageName(context.getPackageName());
-                e.getText().add(String.valueOf(prev_volume) + "," + String.valueOf(current_volume));
-                e.setEnabled(true);
-                accessibilityManager.sendAccessibilityEvent(e);
+            torchieQuickService = TorchieQuick.getSharedInstance();
+            if(torchieQuickService != null){
+                torchieQuickService.handleVolumeChangeEvent(prev_volume,current_volume);
             }
+//            AccessibilityManager accessibilityManager = (AccessibilityManager) context.getSystemService(Context.ACCESSIBILITY_SERVICE);
+//            if (accessibilityManager != null && accessibilityManager.isEnabled()) {
+//                AccessibilityEvent e = AccessibilityEvent.obtain();
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+//                    e.setEventType(AccessibilityEvent.TYPE_ANNOUNCEMENT);
+//                }
+//                e.setClassName(TorchieConstants.ACC_VOLUME_CHANGE); //define type of broadcast event
+//                e.setPackageName(context.getPackageName());
+//                e.getText().add(String.valueOf(prev_volume) + "," + String.valueOf(current_volume));
+//                e.setEnabled(true);
+//                accessibilityManager.sendAccessibilityEvent(e);
+//            }
         }
 
 //        throw new UnsupportedOperationException("Not yet implemented");
