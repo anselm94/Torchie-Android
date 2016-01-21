@@ -34,9 +34,9 @@ public class TorchieConstants {
     public final static String ERR_CAMERA_OFF = "Camera error while turning off!";
 
     public enum ScreenState {
-        AhOFjLt, //SCREEN_OFF
-        XgLOCtk, //SCREEN_LOCK
-        KrULoCdw //SCREEN_UNLOCK
+        SCREEN_OFF, //SCREEN_OFF AhOFj Lt
+        SCREEN_LOCK, //SCREEN_LOCK XgLOC tk
+        SCREEN_UNLOCK //SCREEN_UNLOCK KrULoC dw
     }
 
     public enum TorchieFlashMode {
