@@ -17,7 +17,7 @@ public class TorchieConstants {
     public final static String GOOGLEPLUS_URI = "https://plus.google.com/111668132285982978436";
     public final static String WEB_DONATE_URI = "https://torchieapp.wordpress.com/donate/";
     //Accessibility Event Announcement
-    public final static String ACC_VOLUME_CHANGE = "AzVfCd"; //ACCESSIBLITY_VOLUME_CHANGE_EVENT out own event
+    public final static String ACC_VOLUME_CHANGE = "AzVfCd"; //ACCESSIBILITY_VOLUME_CHANGE_EVENT out own event
     //Preferences
     public final static String PREF_KEY_APP = "in.blogspot.anselmbros.torchie.PREF_KEY_TORCHIE";
     public final static String PREF_FIRST_TIME = "zFtLrXG";
@@ -25,6 +25,8 @@ public class TorchieConstants {
     public final static String PREF_FUNC_SCREEN_LOCKED = "notQSrnU";
     public final static String PREF_FUNC_SCREEN_UNLOCKED = "loUnSrpr";
     public final static String PREF_FUNC_SCREEN_AMOLED = "gkLEdqt";
+    public final static String PREF_FUNC_SCREEN_OFF_TIME = "joTnBrwz";
+    public final static String PREF_FUNC_SCREEN_OFF_INDEFINITE = "tQcIdjel";
     //Camera Errors
     public final static String ERR_CAMERA_UNAVAILABLE = "Camera not found!";
     public final static String ERR_FLASH_UNAVAILABLE = "Flash not found!";
