@@ -82,20 +82,6 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
 
     @Override
     public void onAccessibilityEvent(AccessibilityEvent event) {
-//        if (event.getPackageName() != null) {
-//            if (event.getPackageName().equals(this.getPackageName())) {
-//                if (event.getClassName() != null) {
-//                    if (event.getClassName().equals(TorchieConstants.ACC_VOLUME_CHANGE)) {
-//                        if (event.getText() != null) {
-//                            String par[] = event.getText().get(0).toString().split(",");
-//                            int prevVol = Integer.valueOf(par[0]);
-//                            int currentVol = Integer.valueOf(par[1]);
-//
-//                        }
-//                    }
-//                }
-//            }
-//        }
     }
 
     @Override
