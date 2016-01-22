@@ -52,7 +52,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:text="@string/torchie_functionality"
-                android:textSize="16sp" />
+                android:textAppearance="?android:textAppearanceListItem" />
 
             <Space
                 android:layout_width="0dp"
