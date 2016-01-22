@@ -3,14 +3,11 @@ package in.blogspot.anselmbros.torchie.manager;
 import android.content.Context;
 import android.os.Build;
 import android.os.CountDownTimer;
-import android.util.Log;
 import android.view.KeyEvent;
 
 import in.blogspot.anselmbros.torchie.listeners.VolumeKeyComboListener;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 import in.blogspot.anselmbros.torchie.utils.TorchieWakelock;
-import in.blogspot.anselmbros.torchie.utils.VolumeKeyManager;
-import in.blogspot.anselmbros.torchie.utils.VolumeRockerManager;
 
 /**
  * Created by anselm94 on 2/12/15.

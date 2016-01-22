@@ -1,4 +1,4 @@
-package in.blogspot.anselmbros.torchie.utils;
+package in.blogspot.anselmbros.torchie.manager;
 
 import android.view.KeyEvent;
 
