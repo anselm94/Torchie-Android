@@ -15,6 +15,7 @@
 
         <item name="android:colorForeground">@color/colorGrey400</item>
 
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
         <item name="preferenceTheme">@style/MyPreferenceTheme</item>
     </style>
 
