@@ -69,6 +69,7 @@
     <string name="hold_delay">Hold delay</string>
     <string name="immediate">Immediate</string>
     <string name="not_work_screen_off">Will not work in Screen off!</string>
-    <string name="torch_time_out">Torch time-out</string>>
+    <string name="torch_time_out">Torch time-out</string>
+    <string name="language_select">Choose language</string>
 
 </resources>
