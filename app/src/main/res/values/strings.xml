@@ -57,5 +57,18 @@
     <string name="indefinite">Indefinite</string>
     <string name="minutes">Minutes</string>
     <string name="seconds">Seconds</string>
+    <string name="milliseconds">Millis</string>
     <string name="vibrate">Vibrate</string>
+    <string name="torch_source">Torch source</string>
+    <string name="flash_or_led">Flash/LED</string>
+    <string name="screen_light">Screen light</string>
+    <string name="toggle_method">Toggle method</string>
+    <string name="both_vol_buttons">Volume + &amp; Volume -</string>
+    <string name="volume_up">Volume +</string>
+    <string name="volume_down">Volume -</string>
+    <string name="hold_delay">Hold delay</string>
+    <string name="immediate">Immediate</string>
+    <string name="not_work_screen_off">Will not work in Screen off!</string>
+    <string name="torch_time_out">Torch time-out</string>>
+
 </resources>
