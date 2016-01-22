@@ -2,6 +2,8 @@ package in.blogspot.anselmbros.torchie.manager;
 
 import android.content.Context;
 import android.os.Build;
+import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.KeyEvent;
 
 import in.blogspot.anselmbros.torchie.listeners.VolumeKeyComboListener;
@@ -16,10 +18,16 @@ import in.blogspot.anselmbros.torchie.utils.VolumeRockerManager;
 public class TorchieActionManager implements VolumeKeyComboListener {
 
     public String TAG = TorchieConstants.INFO;
+
     TorchieWakelock wakeLock;
-    private boolean flagScreenOff;      //User Settings
-    private boolean flagScreenLock;     //User Settings
-    private boolean flagScreenUnlocked; //User Settings
+
+    private boolean settingScreenOff;            //User Settings
+    private boolean settingScreenLock;           //User Settings
+    private boolean settingScreenUnlocked;       //User Settings
+    private boolean settingsScreenOffIndefinite; //User Settings
+    private long settingsScreenOffTime;           //User Settings
+
+    private boolean flagScreenOff;         //Changes when screen off time runs out
 
     private TorchieConstants.ScreenState currentScreenState = TorchieConstants.ScreenState.SCREEN_UNLOCK; //Current State of screen
     private KeyComboMode currentKeyComboMode;
@@ -28,6 +36,7 @@ public class TorchieActionManager implements VolumeKeyComboListener {
     private VolumeKeyManager mKeyComboManager;
     private VolumeRockerManager mKeyComboCompatManager;
     private Context mContext;
+    private ScreenOffTimer screenOffTimer;
 
     public TorchieActionManager(Context context) {
         TAG = this.getClass().getName();
@@ -39,21 +48,44 @@ public class TorchieActionManager implements VolumeKeyComboListener {
         this.mListener = listener;
     }
 
+    public void setSettingScreenOff(boolean settingScreenOff) {
+        this.settingScreenOff = settingScreenOff;
+    }
+
+    public void setSettingScreenLock(boolean settingScreenLock) {
+        this.settingScreenLock = settingScreenLock;
+    }
+
+    public void setSettingScreenUnlocked(boolean settingScreenUnlocked) {
+        this.settingScreenUnlocked = settingScreenUnlocked;
+    }
+
+    public void setSettingsScreenOffIndefinite(boolean settingsScreenOffIndefinite) {
+        this.settingsScreenOffIndefinite = settingsScreenOffIndefinite;
+    }
+
+    public void setSettingsScreenOffTime(long settingsScreenOffTime) {
+        this.settingsScreenOffTime = settingsScreenOffTime;
+    }
+
     public void setFlagScreenOff(boolean flagScreenOff) {
         this.flagScreenOff = flagScreenOff;
-    }
-
-    public void setFlagScreenLock(boolean flagScreenLock) {
-        this.flagScreenLock = flagScreenLock;
-    }
-
-    public void setFlagScreenUnlocked(boolean flagScreenUnlocked) {
-        this.flagScreenUnlocked = flagScreenUnlocked;
     }
 
     public void notifyScreenState(TorchieConstants.ScreenState screenState) {
         this.currentScreenState = screenState;
         notifyWakelock();
+        if (this.currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF) {
+            setFlagScreenOff(true); //Initialise Screen off timer
+            if(!settingsScreenOffIndefinite) {
+                screenOffTimer = new ScreenOffTimer(this.settingsScreenOffTime, 1000);
+                screenOffTimer.start();
+            }
+        }else if(this.currentScreenState == TorchieConstants.ScreenState.SCREEN_LOCK){
+            if(screenOffTimer != null){
+                screenOffTimer.cancel();
+            }
+        }
     }
 
     public void setKeyComboMode(KeyComboMode mode) {
@@ -79,7 +111,7 @@ public class TorchieActionManager implements VolumeKeyComboListener {
     }
 
     public void handleVolumeValues(int prevValue, int currentValue) {
-        if ((currentKeyComboMode == KeyComboMode.KEYCOMBO_COMPAT) || ((currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF) && flagScreenOff)) {
+        if ((currentKeyComboMode == KeyComboMode.KEYCOMBO_COMPAT) || ((currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF) && settingScreenOff)) {
             mKeyComboCompatManager.pushVolumeToBuffer(prevValue, currentValue);
         }
     }
@@ -91,7 +123,7 @@ public class TorchieActionManager implements VolumeKeyComboListener {
     }
 
     private void notifyWakelock() {
-        if (flagScreenOff && (currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF)) {
+        if (settingScreenOff && (currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF)) {
             wakeLock.acquire(mContext);
             if (this.currentKeyComboMode == KeyComboMode.KEYCOMBO) {
                 if (mKeyComboCompatManager == null)
@@ -107,7 +139,7 @@ public class TorchieActionManager implements VolumeKeyComboListener {
         if (this.currentKeyComboMode == KeyComboMode.KEYCOMBO_COMPAT) {
             if (currentScreenState == TorchieConstants.ScreenState.SCREEN_LOCK) {
                 wakeLock.acquire(mContext);
-            } else if (currentScreenState == TorchieConstants.ScreenState.SCREEN_UNLOCK){
+            } else if (currentScreenState == TorchieConstants.ScreenState.SCREEN_UNLOCK) {
                 wakeLock.release();
             }
         }
@@ -124,7 +156,7 @@ public class TorchieActionManager implements VolumeKeyComboListener {
     }
 
     private boolean isAccessProvided() {
-        return (flagScreenOff && (currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF)) || (flagScreenLock && (currentScreenState == TorchieConstants.ScreenState.SCREEN_LOCK)) || (flagScreenUnlocked && (currentScreenState == TorchieConstants.ScreenState.SCREEN_UNLOCK));
+        return (settingScreenOff && (currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF)) && flagScreenOff || (settingScreenLock && (currentScreenState == TorchieConstants.ScreenState.SCREEN_LOCK)) || (settingScreenUnlocked && (currentScreenState == TorchieConstants.ScreenState.SCREEN_UNLOCK));
     }
 
     @Override
@@ -138,5 +170,21 @@ public class TorchieActionManager implements VolumeKeyComboListener {
         AUTO,           //For Auto setup
         KEYCOMBO,       //Android 4.3+ as onKeyEvent() is accessible
         KEYCOMBO_COMPAT //Android < 4.3 for Torchie Trick (C)
+    }
+
+    private class ScreenOffTimer extends CountDownTimer{
+        public ScreenOffTimer(long startTime, long interval){
+            super(startTime, interval);
+        }
+
+        @Override
+        public void onTick(long millisUntilFinished) {
+        }
+
+        @Override
+        public void onFinish() {
+            setFlagScreenOff(false);
+            wakeLock.release();
+        }
     }
 }

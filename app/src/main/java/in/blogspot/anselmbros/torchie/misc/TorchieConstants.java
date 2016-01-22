@@ -17,7 +17,7 @@ public class TorchieConstants {
     public final static String GOOGLEPLUS_URI = "https://plus.google.com/111668132285982978436";
     public final static String WEB_DONATE_URI = "https://torchieapp.wordpress.com/donate/";
     //Accessibility Event Announcement
-    public final static String ACC_VOLUME_CHANGE = "AzVfCd"; //ACCESSIBILITY_VOLUME_CHANGE_EVENT out own event
+    public final static long DEFAULT_SCREENOFF_TIME = 10000; //in millis
     //Preferences
     public final static String PREF_KEY_APP = "in.blogspot.anselmbros.torchie.PREF_KEY_TORCHIE";
     public final static String PREF_FIRST_TIME = "zFtLrXG";
