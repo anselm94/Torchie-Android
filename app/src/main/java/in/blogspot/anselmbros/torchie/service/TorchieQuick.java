@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.os.Vibrator;
 import android.view.KeyEvent;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.Toast;
@@ -28,6 +29,8 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
     BroadcastReceiver mReceiver;
     private FlashlightManager mFlashlightManager;
     private TorchieActionManager mTorchieActionManager;
+
+    private boolean isVibrateEnabled;
 
     public TorchieQuick() {
         TAG = this.getClass().getName();
@@ -68,16 +71,16 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
         mTorchieActionManager = new TorchieActionManager(TorchieQuick.this);
         mTorchieActionManager.setListener(this);
         mTorchieActionManager.setKeyComboMode(TorchieActionManager.KeyComboMode.AUTO);
-        mTorchieActionManager.setSettingScreenLock(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_LOCKED, this.getResources().getBoolean(R.bool.func_screen_lock)));
+        mTorchieActionManager.setSettingScreenLock(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_LOCKED, true));
         mTorchieActionManager.setSettingScreenOff(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_OFF, false));
         mTorchieActionManager.setSettingScreenUnlocked(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_UNLOCKED, true));
         mTorchieActionManager.setSettingsScreenOffIndefinite(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_OFF_INDEFINITE, false));
         mTorchieActionManager.setSettingsScreenOffTime(preferences.getLong(TorchieConstants.PREF_FUNC_SCREEN_OFF_TIME, TorchieConstants.DEFAULT_SCREENOFF_TIME));
-
+        isVibrateEnabled = preferences.getBoolean(TorchieConstants.PREF_FUNC_VIBRATE, false);
         super.onServiceConnected();
     }
 
-    public void handleVolumeChangeEvent(int prevVol, int currentVol){
+    public void handleVolumeChangeEvent(int prevVol, int currentVol) {
         mTorchieActionManager.handleVolumeValues(prevVol, currentVol);
     }
 
@@ -96,7 +99,7 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
                 mTorchieActionManager.setSettingScreenOff(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_OFF, false));
                 break;
             case TorchieConstants.PREF_FUNC_SCREEN_LOCKED:
-                mTorchieActionManager.setSettingScreenLock(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_LOCKED, this.getResources().getBoolean(R.bool.func_screen_lock)));
+                mTorchieActionManager.setSettingScreenLock(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_LOCKED, true));
                 break;
             case TorchieConstants.PREF_FUNC_SCREEN_UNLOCKED:
                 mTorchieActionManager.setSettingScreenUnlocked(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_UNLOCKED, true));
@@ -106,6 +109,9 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
                 break;
             case TorchieConstants.PREF_FUNC_SCREEN_OFF_TIME:
                 mTorchieActionManager.setSettingsScreenOffTime(preferences.getLong(TorchieConstants.PREF_FUNC_SCREEN_OFF_TIME, TorchieConstants.DEFAULT_SCREENOFF_TIME));
+                break;
+            case TorchieConstants.PREF_FUNC_VIBRATE:
+                isVibrateEnabled = preferences.getBoolean(TorchieConstants.PREF_FUNC_VIBRATE, false);
                 break;
         }
     }
@@ -141,6 +147,11 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
     public void onFlashStateChanged(boolean enabled) {
         if (mListener != null) {
             mListener.onFlashStateChanged(enabled);
+        }
+        if (isVibrateEnabled) {
+            Vibrator vib = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+            if (vib.hasVibrator())
+                vib.vibrate(TorchieConstants.DEFAULT_VIBRATOR_TIME);
         }
     }
 
