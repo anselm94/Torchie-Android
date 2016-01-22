@@ -16,8 +16,9 @@ public class TorchieConstants {
     public final static String FACEBOOK_URI = "https://facebook.com/torchieapp";
     public final static String GOOGLEPLUS_URI = "https://plus.google.com/111668132285982978436";
     public final static String WEB_DONATE_URI = "https://torchieapp.wordpress.com/donate/";
-    //Accessibility Event Announcement
+    //Default Values
     public final static long DEFAULT_SCREENOFF_TIME = 10000; //in millis
+    public final static long DEFAULT_VIBRATOR_TIME = 100; //in millis
     //Preferences
     public final static String PREF_KEY_APP = "in.blogspot.anselmbros.torchie.PREF_KEY_TORCHIE";
     public final static String PREF_FIRST_TIME = "zFtLrXG";
@@ -27,6 +28,7 @@ public class TorchieConstants {
     public final static String PREF_FUNC_SCREEN_AMOLED = "gkLEdqt";
     public final static String PREF_FUNC_SCREEN_OFF_TIME = "joTnBrwz";
     public final static String PREF_FUNC_SCREEN_OFF_INDEFINITE = "tQcIdjel";
+    public final static String PREF_FUNC_VIBRATE = "vTkOdxzH";
     //Camera Errors
     public final static String ERR_CAMERA_UNAVAILABLE = "Camera not found!";
     public final static String ERR_FLASH_UNAVAILABLE = "Flash not found!";
