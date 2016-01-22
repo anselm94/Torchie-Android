@@ -28,4 +28,8 @@
     <color name="colorBlack">#000000</color>
     <color name="colorTransparent">#00FFFFFF</color>
     <color name="colorRippleWhite">#88FFFFFF</color>
+
+    <color name="colorPrimary">@color/colorIndigo500</color>
+    <color name="colorPrimaryDark">@color/colorIndigo700</color>
+    <color name="colorAccent">@color/colorPinkA200</color>
 </resources>
