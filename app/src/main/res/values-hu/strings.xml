@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie Beállítássok</string>
+    <string name="service_torchiequick_name">Villám Torchie</string>
+    <string name="accessibility_service_description">Amikor a \'Villám Torchie\' engedélyezve van, a hangerőszabályzó gombok egyszerre történő lenyomásával lehet ki- és bekapcsolni a lámpát</string>
+
+    <string name="torchie_functionality">Torchie működés</string>
+    <string name="screen_on">Bekapcsolt kijelzőnél</string>
+    <string name="screen_lock">Képernyőzárnál</string>
+    <string name="screen_off">Kikapcsolt kijelzőnél</string>
+    <string name="miscellaneous">Egyéb</string>
+    <string name="optimize_led_screen">AMOLED kijelző optimalizálás</string>
+    <string name="battery_drain_warn">Jelentős akkumulátor használatot eredményezhet</string>
+
+    <string name="donate">Adomány</string>
+    <string name="tellfriend">Megosztás</string>
+    <string name="rate">Értékeld a Torchie-t</string>
+    <string name="about">Névjegy</string>
+    <string name="settings">Beállítások</string>
+    <string name="help_feedback">Segítség &amp; Visszajelzés</string>
+    <string name="enable">Engedélyez</string>
+    <string name="later">Később</string>
+    <string name="loading">töltés</string>
+    <string name="select_donation_amount">Válaszd ki az <b>adomány</b> mennyiségét</string>
+    <string name="thank_you">Köszönöm szépen!</string>
+    <string name="donate_via_paypal">Adomány PayPal-on</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Folytatás</string>
+    <string name="dismiss">Elutasítás</string>
+    <string name="share">Megosztás</string>
+
+    <string name="share_info">Turn on torch just by holding volume buttons together with Torchie. Download Torchie now! </string>
+    <string name="share_info">A Torchie-val bekapcsolhatod a lámpát a hangerőszabályzó gombok együttes lenyomásával. Töltsd le a Torchie-t még ma! </string>
+    <string name="share_via">Néhány gondolat a Torchie-ról ezzel: </string>
+
+    <string name="welcome"><b>Üdvözöllek</b></string>
+    <string name="welcome_note">Könnyítsd meg az életed a <b>Torchie-val</b>! \n\nEngedélyezd a <b>\'Torchie működést\'</b> ahhoz, hogy a lámpa kapcsolásához csak a <b>hangerőszabályzó gombok együttes lenyomása</b> legyen szükséges!\n\nTovábbi beállítások a Torchie <b>Beállításokban</b>!</string>
+    <string name="got_it">Értettem</string>
+    <string name="permission_note">Engedélyezd a <b>\'Villám Torchie\'</b>-t a Kisegítő szolgáltatások <b>Szolgáltatások</b>-ban a Torchie kipróbálásához.</string>
+    
+    <string name="permission_warn"><b>About the PERMISSION - </b> \"<i>...observe text that you type &amp; observe your actions...</i>\"\nAlas! It\'s threatening! Android throws a \'Key Event\' only when a HARDWARE KEY is pressed. It is by this way, Torchie captures Volume Key presses. But It is Android\'s <i>flaw</i>, showing the same WARNING even for NON-HARDWARE KEYBOARD ENABLED PHONES (except very old Android devices and Blackberry Priv which had/have hardware keyboard for typing). It is impossible to design Torchie Functionality without this permission
+        \nAlso, Torchie <b>DOES NOT HAVE INTERNET PERMISSION</b>, so it is impossible to <i>send</i> anything to anyone\n\n Torchie CANNOT <i>COLLECT</i> anything from anyone. Feel free to enable Torchie functionality! <a href="https://torchieapp.wordpress.com/help/">Learn more</a> </string>
+	
+	<string name="permission_warn"><b>Az ENGEDÉLYEKRŐL - </b> \"<i>...figyeld meg a beírt szöveget &amp; figyeld meg a műveleteket...</i>\"\nJaj! Ez fenyegető! Az Android csak akkor küld \'Gomb Eseményt\' ha egy HARDVERES GOMB lett lenyomva. Emiatt a Torchie figyeli a billentyű lenyomásokat. De ez az Android <i>sajátossága</i>, hogy ugyan ezt a FIGYELMEZTETÉST használja a NEM-HARDVERES BILLENTYŰZETTEL ELLÁTOTT TELEFONOKNÁL IS (kivéve a nagyon régi Androidos készülékeket és a BlackBerry Priv-et, amelyeknek fizikális bevitelük is van). Lehetetlen a Torchie Működés enélkül az engedély nélkül.
+        \nTovábbá, a Torchie <b>NINCS SZÜKSÉGE INTERNET HOZZÁFÉRÉSRE</b>, szóval lehetetlen bármit is <i>elküldeni</i> akárkinek\n\n A Torchie NEM <i>KÉPES</i> semmiféle gyűjtésre és küldésre. Nyugodtan engedélyezd a Torchie Működést! <a href="https://torchieapp.wordpress.com/help/">Tudj meg többet</a> </string>
+    <string name="permission">Engedélyezed a Torchie Működést?</string>
+
+    <string name="about_note"><i>Torchie - Touch to Torch &#169; 2016</i> \n\nA <b>Torchie</b> két testvér által készült\nMerbin J Anselm és Rebin J Anselm\nanselmbros@gmail.com\n\n Sok köszönet mindenkinek, aki segített lefordítani a Torchie-t</string>
+    <string name="about_anselm">Többet Anselm &amp; Anselm-ről</string>
+    <string name="official_website">Hivatalos oldal</string>
+    <string name="join_community">Csatlakozz a Béta Közösséghez</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Rengeteg <b>órát</b> töltöttünk a Torchie fejlesztésével, hogy Te ne veszíts egy <b>másodpercet sem</b> a lámpa bekapcsolásával!\nKérjük támogasd a Torchie-val eltöltött munkánkat</string>
+    <string name="thank_you_note">Motiválj minket!\n\nOszd meg a gondolataidat a Torchie-ról a családoddal és barátaiddal!</string>
+    <string name="donation_error">Oops! Error while sharing love with us!</string>
+    <string name="donation_error">Hoppá! Váratlan hiba történt az üzenet küldésekor!</string>
+    <string name="proceed_paypal">Tovább lépsz a Paypal-ra?</string>
+
+</resources>
