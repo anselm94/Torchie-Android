@@ -33,7 +33,10 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="8dp"
-        android:spinnerMode="dialog" />
+        android:spinnerMode="dialog"
+        android:background="@color/colorGrey700"
+        android:elevation="-12dp"
+        android:translationZ="8dp" />
 
     <TextView
         android:id="@+id/tv_donate_status"
