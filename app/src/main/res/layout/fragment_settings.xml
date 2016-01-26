@@ -20,7 +20,7 @@
             android:paddingBottom="2dp"
             android:paddingTop="16dp"
             android:text="@string/torchie_functionality"
-            android:textAppearance="?android:textAppearanceSmall"
+            style="@style/TextAppearance.AppCompat.Small"
             android:textColor="@color/colorAccent" />
 
         <LinearLayout
@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/screen_on"
-                android:textAppearance="?android:textAppearanceListItem"
+                style="@style/TextAppearance.AppCompat.Menu"
                 android:textColor="@color/colorWhite" />
 
             <Space
@@ -66,7 +66,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/screen_lock"
-                android:textAppearance="?android:textAppearanceListItem"
+                style="@style/TextAppearance.AppCompat.Menu"
                 android:textColor="@color/colorWhite" />
 
             <Space
@@ -97,7 +97,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/screen_off"
-                android:textAppearance="?android:textAppearanceListItem"
+                style="@style/TextAppearance.AppCompat.Menu"
                 android:textColor="@color/colorWhite" />
 
             <Space
@@ -153,7 +153,7 @@
                         android:layout_height="wrap_content"
                         android:paddingTop="4dp"
                         android:text="@string/indefinite"
-                        android:textAppearance="?android:textAppearanceListItem"
+                        style="@style/TextAppearance.AppCompat.Menu"
                         android:textColor="@color/colorWhite" />
 
                     <Space
@@ -178,18 +178,19 @@
                         android:id="@+id/et_settings_screen_off_minutes"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:maxLength="3"
                         android:digits="0123456789"
                         android:gravity="center_horizontal"
                         android:inputType="number"
                         android:minWidth="50dp"
                         android:singleLine="true"
-                        android:textAppearance="?android:textAppearanceMedium" />
+                        style="@style/TextAppearance.AppCompat.Menu" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/minutes"
-                        android:textAppearance="?android:textAppearanceListItem"
+                        style="@style/TextAppearance.AppCompat.Menu"
                         android:textColor="@color/colorWhite"/>
 
                     <TextView
@@ -204,16 +205,17 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="0123456789"
+                        android:maxLength="3"
                         android:gravity="center"
                         android:inputType="number"
                         android:minWidth="50dp"
                         android:singleLine="true"
-                        android:textAppearance="?android:textAppearanceMedium" />
+                        style="@style/TextAppearance.AppCompat.Menu" />
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/seconds"
-                        android:textAppearance="?android:textAppearanceListItem"
+                        style="@style/TextAppearance.AppCompat.Menu"
                         android:textColor="@color/colorWhite"/>
                 </LinearLayout>
 
@@ -244,7 +246,7 @@
             android:paddingBottom="2dp"
             android:paddingTop="16dp"
             android:text="@string/miscellaneous"
-            android:textAppearance="?android:textAppearanceSmall"
+            style="@style/TextAppearance.AppCompat.Small"
             android:textColor="@color/colorAccent" />
 
         <LinearLayout
@@ -267,7 +269,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/vibrate"
-                    android:textAppearance="?android:textAppearanceListItem"
+                    style="@style/TextAppearance.AppCompat.Menu"
                     android:textColor="@color/colorWhite" />
 
                 <Space
