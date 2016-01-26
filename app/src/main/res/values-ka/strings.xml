@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie-ს ოფციები</string>
+    <string name="service_torchiequick_name">სწრაფი Torchie</string>
+    <string name="accessibility_service_description">როდესაც \'სწრაფი Torchie\' ჩართულია, ფანრის ჩართვა/გამორთვა შესაძლებელია ხმის ღილაკების ერთდროულად დაჭერით</string>
+
+    <string name="torchie_functionality">Torchie-ს ფუნქციონალი</string>
+    <string name="screen_on">ჩართულ ეკრანზე</string>
+    <string name="screen_lock">დაბლოკილ ეკრანზე</string>
+    <string name="screen_off">გამორთულ ეკრანზე</string>
+    <string name="miscellaneous">სხვა და სხვა</string>
+    <string name="optimize_led_screen">AMOLED ეკრანის ოპტიმიზაცია</string>
+    <string name="battery_drain_warn">გამოიწვევს ბატარიის მალე დაჯენას</string>
+
+    <string name="donate">დონაცია</string>
+    <string name="tellfriend">გაუზიარე მეგობრებს</string>
+    <string name="rate">შეაფასე Torchie</string>
+    <string name="about">შესახებ</string>
+    <string name="settings">ოფციები</string>
+    <string name="help_feedback">დახმარება &amp; უკუკავშირი</string>
+    <string name="enable">გააქტიურება</string>
+    <string name="later">მოგვიანებით</string>
+    <string name="loading">დაელოდეთ</string>
+    <string name="select_donation_amount">აირჩიეთ <b>დონაციის</b> რაოდენობა</string>
+    <string name="thank_you">გმადლობთ!</string>
+    <string name="donate_via_paypal">დონაცია Paypal-ით</string>
+    <string name="ok">OK</string>
+    <string name="proceed">გაგრძელება</string>
+    <string name="dismiss">უარყოფა</string>
+    <string name="share">გაზიარება</string>
+
+    <string name="share_info">ჩართეთ ფანარი ხმის ღილაკებზე ერთდროულად დაჭერით Torchie-ს გამოყენებით. გადმოწერეთ Tochie ახლავე! </string>
+    <string name="share_via">გააზიარე Tochie</string>
+
+    <string name="welcome"><b>მოგესალმებით</b></string>
+    <string name="welcome_note">გაიმარტივე ცხოვრება <b>Torchie-სთან</b> ერთად! \n\გაააქტიურეთ <b>\'Torchie-ს ფუნქციონალი\'</b> რათა ჩართოთ/გამორთოთ ფანარი მხოლოდ <b>ხმის ღილაკებზე ერთდროულად დაჭერით</b>!\n\nდამატებითი ფუნქციები იხილეთ Tochie-ს <b>ოფციებში</b>!</string>
+    <string name="got_it">გასაგებია</string>
+    <string name="permission_note">გააქტიურე <b>\'სწრაფი Torchie\'</b> მისაწვდომობის <b>სერვისებიდან</b> რათა გამოსცადოთ Torchie.</string>
+    <string name="permission_warn"><b>უფლებების შესახებ - </b> \"<i>...დააკვირდით რას წერთ &amp; და აკონტროლეთ თქვენი ქმედებები...</i>\"\nაფსუს! ის გვემუქრება! Android-ი იძლევა \'Key Event-ს\' მხოლოდ მაშინ როდესაც კონტაქტი ხდება კავეულ ღილაკთან. ამ გზით, Tochie მხოლოდ აკონტროლებს ხმის ღილაკების მდგომარეობას. თუმცა Android-ის <i>ნაკლის</i> გამო, სისტემა იგივე შეტყობინებას აჩვენებს კავეული კლავიატურის არ მქონე ტელეფონებთანაც (ძალიან ძველი Android მოწყობილობებისა და BlackBerry Priv-ის გარდა, რომლებსაც ჰქონდათ/აქვთ კავეული კლავიატურა). ამ უფლების გარეშე Tochie-ს ფუნქციონალის გამოყენება შეუძლებელია
+        \nასევე, Torchie-ს <b>არ აქვს ინტერნეტთან წვდომა</b>, ასე რომ ინფორმაციის სადმე <i>გაგზავნა</i> პრაქტიკულად შეუძლებელია\n\n Torchie-ს არ შეუძლია <i>შეაგროვოს</i> რაიმე ვინმესგან. არ შეგეშინდეთ Torchie-ს ფუნქციონალის გააქტიურების! <a href="https://torchieapp.wordpress.com/help/">გაიგეთ მეტი</a> </string>
+    <string name="permission">გავააქტიურო Torchie-ს ფუნქციონალი?</string>
+
+    <string name="about_note"><i>Torchie - Touch to Torch &#169; 2016</i> \n\n<b>Torchie</b> შექმნილია ძმები \nMerbin J Anselm-ისა და Rebin J Anselm-ის მიერ\nanselmbros@gmail.com\n\nდიდი მადლობა მათ, ვინც დაგვეხმარა Torchie-ს გადათარგმნაში</string>
+    <string name="about_anselm">Anselm &amp; Anselm-ის შესახებ</string>
+    <string name="official_website">ეწვიეთ ოფიციალურ საიტს</string>
+    <string name="join_community">გაწევრიანდით ბეტა საზოგადოებაში</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">ჩვენ საკმაოდ ბევრი <b>საათი</b> დავხარჯეთ Tochie-ს გაკეთებაში, სწორედ ამიტომ თქვენ  <b>წამსაც კი არ კარგავთ</b> ფანარის გასააქტიურებლად!\nმხარი დაუჭირეთ Tochie-ს დონაციით</string>
+    <string name="thank_you_note">თქვენი მზრუნველობა მოტივაციას გვაძლევს ჩვენ!\n\nგაუზიარეთ Tochie თქვენს ოჯახის წევრებსა და მეგობრებს!</string>
+    <string name="donation_error">უფს! სიყვარულის გაზიარების დროს შეცდომა დაფიქსირდა!</string>
+    <string name="proceed_paypal">გავაგრძელოთ Paypal-ში?</string>
+
+
+    <string name="indefinite">განუსაზღვრელი</string>
+    <string name="minutes">წუთი</string>
+    <string name="seconds">წამი</string>
+    <string name="milliseconds">მილი-წამები.</string>
+    <string name="vibrate">ვიბრაცია</string>
+    <string name="torch_source">ნათების წყარო</string>
+    <string name="flash_or_led">Flash/LED</string>
+    <string name="screen_light">ეკრანის განათება</string>
+    <string name="toggle_method">ჩართვის მეთოდი</string>
+    <string name="both_vol_buttons">ხმის აწევა &amp; ხმის დაწევა</string>
+    <string name="volume_up">ხმის აწევა</string>
+    <string name="volume_down">ხმის დაწევა</string>
+    <string name="hold_delay">შეყოვნების ხანგრძლივობა</string>
+    <string name="immediate">წამიერი</string>
+    <string name="not_work_screen_off">არ იმუშავებს გამორთულ ეკრანზე!</string>
+    <string name="torch_time_out">ფანრის შესვენება</string>>
+    <string name="language_select">აირჩიეთ ენა</string>
+</resources>
