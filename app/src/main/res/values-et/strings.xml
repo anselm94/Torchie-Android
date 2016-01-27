@@ -51,4 +51,21 @@
     <string name="donation_error">Ups! Annetamisel tekkis viga!</string>
     <string name="proceed_paypal">Jätka Paypalis?</string>
 
+    <string name="indefinite">Pikaajaline(töötab kogu aeg)</string>
+    <string name="minutes">Minutit</string>
+    <string name="seconds">Sekundit</string>
+    <string name="milliseconds">Millisekundit</string>
+    <string name="vibrate">Vibratsioon</string>
+    <string name="torch_source">Tõrviku töötamisallikas</string>
+    <string name="flash_or_led">Välk/LED</string>
+    <string name="screen_light">Ekraanivalgus</string>
+    <string name="toggle_method">Välgu kasutamise meetod</string>
+    <string name="both_vol_buttons">Mõlemad</string>
+    <string name="volume_up">Helinupp +</string>
+    <string name="volume_down">Helinupp -</string>
+    <string name="hold_delay">All hoidmise viivitus</string>
+    <string name="immediate">Otsekohene</string>
+    <string name="not_work_screen_off">Ei tööta, kui ekraan välja lülitatud!</string>
+    <string name="torch_time_out">Ajaline kestvus</string>
+    <string name="language_select">Vali keel</string>
 </resources>

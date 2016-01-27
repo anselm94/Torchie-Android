@@ -45,4 +45,22 @@
     <string name="google_plus">Google+</string>
     <string name="thank_you_note">Wasz wkład motywuje nas do działania, pamiętajcie o rozpowszechnieniu informacji o naszej aplikacji</string>
     <string name="about_note"><i>Torchie - stuknij, aby włączyć latarkę &#169; 2016</i>Autorem <b>Torchie</b> jest rodzeństwo \nMerbin J Anselm i Rebin J Anselm\nanselmbros@gmail.com\n\nPodziękowania dla wszystkich, odpowiedzialnych za lokalizację Torchie</string>
+
+    <string name="indefinite">Nieograniczony</string>
+    <string name="minutes">Minut(y)</string>
+    <string name="seconds">Sekund(y)</string>
+    <string name="milliseconds">milisekund(y)</string>
+    <string name="vibrate">Wibracje</string>
+    <string name="torch_source">Źródło latarki</string>
+    <string name="flash_or_led">Dioda aparatu</string>
+    <string name="screen_light">Wyświetlacz</string>
+    <string name="toggle_method">Metoda uruchomienia</string>
+    <string name="both_vol_buttons">Obydwa przyciski</string>
+    <string name="volume_up">Podgłoszenie</string>
+    <string name="volume_down">Ściszenie</string>
+    <string name="hold_delay">Opóźnienie</string>
+    <string name="immediate">Natychmiast</string>
+    <string name="not_work_screen_off">Nie działa na zablokowanym ekranie</string>
+    <string name="torch_time_out">Czas przerwy latarki</string>
+    <string name="language_select">Zmiana języka</string>
 </resources>

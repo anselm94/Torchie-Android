@@ -52,4 +52,21 @@
     <string name="donation_error">Oops! Chyba během šíření lásky!</string>
     <string name="proceed_paypal">Pokračovat na PayPal?</string>
 
+    <string name="indefinite">Neurčitě</string>
+    <string name="minutes">Minut</string>
+    <string name="seconds">Sekund</string>
+    <string name="milliseconds">Milisekund</string>
+    <string name="vibrate">Vibrovat</string>
+    <string name="torch_source">Zdroj světla</string>
+    <string name="flash_or_led">Blesk/LED</string>
+    <string name="screen_light">Podsvícení obrazovky</string>
+    <string name="toggle_method">Způsob zapínání</string>
+    <string name="both_vol_buttons">Hlasitost + &amp; Hlasitost -</string>
+    <string name="volume_up">Hasitost +</string>
+    <string name="volume_down">Hlasitost -</string>
+    <string name="hold_delay">Zapnout po</string>
+    <string name="immediate">Ihned</string>
+    <string name="not_work_screen_off">Nebude fungovat při Vypnuté obrazovce!</string>
+    <string name="torch_time_out">Automaticky vypnout</string>>
+    <string name="language_select">Výběr jazyka</string>
 </resources>

@@ -53,4 +53,21 @@
     <string name="donation_error">اوه! مشکلی تو حمایتتون از ما به وجود اومد!</string>
     <string name="proceed_paypal">بریم پی پال؟</string>
 
+    <string name="indefinite">نامحدود</string>
+    <string name="minutes">دقیقه</string>
+    <string name="seconds">ثانیه</string>
+    <string name="milliseconds">میلی ثانیه</string>
+    <string name="vibrate">لرزش</string>
+    <string name="torch_source">منبع نور</string>
+    <string name="flash_or_led">فلش دوربین</string>
+    <string name="screen_light">نور صفحه</string>
+    <string name="toggle_method">روش فعال سازی</string>
+    <string name="both_vol_buttons">دکمه های کم و زیاد صدا</string>
+    <string name="volume_up">دکمه زیاد کردن صدا</string>
+    <string name="volume_down">دکمه کم کردن صدا</string>
+    <string name="hold_delay">زمان نگه داشتن</string>
+    <string name="immediate">بلافاصله</string>
+    <string name="not_work_screen_off">زمان خاموشی صفحه کار نمیکند!</string>
+    <string name="torch_time_out">زمان روشن ماندن چراغ</string>>
+    <string name="language_select">انتخاب زبان</string>
 </resources>

@@ -52,4 +52,21 @@
     <string name="donation_error">Hey! Sevginizi bizimle paylaşırken hata meydana geldi!</string>
     <string name="proceed_paypal">Paypal ile devam edilsin mi?</string>
 
+    <string name="indefinite">Süresiz</string>
+    <string name="minutes">Dakika</string>
+    <string name="seconds">Saniye</string>
+    <string name="milliseconds">Ms</string>
+    <string name="vibrate">Titreşim</string>
+    <string name="torch_source">Torch kaynağı</string>
+    <string name="flash_or_led">Flaş/LED</string>
+    <string name="screen_light">Ekran ışığı</string>
+    <string name="toggle_method">Etkinleştirme metodu</string>
+    <string name="both_vol_buttons">Ses + &amp; Ses -</string>
+    <string name="volume_up">Ses +</string>
+    <string name="volume_down">Ses -</string>
+    <string name="hold_delay">Tuş basma gecikmesi</string>
+    <string name="immediate">Hemen</string>
+    <string name="not_work_screen_off">Ekran kapalıyken çalışmayacaktır!</string>
+    <string name="torch_time_out">Torch zaman aşımı</string>>
+    <string name="language_select">Dil seç</string>
 </resources>

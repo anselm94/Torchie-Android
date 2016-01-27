@@ -52,4 +52,21 @@
     <string name="donation_error">아차! 기부를 하다가 오류가 발생한 것 같네요!</string>
     <string name="proceed_paypal">PayPal로 진행할까요?</string>
 
+    <string name="indefinite">무한</string>
+    <string name="minutes">분</string>
+    <string name="seconds">초</string>
+    <string name="milliseconds">밀리초</string>
+    <string name="vibrate">진동</string>
+    <string name="torch_source">전등 표시 방법</string>
+    <string name="flash_or_led">플래시/LED</string>
+    <string name="screen_light">화면 빛</string>
+    <string name="toggle_method">토글 방법</string>
+    <string name="both_vol_buttons">볼륨 + &amp; 볼륨 -</string>
+    <string name="volume_up">볼륨 +</string>
+    <string name="volume_down">볼륨 -</string>
+    <string name="hold_delay">누르는 시간</string>
+    <string name="immediate">바로</string>
+    <string name="not_work_screen_off">화면이 꺼지면 작동하지 않습니다!</string>
+    <string name="torch_time_out">전등 시간</string>
+    <string name="language_select">언어 선택</string>
 </resources>

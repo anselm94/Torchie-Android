@@ -52,4 +52,22 @@
     <string name="donation_error">¡Oops! ¡Error mientras tratabas de compartirnos tu amor!</string>
     <string name="proceed_paypal">Proceder a Paypal?</string>
 
+
+    <string name="indefinite">Indefinido</string>
+    <string name="minutes">Minutos</string>
+    <string name="seconds">Segundos</string>
+    <string name="milliseconds">Milisegundos</string>
+    <string name="vibrate">Vibrar</string>
+    <string name="torch_source">Fuente de la linterna</string>
+    <string name="flash_or_led">Flash/LED</string>
+    <string name="screen_light">Luz de la Pantalla</string>
+    <string name="toggle_method">Cambiar Método</string>
+    <string name="both_vol_buttons">Volumen + &amp; Volumen -</string>
+    <string name="volume_up">Volumen +</string>
+    <string name="volume_down">Volumen -</string>
+    <string name="hold_delay">Demora de la presión</string>
+    <string name="immediate">De inmediato</string>
+    <string name="not_work_screen_off">¡No funcionará en la pantalla apagada!</string>
+    <string name="torch_time_out">Tiempo de espera de la Antorcha</string>
+    <string name="language_select">Escoger Idioma</string>
 </resources>

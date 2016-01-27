@@ -52,4 +52,21 @@
     <string name="donation_error">Oops! Ein Fehler während du uns unterstützen wolltest!</string>
     <string name="proceed_paypal">Weiter zu PayPal?</string>
 
+    <string name="indefinite">Dauerhaft</string>
+    <string name="minutes">Minuten</string>
+    <string name="seconds">Sekunden</string>
+    <string name="milliseconds">Millis</string>
+    <string name="vibrate">vibriere</string>
+    <string name="torch_source">Lichtquelle</string>
+    <string name="flash_or_led">Blitz/LED</string>
+    <string name="screen_light">Screen light</string>
+    <string name="toggle_method">Wechselmethode</string>
+    <string name="both_vol_buttons">Lautstärke + &amp; -</string>
+    <string name="volume_up">Lautstärke +</string>
+    <string name="volume_down">Lautstärke -</string>
+    <string name="hold_delay">Verzögerung halten</string>
+    <string name="immediate">Sofort</string>
+    <string name="not_work_screen_off">Funktioniert nicht wenn Bildschirm aus ist!</string>
+    <string name="torch_time_out">Lampe automatisch aus</string>>
+    <string name="language_select">Sprachauswahl</string>
 </resources>

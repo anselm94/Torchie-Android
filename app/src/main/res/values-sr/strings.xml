@@ -52,4 +52,21 @@
     <string name="donation_error">Ups! Greška u deljenju!</string>
     <string name="proceed_paypal">Nastavi na Paypal?</string>
 
+    <string name="indefinite">Nedefinisano</string>
+    <string name="minutes">minuta</string>
+    <string name="seconds">sekundi</string>
+    <string name="milliseconds">milisekundi</string>
+    <string name="vibrate">Vibriraj</string>
+    <string name="torch_source">Izvor svetlosti</string>
+    <string name="flash_or_led">Blic/LED</string>
+    <string name="screen_light">Svetlost ekrana</string>
+    <string name="toggle_method">Metoda paljenja</string>
+    <string name="both_vol_buttons">Jačina zvuka + &amp; Jačina zvuka -</string>
+    <string name="volume_up">Jačina zvuka +</string>
+    <string name="volume_down">Jačina zvuka -</string>
+    <string name="hold_delay">Aktiviraj</string>
+    <string name="immediate">Odmah</string>
+    <string name="not_work_screen_off">Neće raditi dok je ekran isključen!</string>
+    <string name="torch_time_out">Odlaganje paljenja svetlosti</string>
+    <string name="language_select">Izaberi jezik</string>
 </resources>

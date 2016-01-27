@@ -52,4 +52,21 @@
     <string name="donation_error">Өө яана аа! Бидэнд туслах дэмжлэгт алдаа гарлаа!</string>
     <string name="proceed_paypal">Paypal ашиглахдаа итгэлтэй байна уу?</string>
 
+    <string name="indefinite">Тодорхойгүй</string>
+    <string name="minutes">Минут</string>
+    <string name="seconds">Секунд</string>
+    <string name="milliseconds">Миллисекунд</string>
+    <string name="vibrate">Чичрээ</string>
+    <string name="torch_source">Гэрэлтүүлэгчийн үүсвэр</string>
+    <string name="flash_or_led">Flash/LED</string>
+    <string name="screen_light">Дэлгэцийн гэрэл</string>
+    <string name="toggle_method">Асаах унтраах төлөв</string>
+    <string name="both_vol_buttons">Дуу + &amp; Дуу -</string>
+    <string name="volume_up">Дуу +</string>
+    <string name="volume_down">Дуу -</string>
+    <string name="hold_delay">Хүлээх хугацаа</string>
+    <string name="immediate">Шуурхай</string>
+    <string name="not_work_screen_off">Дэлгэц унтарсан үед ажиллахгүй!</string>
+    <string name="torch_time_out">Гэрлийн унтрах хугацаа</string>
+    <string name="language_select">Хэл сонгох</string>
 </resources>

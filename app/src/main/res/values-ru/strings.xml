@@ -53,4 +53,21 @@
     <string name="donation_error">Опа! Ошибка в процессе выражения нам признательности!</string>
     <string name="proceed_paypal">Перейти к Paypal?</string>
 
+    <string name="indefinite">Не определено</string>
+    <string name="minutes">Минут</string>
+    <string name="seconds">Секунд</string>
+    <string name="milliseconds">Миллисекунд</string>
+    <string name="vibrate">Вибрация</string>
+    <string name="torch_source">Источник фонарика</string>
+    <string name="flash_or_led">Вспышка/светодиод</string>
+    <string name="screen_light">Свет экрана</string>
+    <string name="toggle_method">Метод включения</string>
+    <string name="both_vol_buttons">Громкость + &amp; Громкость -</string>
+    <string name="volume_up">Громкость +</string>
+    <string name="volume_down">Громкость -</string>
+    <string name="hold_delay">Задержка удержания</string>
+    <string name="immediate">Сразу</string>
+    <string name="not_work_screen_off">Не работает с выкл. экраном!</string>
+    <string name="torch_time_out">Таймаут фонарика</string>
+    <string name="language_select">Выбор языка</string>
 </resources>

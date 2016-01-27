@@ -29,7 +29,6 @@
     <string name="dismiss">Elutasítás</string>
     <string name="share">Megosztás</string>
 
-    <string name="share_info">Turn on torch just by holding volume buttons together with Torchie. Download Torchie now! </string>
     <string name="share_info">A Torchie-val bekapcsolhatod a lámpát a hangerőszabályzó gombok együttes lenyomásával. Töltsd le a Torchie-t még ma! </string>
     <string name="share_via">Néhány gondolat a Torchie-ról ezzel: </string>
 
@@ -37,9 +36,6 @@
     <string name="welcome_note">Könnyítsd meg az életed a <b>Torchie-val</b>! \n\nEngedélyezd a <b>\'Torchie működést\'</b> ahhoz, hogy a lámpa kapcsolásához csak a <b>hangerőszabályzó gombok együttes lenyomása</b> legyen szükséges!\n\nTovábbi beállítások a Torchie <b>Beállításokban</b>!</string>
     <string name="got_it">Értettem</string>
     <string name="permission_note">Engedélyezd a <b>\'Villám Torchie\'</b>-t a Kisegítő szolgáltatások <b>Szolgáltatások</b>-ban a Torchie kipróbálásához.</string>
-    
-    <string name="permission_warn"><b>About the PERMISSION - </b> \"<i>...observe text that you type &amp; observe your actions...</i>\"\nAlas! It\'s threatening! Android throws a \'Key Event\' only when a HARDWARE KEY is pressed. It is by this way, Torchie captures Volume Key presses. But It is Android\'s <i>flaw</i>, showing the same WARNING even for NON-HARDWARE KEYBOARD ENABLED PHONES (except very old Android devices and Blackberry Priv which had/have hardware keyboard for typing). It is impossible to design Torchie Functionality without this permission
-        \nAlso, Torchie <b>DOES NOT HAVE INTERNET PERMISSION</b>, so it is impossible to <i>send</i> anything to anyone\n\n Torchie CANNOT <i>COLLECT</i> anything from anyone. Feel free to enable Torchie functionality! <a href="https://torchieapp.wordpress.com/help/">Learn more</a> </string>
 	
 	<string name="permission_warn"><b>Az ENGEDÉLYEKRŐL - </b> \"<i>...figyeld meg a beírt szöveget &amp; figyeld meg a műveleteket...</i>\"\nJaj! Ez fenyegető! Az Android csak akkor küld \'Gomb Eseményt\' ha egy HARDVERES GOMB lett lenyomva. Emiatt a Torchie figyeli a billentyű lenyomásokat. De ez az Android <i>sajátossága</i>, hogy ugyan ezt a FIGYELMEZTETÉST használja a NEM-HARDVERES BILLENTYŰZETTEL ELLÁTOTT TELEFONOKNÁL IS (kivéve a nagyon régi Androidos készülékeket és a BlackBerry Priv-et, amelyeknek fizikális bevitelük is van). Lehetetlen a Torchie Működés enélkül az engedély nélkül.
         \nTovábbá, a Torchie <b>NINCS SZÜKSÉGE INTERNET HOZZÁFÉRÉSRE</b>, szóval lehetetlen bármit is <i>elküldeni</i> akárkinek\n\n A Torchie NEM <i>KÉPES</i> semmiféle gyűjtésre és küldésre. Nyugodtan engedélyezd a Torchie Működést! <a href="https://torchieapp.wordpress.com/help/">Tudj meg többet</a> </string>
@@ -54,8 +50,24 @@
 
     <string name="donation_note">Rengeteg <b>órát</b> töltöttünk a Torchie fejlesztésével, hogy Te ne veszíts egy <b>másodpercet sem</b> a lámpa bekapcsolásával!\nKérjük támogasd a Torchie-val eltöltött munkánkat</string>
     <string name="thank_you_note">Motiválj minket!\n\nOszd meg a gondolataidat a Torchie-ról a családoddal és barátaiddal!</string>
-    <string name="donation_error">Oops! Error while sharing love with us!</string>
     <string name="donation_error">Hoppá! Váratlan hiba történt az üzenet küldésekor!</string>
     <string name="proceed_paypal">Tovább lépsz a Paypal-ra?</string>
 
+    <string name="indefinite">Határozatlan</string>
+    <string name="minutes">perc</string>
+    <string name="seconds">másodperc</string>
+    <string name="milliseconds">ms</string>
+    <string name="vibrate">Rezgés</string>
+    <string name="torch_source">Lámpa forrása</string>
+    <string name="flash_or_led">Vaku/LED</string>
+    <string name="screen_light">Képernyővilágítás</string>
+    <string name="toggle_method">Kapcsolás módja</string>
+    <string name="both_vol_buttons">Hangerő fel &amp; Hangerő le</string>
+    <string name="volume_up">Hangerő fel</string>
+    <string name="volume_down">Hangerő le</string>
+    <string name="hold_delay">Késleltetés</string>
+    <string name="immediate">Azonnal</string>
+    <string name="not_work_screen_off">Kikapcsolt kijelzővel nem működik!</string>
+    <string name="torch_time_out">Lámpa kikapcsolása</string>
+    <string name="language_select">Válassz nyelvet</string>
 </resources>

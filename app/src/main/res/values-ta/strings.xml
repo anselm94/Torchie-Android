@@ -53,4 +53,21 @@
     <string name="donation_error">எங்களோடு அன்பை பகிரும்போது தடங்கல் ஏற்பட்டுவிட்டது!</string>
     <string name="proceed_paypal">Paypal இணைப்பக்கத்துக்கு தொடரலாமா?</string>
 
+    <string name="indefinite">காலவரையில்லை</string>
+    <string name="minutes">நிமிடம்</string>
+    <string name="seconds">விநாடிகள்</string>
+    <string name="milliseconds">மில்லி விநாடி</string>
+    <string name="vibrate">அதிர்வுறு</string>
+    <string name="torch_source">வெளிச்சத்தின் ஆதாரம்</string>
+    <string name="flash_or_led">விளக்கு/LED</string>
+    <string name="screen_light">திரை ஒளி</string>
+    <string name="toggle_method">செயல்படுத்தும் முறை</string>
+    <string name="both_vol_buttons">Volume + &amp; Volume -</string>
+    <string name="volume_up">Volume +</string>
+    <string name="volume_down">Volume -</string>
+    <string name="hold_delay">அழுத்த நேரம்</string>
+    <string name="immediate">உடனடியாக</string>
+    <string name="not_work_screen_off">திரை அனைந்த பிறகு செயல்படாது!</string>
+    <string name="torch_time_out">Torch time-out</string>
+    <string name="language_select">மொழியை தேர்ந்தெடுக்க</string>
 </resources>

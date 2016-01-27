@@ -52,4 +52,21 @@ Torchie ANVÄNDER SIG INTE HELLER AV INTERNET TILLSTÅND, så det är omöjligt 
     <string name="donation_error">Hoppsan! Ett fel uppstod när du skulle dela din kärlek med oss!</string>
     <string name="proceed_paypal">Fortsätt till Paypal?</string>
 
+    <string name="indefinite">Obegränsat</string>
+    <string name="minutes">Minuter</string>
+    <string name="seconds">Sekunder</string>
+    <string name="milliseconds">Millisekunder</string>
+    <string name="vibrate">Vibrera</string>
+    <string name="torch_source">Ljuskälla</string>
+    <string name="flash_or_led">Blixt/LED</string>
+    <string name="screen_light">Skärmens ljus</string>
+    <string name="toggle_method">Metod för på/avslagning</string>
+    <string name="both_vol_buttons">Volym + &amp; Volym -</string>
+    <string name="volume_up">Volym +</string>
+    <string name="volume_down">Volym -</string>
+    <string name="hold_delay">Fördröjning</string>
+    <string name="immediate">Omedelbart</string>
+    <string name="not_work_screen_off">Fungerar ej vid låst skärm!</string>
+    <string name="torch_time_out">Lampans tidsgräns</string>
+    <string name="language_select">Välj Språk</string>
 </resources>
