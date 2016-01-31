@@ -20,7 +20,9 @@ import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 public class AboutDialog extends DialogFragment implements View.OnClickListener {
 
     View rootView;
-    TextView tvAboutNote, tvAboutAnselm, tvVisitSite, tvJoinCommunity, tvFacebook, tvGoogle, tvTranslatorNote;
+    TextView tvAboutNote, tvAboutAnselm, tvVisitSite, tvJoinCommunity, tvFacebook, tvGoogle, tvTranslatorNote, tvNotice;
+
+    String notice;
 
     public AboutDialog() {
 
@@ -38,6 +40,7 @@ public class AboutDialog extends DialogFragment implements View.OnClickListener 
         tvFacebook = (TextView) rootView.findViewById(R.id.tv_facebook);
         tvGoogle = (TextView) rootView.findViewById(R.id.tv_googleplus);
         tvTranslatorNote = (TextView) rootView.findViewById(R.id.tv_translator_note);
+        tvNotice = (TextView) rootView.findViewById(R.id.tv_notice);
 
         tvAboutNote.setMovementMethod(LinkMovementMethod.getInstance());
         tvTranslatorNote.setMovementMethod(LinkMovementMethod.getInstance());
@@ -46,6 +49,15 @@ public class AboutDialog extends DialogFragment implements View.OnClickListener 
         tvJoinCommunity.setOnClickListener(this);
         tvFacebook.setOnClickListener(this);
         tvGoogle.setOnClickListener(this);
+        tvNotice.setMovementMethod(LinkMovementMethod.getInstance());
+
+        try {
+            notice = String.format(getActivity().getResources().getString(R.string.notice), getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0).versionName);
+            tvNotice.setText(notice);
+        } catch (Exception e) {
+
+        }
+
         return rootView;
     }
 

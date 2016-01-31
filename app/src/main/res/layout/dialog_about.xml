@@ -29,6 +29,16 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tv_notice"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="web"
+                android:gravity="center"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/notice" />
+
+            <TextView
                 android:id="@+id/tv_about_note"
                 style="@style/TextAppearance.AppCompat.Body1"
                 android:layout_width="match_parent"
