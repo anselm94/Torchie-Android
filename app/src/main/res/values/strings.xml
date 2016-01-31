@@ -3,6 +3,7 @@
     <string name="activity_settings">Torchie Settings</string>
     <string name="service_torchiequick_name">Torchie Quick</string>
     <string name="accessibility_service_description">When \'Torchie Quick\' is enabled, turn on/off Torch just by holding Volume Buttons together</string>
+    <string name="accessibility_service_description_2" translatable="false">@string/permission_warn</string>
 
     <string name="torchie_functionality">Torchie functionality</string>
     <string name="screen_on">Screen On</string>
