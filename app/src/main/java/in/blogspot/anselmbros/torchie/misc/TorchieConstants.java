@@ -29,6 +29,9 @@ public class TorchieConstants {
     public final static String PREF_FUNC_SCREEN_OFF_TIME = "joTnBrwz";
     public final static String PREF_FUNC_SCREEN_OFF_INDEFINITE = "tQcIdjel";
     public final static String PREF_FUNC_VIBRATE = "vTkOdxzH";
+    public final static String PREF_FLASH_SOURCE = "dRuXsI";
+    //Broadcast Key
+    public final static String BROADCAST_CLOSE_ACTIVITY = "in.blogspot.anselmbros.torchie.CLOSE_ACTIVITY";
     //Camera Errors
     public final static String ERR_CAMERA_UNAVAILABLE = "Camera not found!";
     public final static String ERR_FLASH_UNAVAILABLE = "Flash not found!";
@@ -37,15 +40,13 @@ public class TorchieConstants {
     public final static String ERR_CAMERA_PREVIEW = "Camera Preview is causing problem";
     public final static String ERR_CAMERA_OFF = "Camera error while turning off!";
 
+    //Flash modes
+    public final static int SOURCE_FLASH_CAMERA = 0;
+    public final static int SOURCE_FLASH_SCREEN = 1;
+
     public enum ScreenState {
         SCREEN_OFF, //SCREEN_OFF AhOFj Lt
         SCREEN_LOCK, //SCREEN_LOCK XgLOC tk
         SCREEN_UNLOCK //SCREEN_UNLOCK KrULoC dw
     }
-
-    public enum TorchieFlashMode {
-        TOGGLE,
-        PTO //Push To On
-    }
-
 }
