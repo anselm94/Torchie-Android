@@ -1,3 +1,21 @@
+/*
+ *     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+ *
+ *     This program is free software; you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation; either version 2 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License along
+ *     with this program; if not, write to the Free Software Foundation, Inc.,
+ *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
 package in.blogspot.anselmbros.torchie.ui.dialog;
 
 import android.app.DialogFragment;
@@ -20,7 +38,9 @@ import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 public class AboutDialog extends DialogFragment implements View.OnClickListener {
 
     View rootView;
-    TextView tvAboutNote, tvAboutAnselm, tvVisitSite, tvJoinCommunity, tvFacebook, tvGoogle, tvTranslatorNote;
+    TextView tvAboutNote, tvAboutAnselm, tvVisitSite, tvJoinCommunity, tvFacebook, tvGoogle, tvTranslatorNote, tvNotice;
+
+    String notice;
 
     public AboutDialog() {
 
@@ -38,6 +58,7 @@ public class AboutDialog extends DialogFragment implements View.OnClickListener 
         tvFacebook = (TextView) rootView.findViewById(R.id.tv_facebook);
         tvGoogle = (TextView) rootView.findViewById(R.id.tv_googleplus);
         tvTranslatorNote = (TextView) rootView.findViewById(R.id.tv_translator_note);
+        tvNotice = (TextView) rootView.findViewById(R.id.tv_notice);
 
         tvAboutNote.setMovementMethod(LinkMovementMethod.getInstance());
         tvTranslatorNote.setMovementMethod(LinkMovementMethod.getInstance());
@@ -46,6 +67,15 @@ public class AboutDialog extends DialogFragment implements View.OnClickListener 
         tvJoinCommunity.setOnClickListener(this);
         tvFacebook.setOnClickListener(this);
         tvGoogle.setOnClickListener(this);
+        tvNotice.setMovementMethod(LinkMovementMethod.getInstance());
+
+        try {
+            notice = String.format(getActivity().getResources().getString(R.string.notice), getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0).versionName);
+            tvNotice.setText(notice);
+        } catch (Exception e) {
+
+        }
+
         return rootView;
     }
 

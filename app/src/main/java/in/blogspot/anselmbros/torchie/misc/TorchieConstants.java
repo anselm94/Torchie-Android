@@ -1,3 +1,21 @@
+/*
+ *     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+ *
+ *     This program is free software; you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation; either version 2 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License along
+ *     with this program; if not, write to the Free Software Foundation, Inc.,
+ *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
 package in.blogspot.anselmbros.torchie.misc;
 
 /**
@@ -29,6 +47,9 @@ public class TorchieConstants {
     public final static String PREF_FUNC_SCREEN_OFF_TIME = "joTnBrwz";
     public final static String PREF_FUNC_SCREEN_OFF_INDEFINITE = "tQcIdjel";
     public final static String PREF_FUNC_VIBRATE = "vTkOdxzH";
+    public final static String PREF_FLASH_SOURCE = "dRuXsI";
+    //Broadcast Key
+    public final static String BROADCAST_CLOSE_ACTIVITY = "in.blogspot.anselmbros.torchie.CLOSE_ACTIVITY";
     //Camera Errors
     public final static String ERR_CAMERA_UNAVAILABLE = "Camera not found!";
     public final static String ERR_FLASH_UNAVAILABLE = "Flash not found!";
@@ -37,15 +58,13 @@ public class TorchieConstants {
     public final static String ERR_CAMERA_PREVIEW = "Camera Preview is causing problem";
     public final static String ERR_CAMERA_OFF = "Camera error while turning off!";
 
+    //Flash modes
+    public final static int SOURCE_FLASH_CAMERA = 0;
+    public final static int SOURCE_FLASH_SCREEN = 1;
+
     public enum ScreenState {
         SCREEN_OFF, //SCREEN_OFF AhOFj Lt
         SCREEN_LOCK, //SCREEN_LOCK XgLOC tk
         SCREEN_UNLOCK //SCREEN_UNLOCK KrULoC dw
     }
-
-    public enum TorchieFlashMode {
-        TOGGLE,
-        PTO //Push To On
-    }
-
 }

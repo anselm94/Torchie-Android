@@ -1,3 +1,21 @@
+/*
+ *     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+ *
+ *     This program is free software; you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation; either version 2 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License along
+ *     with this program; if not, write to the Free Software Foundation, Inc.,
+ *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
 package in.blogspot.anselmbros.torchie.service;
 
 import android.accessibilityservice.AccessibilityService;
@@ -11,15 +29,14 @@ import android.view.KeyEvent;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.Toast;
 
-import in.blogspot.anselmbros.torchie.R;
-import in.blogspot.anselmbros.torchie.listeners.FlashlightListener;
+import in.blogspot.anselmbros.torchie.listeners.FlashListener;
 import in.blogspot.anselmbros.torchie.listeners.TorchieQuickListener;
 import in.blogspot.anselmbros.torchie.listeners.VolumeKeyComboListener;
-import in.blogspot.anselmbros.torchie.manager.FlashlightManager;
+import in.blogspot.anselmbros.torchie.manager.FlashManager;
 import in.blogspot.anselmbros.torchie.manager.TorchieActionManager;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 
-public class TorchieQuick extends AccessibilityService implements SharedPreferences.OnSharedPreferenceChangeListener, FlashlightListener, VolumeKeyComboListener {
+public class TorchieQuick extends AccessibilityService implements SharedPreferences.OnSharedPreferenceChangeListener, FlashListener, VolumeKeyComboListener {
 
     private static TorchieQuick sharedInstance;
     public String TAG = TorchieConstants.INFO;
@@ -27,7 +44,7 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
     SharedPreferences.Editor prefEditor;
     TorchieQuickListener mListener;
     BroadcastReceiver mReceiver;
-    private FlashlightManager mFlashlightManager;
+    private FlashManager mFlashManager;
     private TorchieActionManager mTorchieActionManager;
 
     private boolean isVibrateEnabled;
@@ -41,15 +58,19 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
     }
 
     public void toggleFlash() {
-        mFlashlightManager.toggleFlash();
+        mFlashManager.toggleFlash();
     }
 
     public boolean isFlashOn() {
-        return mFlashlightManager.isFlashOn();
+        return mFlashManager.isFlashOn();
     }
 
     public void setTorchieQuickListener(TorchieQuickListener listener) {
         this.mListener = listener;
+    }
+
+    public void notifyScreenlightStatus(boolean status){
+        mFlashManager.notifyScreenlightStatus(status);
     }
 
     @Override
@@ -66,8 +87,9 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
         mReceiver = new ScreenReceiver();
         registerReceiver(mReceiver, filter);
 
-        mFlashlightManager = new FlashlightManager(TorchieQuick.this);
-        mFlashlightManager.setFlashlightListener(this);
+        mFlashManager = new FlashManager(TorchieQuick.this);
+        mFlashManager.setFlashlightListener(this);
+        mFlashManager.setFlashSource(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
         mTorchieActionManager = new TorchieActionManager(TorchieQuick.this);
         mTorchieActionManager.setListener(this);
         mTorchieActionManager.setKeyComboMode(TorchieActionManager.KeyComboMode.AUTO);
@@ -113,6 +135,9 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
             case TorchieConstants.PREF_FUNC_VIBRATE:
                 isVibrateEnabled = preferences.getBoolean(TorchieConstants.PREF_FUNC_VIBRATE, false);
                 break;
+            case TorchieConstants.PREF_FLASH_SOURCE:
+                mFlashManager.setFlashSource(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
+                break;
         }
     }
 
@@ -124,8 +149,8 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
 
     @Override
     public void onDestroy() {
-        if (mFlashlightManager.isFlashOn()) {
-            mFlashlightManager.toggleFlash();
+        if (mFlashManager.isFlashOn()) {
+            mFlashManager.toggleFlash();
         }
         preferences.unregisterOnSharedPreferenceChangeListener(this);
         unregisterReceiver(mReceiver);
@@ -166,7 +191,7 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
 
     @Override
     public void onKeyComboPerformed() {
-        mFlashlightManager.toggleFlash();
+        mFlashManager.toggleFlash();
     }
 
     public class ScreenReceiver extends BroadcastReceiver {

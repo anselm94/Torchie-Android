@@ -21,8 +21,10 @@ package in.blogspot.anselmbros.torchie.listeners;
 /**
  * Created by anselm94 on 2/12/15.
  *
- * Interface for listening to key actions performed
+ * Interface for flash - Flashlight & Screenlight
  */
-public interface VolumeKeyComboListener {
-    void onKeyComboPerformed();
+public interface FlashListener {
+    void onFlashStateChanged(boolean enabled);
+
+    void onFlashError(String error);
 }

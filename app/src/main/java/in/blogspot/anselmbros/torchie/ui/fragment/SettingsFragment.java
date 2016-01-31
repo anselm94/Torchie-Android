@@ -1,3 +1,21 @@
+/*
+ *     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+ *
+ *     This program is free software; you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation; either version 2 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License along
+ *     with this program; if not, write to the Free Software Foundation, Inc.,
+ *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
 package in.blogspot.anselmbros.torchie.ui.fragment;
 
 
@@ -5,8 +23,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Vibrator;
-import android.preference.PreferenceFragment;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.AppCompatCheckBox;
 import android.support.v7.widget.SwitchCompat;
@@ -30,7 +46,7 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
     SharedPreferences.Editor prefEditor;
 
     SwitchCompat sw_screen_on, sw_lock_screen, sw_screen_off;
-    RadioGroup rg_screen_off_options;
+    RadioGroup rg_screen_off_options, rg_flash_source;
     EditText et_screen_off_mins, et_screen_off_sec;
     AppCompatCheckBox cb_vibrate;
 
@@ -42,14 +58,6 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
         loadPreferences();
 
         return rootView;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        // Define the settings file to use by this settings fragment
-//        getPreferenceManager().setSharedPreferencesName(TorchieConstants.PREF_KEY_APP);
-//        addPreferencesFromResource(R.xml.preferences);
     }
 
     @Override
@@ -85,6 +93,12 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
             } else if (checkedId == R.id.rb_settings_screen_off_timeout) {
                 prefEditor.putBoolean(TorchieConstants.PREF_FUNC_SCREEN_OFF_INDEFINITE, false).commit();
             }
+        } else if (group.equals(rg_flash_source)){
+            if(checkedId == R.id.rb_settings_flash_camera){
+                prefEditor.putInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA).commit();
+            }else if (checkedId == R.id.rb_settings_flash_screen){
+                prefEditor.putInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_SCREEN).commit();
+            }
         }
     }
 
@@ -96,12 +110,14 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
         et_screen_off_mins = (EditText) rootView.findViewById(R.id.et_settings_screen_off_minutes);
         et_screen_off_sec = (EditText) rootView.findViewById(R.id.et_settings_screen_off_seconds);
         cb_vibrate = (AppCompatCheckBox) rootView.findViewById(R.id.cb_vibrate);
+        rg_flash_source = (RadioGroup) rootView.findViewById(R.id.rg_flash_source);
 
         sw_screen_on.setOnCheckedChangeListener(this);
         sw_lock_screen.setOnCheckedChangeListener(this);
         sw_screen_off.setOnCheckedChangeListener(this);
         rg_screen_off_options.setOnCheckedChangeListener(this);
         cb_vibrate.setOnCheckedChangeListener(this);
+        rg_flash_source.setOnCheckedChangeListener(this);
     }
 
     private void loadPreferences() {
@@ -114,6 +130,11 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
         sw_screen_off.setChecked(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_OFF, false));
         setScreenOffOptionsUI(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_OFF, false));
         cb_vibrate.setChecked(preferences.getBoolean(TorchieConstants.PREF_FUNC_VIBRATE, false));
+        if (preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA) == TorchieConstants.SOURCE_FLASH_CAMERA) {
+            rg_flash_source.check(R.id.rb_settings_flash_camera);
+        } else if(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA) == TorchieConstants.SOURCE_FLASH_SCREEN){
+            rg_flash_source.check(R.id.rb_settings_flash_screen);
+        }
     }
 
     private void saveScreenOffPref() {

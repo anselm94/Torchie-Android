@@ -1,8 +1,27 @@
+<!--
+  ~     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
 <resources>
     <string name="app_name">Torchie</string>
     <string name="activity_settings">Torchie Settings</string>
     <string name="service_torchiequick_name">Torchie Quick</string>
     <string name="accessibility_service_description">When \'Torchie Quick\' is enabled, turn on/off Torch just by holding Volume Buttons together</string>
+    <string name="accessibility_service_description_2" translatable="false">@string/permission_warn</string>
 
     <string name="torchie_functionality">Torchie functionality</string>
     <string name="screen_on">Screen On</string>
@@ -41,7 +60,7 @@
         \nAlso, Torchie <b>DOES NOT HAVE INTERNET PERMISSION</b>, so it is impossible to <i>send</i> anything to anyone\n\n Torchie CANNOT <i>COLLECT</i> anything from anyone. Feel free to enable Torchie functionality! <a href="https://torchieapp.wordpress.com/help/">Learn more</a> </string>
     <string name="permission">Enable Torchie Functionality?</string>
 
-    <string name="about_note"><i>Torchie - Touch to Torch &#169; 2016</i> \n\n<b>Torchie</b> is made by two brothers\nMerbin J Anselm and Rebin J Anselm\nanselmbros@gmail.com\n\nMany thanks to following great hearts, who helped to translate Torchie</string>
+    <string name="about_note"><b>Torchie</b> is made by two brothers\nMerbin J Anselm and Rebin J Anselm\nanselmbros@gmail.com\n\nMany thanks to following great hearts, who helped to translate Torchie</string>
     <string name="about_anselm">About Anselm &amp; Anselm</string>
     <string name="official_website">Visit official site</string>
     <string name="join_community">Join Beta Community</string>
@@ -71,5 +90,8 @@
     <string name="not_work_screen_off">Will not work in Screen off!</string>
     <string name="torch_time_out">Torch time-out</string>
     <string name="language_select">Choose language</string>
+
+    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nTorchie comes with absolutely no warranty. This program is free software licensed under
+    GNU General Public License v2.0\nFull source-code for is available here https://github.com/anselm94/torchie-android\n</string>
 
 </resources>
