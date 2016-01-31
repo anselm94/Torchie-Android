@@ -20,6 +20,8 @@ package in.blogspot.anselmbros.torchie.listeners;
 
 /**
  * Created by anselm94 on 2/12/15.
+ *
+ * Interface for listening to key actions performed
  */
 public interface VolumeKeyComboListener {
     void onKeyComboPerformed();

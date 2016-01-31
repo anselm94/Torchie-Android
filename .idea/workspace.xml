@@ -78,93 +78,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37a1af66-62c4-458b-838f-0d1d0fc17593" name="Default" comment="Initial Commit">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/dialog/AboutDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/dialog/AboutDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/dialog/DonateDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/dialog/DonateDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/dialog/DonateFailDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/dialog/DonateFailDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/dialog/DonateSuccessDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/dialog/DonateSuccessDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/utils/DonationAPI.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/utils/DonationAPI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/FlashListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/FlashListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/FlashManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/FlashManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/utils/Flashlight.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/utils/Flashlight.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/utils/Flashlight2.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/utils/Flashlight2.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/IabBroadcastReceiver.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/IabBroadcastReceiver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/IabException.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/IabException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/IabHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/IabHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/IabResult.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/IabResult.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/Inventory.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/Inventory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/activity/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/activity/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/dialog/PermissionDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/dialog/PermissionDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/Purchase.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/Purchase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/receiver/RockerReceiver.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/receiver/RockerReceiver.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/utils/Screenflash.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/utils/Screenflash.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/activity/ScreenflashActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/activity/ScreenflashActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/Security.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/Security.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/activity/SettingsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/activity/SettingsActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/fragment/SettingsFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/fragment/SettingsFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/SkuDetails.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/SkuDetails.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/TorchieActionManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/TorchieActionManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/misc/TorchieConstants.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/misc/TorchieConstants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/service/TorchieQuick.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/service/TorchieQuick.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/TorchieQuickListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/TorchieQuickListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/utils/TorchieWakelock.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/utils/TorchieWakelock.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/VolumeKeyComboListener.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/VolumeKeyComboListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/VolumeKeyManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/VolumeKeyManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/VolumeRockerManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/VolumeRockerManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/dialog/WelcomeDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/dialog/WelcomeDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/xml/accessibility_service_config.xml" afterPath="$PROJECT_DIR$/app/src/main/res/xml/accessibility_service_config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_screenflash.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_screenflash.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/but_ripple.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/but_ripple.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v21/but_ripple.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v21/but_ripple.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_about.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_about.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_donate.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_donate.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_donate_failure.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_donate_failure.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_donate_success.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_donate_success.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_permission.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_permission.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/dialog_welcome.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dialog_welcome.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle.properties" afterPath="$PROJECT_DIR$/gradle.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/misc/key.java" afterPath="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/misc/key.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_list_item.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_list_item.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/menu/menu_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-cs/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-cs/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-de/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-de/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-es/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-es/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-et/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-et/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-fa/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-fa/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-fr/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-hr/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-hr/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-hu/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-hu/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-in/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-in/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-it/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-it/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-ka/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-ka/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-ko/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-ko/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-lt/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-lt/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-mn/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-mn/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-pl/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-pl/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-ru/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-ru/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-sr/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-sr/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-sv/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-sv/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-ta/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-ta/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-tr/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-tr/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sw_flash.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sw_flash.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sw_flash_off.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sw_flash_off.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/sw_flash_on.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/sw_flash_on.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/translators_list.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/translators_list.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Torchie.iws" />
@@ -208,7 +125,28 @@
     <favorites_list name="Torchie" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="FlashManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/FlashManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.48868778">
+              <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#5568#0" expanded="true" />
+                <element signature="e#2888#3141#0" expanded="true" />
+                <element signature="e#3140#3141#0" expanded="true" />
+                <element signature="e#3604#3777#0" expanded="true" />
+                <element signature="e#3776#3777#0" expanded="true" />
+                <element signature="e#3966#3967#0" expanded="true" />
+                <element signature="e#3998#3999#0" expanded="true" />
+                <element signature="e#5360#5361#0" expanded="true" />
+                <element signature="e#5428#5429#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -1585,10 +1523,6 @@
         <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/ui/activity/ScreenlightActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/utils/Screenlight.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/FlashListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/TorchieQuickListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/VolumeKeyComboListener.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/FlashManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/TorchieActionManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/VolumeKeyManager.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/VolumeRockerManager.java" />
@@ -1630,6 +1564,10 @@
         <option value="$PROJECT_DIR$/app/src/main/res/values/styles.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/values/translators_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/xml/accessibility_service_config.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/FlashListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/TorchieQuickListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/VolumeKeyComboListener.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/FlashManager.java" />
       </list>
     </option>
   </component>
@@ -1748,7 +1686,7 @@
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="donate" />
+              <option name="myItemId" value="manager" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -2075,7 +2013,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="0" width="1374" height="741" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.48932928" order="13" side_tool="false" content_ui="tabs" />
@@ -2094,7 +2032,7 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32663316" sideWeight="0.5030488" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21601209" sideWeight="0.4611399" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21601209" sideWeight="0.4611399" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998326" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32854986" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2176,14 +2114,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values-pt/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17788461">
-          <caret line="56" column="33" selection-start-line="56" selection-start-column="33" selection-end-line="56" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="android-dummy:///media/anselm94/Workspace1/Ubuntu-AndroidStudio-Workspace/Torchie/app/Translations Editor">
       <provider selected="true" editor-type-id="string-resource-editor">
         <state />
@@ -2202,44 +2132,6 @@
         <state vertical-scroll-proportion="0.77375567">
           <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/FlashListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32579187">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/TorchieQuickListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1061#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/VolumeKeyComboListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0588236">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#1011#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/FlashManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.6244345">
-          <caret line="103" column="0" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#5500#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2664,6 +2556,62 @@
         <state vertical-scroll-proportion="0.30769232">
           <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/donate/IabException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40723982">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/FlashListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5520362">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#1108#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/TorchieQuickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5520362">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#1116#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/listeners/VolumeKeyComboListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6334842">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="e#0#1066#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/in/blogspot/anselmbros/torchie/manager/FlashManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.48868778">
+          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#5568#0" expanded="true" />
+            <element signature="e#2888#3141#0" expanded="true" />
+            <element signature="e#3140#3141#0" expanded="true" />
+            <element signature="e#3604#3777#0" expanded="true" />
+            <element signature="e#3776#3777#0" expanded="true" />
+            <element signature="e#3966#3967#0" expanded="true" />
+            <element signature="e#3998#3999#0" expanded="true" />
+            <element signature="e#5360#5361#0" expanded="true" />
+            <element signature="e#5428#5429#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

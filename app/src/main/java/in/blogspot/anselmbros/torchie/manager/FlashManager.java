@@ -29,6 +29,8 @@ import in.blogspot.anselmbros.torchie.utils.Screenflash;
 
 /**
  * Created by anselm94 on 2/12/15.
+ *
+ * Controls flash - Flashlight & Screenlight
  */
 public class FlashManager implements FlashListener {
 
@@ -48,14 +50,17 @@ public class FlashManager implements FlashListener {
     public FlashManager(Context context) {
         TAG = this.getClass().getName();
         this.mContext = context;
-        setFlashMode(TorchieConstants.SOURCE_FLASH_CAMERA);
+        setFlashSource(TorchieConstants.SOURCE_FLASH_CAMERA);
     }
 
     public void setFlashlightListener(FlashListener listener) {
         this.mListener = listener;
     }
 
-    public void setFlashMode(int mode) {
+    /**
+     * Sets the source for flash - Flashlight or Screenlight
+     */
+    public void setFlashSource(int mode) {
         currentFlashSource = mode;
         switch (mode) {
             case TorchieConstants.SOURCE_FLASH_CAMERA:

@@ -20,6 +20,8 @@ package in.blogspot.anselmbros.torchie.listeners;
 
 /**
  * Created by anselm94 on 2/12/15.
+ *
+ * Interface for flash - Flashlight & Screenlight
  */
 public interface FlashListener {
     void onFlashStateChanged(boolean enabled);

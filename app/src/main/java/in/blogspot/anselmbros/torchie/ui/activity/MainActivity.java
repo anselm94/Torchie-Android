@@ -247,7 +247,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void initFlashManager(){
         flashManager = new FlashManager(this);
         flashManager.setFlashlightListener(this);
-        flashManager.setFlashMode(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
+        flashManager.setFlashSource(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
     }
 
     private boolean isFlashAvailable(Context context) {

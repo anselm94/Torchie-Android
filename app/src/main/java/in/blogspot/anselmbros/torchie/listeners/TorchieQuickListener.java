@@ -20,6 +20,8 @@ package in.blogspot.anselmbros.torchie.listeners;
 
 /**
  * Created by anselm94 on 4/1/16.
+ *
+ * Interface for TorchieQuick Accessibility service
  */
 public interface TorchieQuickListener {
     void onFlashStateChanged(boolean enabled);

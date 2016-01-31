@@ -89,7 +89,7 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
 
         mFlashManager = new FlashManager(TorchieQuick.this);
         mFlashManager.setFlashlightListener(this);
-        mFlashManager.setFlashMode(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
+        mFlashManager.setFlashSource(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
         mTorchieActionManager = new TorchieActionManager(TorchieQuick.this);
         mTorchieActionManager.setListener(this);
         mTorchieActionManager.setKeyComboMode(TorchieActionManager.KeyComboMode.AUTO);
@@ -136,7 +136,7 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
                 isVibrateEnabled = preferences.getBoolean(TorchieConstants.PREF_FUNC_VIBRATE, false);
                 break;
             case TorchieConstants.PREF_FLASH_SOURCE:
-                mFlashManager.setFlashMode(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE,TorchieConstants.SOURCE_FLASH_CAMERA));
+                mFlashManager.setFlashSource(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
                 break;
         }
     }
