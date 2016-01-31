@@ -13,6 +13,7 @@
         android:paddingRight="16dp">
 
         <TextView
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusable="true"
@@ -20,7 +21,6 @@
             android:paddingBottom="2dp"
             android:paddingTop="16dp"
             android:text="@string/torchie_functionality"
-            style="@style/TextAppearance.AppCompat.Small"
             android:textColor="@color/colorAccent" />
 
         <LinearLayout
@@ -32,10 +32,10 @@
             android:paddingTop="16dp">
 
             <TextView
+                style="@style/TextAppearance.AppCompat.Menu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/screen_on"
-                style="@style/TextAppearance.AppCompat.Menu"
                 android:textColor="@color/colorWhite" />
 
             <Space
@@ -63,10 +63,10 @@
             android:paddingTop="16dp">
 
             <TextView
+                style="@style/TextAppearance.AppCompat.Menu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/screen_lock"
-                style="@style/TextAppearance.AppCompat.Menu"
                 android:textColor="@color/colorWhite" />
 
             <Space
@@ -94,10 +94,10 @@
             android:paddingTop="16dp">
 
             <TextView
+                style="@style/TextAppearance.AppCompat.Menu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/screen_off"
-                style="@style/TextAppearance.AppCompat.Menu"
                 android:textColor="@color/colorWhite" />
 
             <Space
@@ -149,11 +149,11 @@
                     android:orientation="vertical">
 
                     <TextView
+                        style="@style/TextAppearance.AppCompat.Menu"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="4dp"
                         android:text="@string/indefinite"
-                        style="@style/TextAppearance.AppCompat.Menu"
                         android:textColor="@color/colorWhite" />
 
                     <Space
@@ -176,47 +176,48 @@
 
                     <EditText
                         android:id="@+id/et_settings_screen_off_minutes"
+                        style="@style/TextAppearance.AppCompat.Menu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:maxLength="3"
                         android:digits="0123456789"
                         android:gravity="center_horizontal"
                         android:inputType="number"
+                        android:maxLength="3"
                         android:minWidth="50dp"
-                        android:singleLine="true"
-                        style="@style/TextAppearance.AppCompat.Menu" />
+                        android:singleLine="true" />
 
                     <TextView
+                        style="@style/TextAppearance.AppCompat.Menu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/minutes"
-                        style="@style/TextAppearance.AppCompat.Menu"
-                        android:textColor="@color/colorWhite"/>
+                        android:textColor="@color/colorWhite" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="  : "
                         android:textAppearance="?android:textAppearanceMedium"
-                        android:textColor="@color/colorWhite"/>
+                        android:textColor="@color/colorWhite" />
 
                     <EditText
                         android:id="@+id/et_settings_screen_off_seconds"
+                        style="@style/TextAppearance.AppCompat.Menu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:digits="0123456789"
-                        android:maxLength="3"
                         android:gravity="center"
                         android:inputType="number"
+                        android:maxLength="3"
                         android:minWidth="50dp"
-                        android:singleLine="true"
-                        style="@style/TextAppearance.AppCompat.Menu" />
+                        android:singleLine="true" />
+
                     <TextView
+                        style="@style/TextAppearance.AppCompat.Menu"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/seconds"
-                        style="@style/TextAppearance.AppCompat.Menu"
-                        android:textColor="@color/colorWhite"/>
+                        android:textColor="@color/colorWhite" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -239,6 +240,81 @@
         android:paddingRight="16dp">
 
         <TextView
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:paddingBottom="2dp"
+            android:paddingTop="16dp"
+            android:text="@string/torch_source"
+            android:textColor="@color/colorAccent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/rg_flash_source"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingRight="8dp">
+
+                <RadioButton
+                    android:id="@+id/rb_settings_flash_camera"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp" />
+
+                <RadioButton
+                    android:id="@+id/rb_settings_flash_screen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="56dp"
+                    android:checked="true" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/flash_or_led"
+                    android:textColor="@color/colorWhite" />
+
+                <TextView
+                    style="@style/TextAppearance.AppCompat.Menu"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/screen_light"
+                    android:textColor="@color/colorWhite" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey800" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:focusable="true"
@@ -246,7 +322,6 @@
             android:paddingBottom="2dp"
             android:paddingTop="16dp"
             android:text="@string/miscellaneous"
-            style="@style/TextAppearance.AppCompat.Small"
             android:textColor="@color/colorAccent" />
 
         <LinearLayout
@@ -266,10 +341,10 @@
                 android:paddingTop="16dp">
 
                 <TextView
+                    style="@style/TextAppearance.AppCompat.Menu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/vibrate"
-                    style="@style/TextAppearance.AppCompat.Menu"
                     android:textColor="@color/colorWhite" />
 
                 <Space
