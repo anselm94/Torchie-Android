@@ -4,6 +4,7 @@ import android.app.FragmentManager;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.graphics.drawable.TransitionDrawable;
 import android.net.Uri;
 import android.os.Build;
@@ -21,9 +22,9 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
 import in.blogspot.anselmbros.torchie.R;
-import in.blogspot.anselmbros.torchie.listeners.FlashlightListener;
+import in.blogspot.anselmbros.torchie.listeners.FlashListener;
 import in.blogspot.anselmbros.torchie.listeners.TorchieQuickListener;
-import in.blogspot.anselmbros.torchie.manager.FlashlightManager;
+import in.blogspot.anselmbros.torchie.manager.FlashManager;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 import in.blogspot.anselmbros.torchie.service.TorchieQuick;
 import in.blogspot.anselmbros.torchie.ui.dialog.AboutDialog;
@@ -33,7 +34,7 @@ import in.blogspot.anselmbros.torchie.ui.dialog.DonateSuccessDialog;
 import in.blogspot.anselmbros.torchie.ui.dialog.PermissionDialog;
 import in.blogspot.anselmbros.torchie.ui.dialog.WelcomeDialog;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener, FlashlightListener, TorchieQuickListener {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener, FlashListener, TorchieQuickListener {
 
     public String TAG = TorchieConstants.INFO;
 
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TransitionDrawable transAnimButFlash;
 
     TorchieQuick torchieQuickService;
-    FlashlightManager flashLight;
+    FlashManager flashManager;
 
     DonateDialog donateDialog;
 
@@ -65,16 +66,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        flashLight = new FlashlightManager(this);
-        flashLight.setFlashlightListener(this);
-
-        initUI();
-
         preferences = getSharedPreferences(TorchieConstants.PREF_KEY_APP, Context.MODE_PRIVATE);
         prefEditor = preferences.edit();
 
+        if (!isTorchieQuickRunning()) {
+            initFlashManager();
+        }
+        initUI();
+
         if (preferences.getBoolean(TorchieConstants.PREF_FIRST_TIME, true)) {
             showDialogWelcome();
+            if(isFlashAvailable(this)){
+                prefEditor.putInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA).apply();
+            }else{
+                prefEditor.putInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_SCREEN).apply();
+            }
         }
         findViewById(R.id.sw_func_toggle).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -91,7 +97,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             isFlashOn = torchieQuickService.isFlashOn();
         } else {
             sw_func_toggle.setChecked(false);
-            isFlashOn = flashLight.isFlashOn();
+            if (flashManager != null) {
+                isFlashOn = flashManager.isFlashOn();
+            } else {
+                isFlashOn = false;
+            }
         }
         transAnimButFlash.resetTransition();
         if (isFlashOn) {
@@ -103,8 +113,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     protected void onStop() {
         super.onStop();
-        if (flashLight.isFlashOn())
-            flashLight.toggleFlash();
+        if (flashManager != null) {
+            if (flashManager.isFlashOn())
+                flashManager.toggleFlash();
+        }
     }
 
     @Override
@@ -203,12 +215,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void toggleFlash() {
         if (isTorchieQuickRunning()) {
             torchieQuickService.toggleFlash();
-        } else {
-            flashLight.toggleFlash();
+        } else {if(flashManager != null){
+            flashManager.toggleFlash();}else{
+            initFlashManager();
+            flashManager.toggleFlash();
+        }
         }
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {//For animation to start early in Android version less than 6.0
             setFlashButtonStatus(!isFlashOn);
         }
+    }
+
+    private void initFlashManager(){
+        flashManager = new FlashManager(this);
+        flashManager.setFlashlightListener(this);
+        flashManager.setFlashMode(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
+    }
+
+    private boolean isFlashAvailable(Context context) {
+        return context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA);
     }
 
     private void initUI() {
