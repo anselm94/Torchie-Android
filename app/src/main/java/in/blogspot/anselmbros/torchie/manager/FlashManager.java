@@ -3,7 +3,7 @@ package in.blogspot.anselmbros.torchie.manager;
 import android.content.Context;
 import android.os.Build;
 
-import in.blogspot.anselmbros.torchie.listeners.FlashlightListener;
+import in.blogspot.anselmbros.torchie.listeners.FlashListener;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 import in.blogspot.anselmbros.torchie.utils.Flashlight;
 import in.blogspot.anselmbros.torchie.utils.Flashlight2;
@@ -11,11 +11,11 @@ import in.blogspot.anselmbros.torchie.utils.Flashlight2;
 /**
  * Created by anselm94 on 2/12/15.
  */
-public class FlashlightManager implements FlashlightListener {
+public class FlashManager implements FlashListener {
 
     public String TAG = TorchieConstants.INFO;
 
-    private FlashlightListener mListener;
+    private FlashListener mListener;
     private Flashlight flashlight1; //API <  23
     private Flashlight2 flashlight2;//API >= 23
 
@@ -24,7 +24,7 @@ public class FlashlightManager implements FlashlightListener {
     private boolean isFlashOn = false;
     private Mode currentMode;
 
-    public FlashlightManager(Context context) {
+    public FlashManager(Context context) {
         TAG = this.getClass().getName();
         this.mContext = context;
         currentMode = getCurrentMode();
@@ -37,7 +37,7 @@ public class FlashlightManager implements FlashlightListener {
         }
     }
 
-    public void setFlashlightListener(FlashlightListener listener) {
+    public void setFlashlightListener(FlashListener listener) {
         this.mListener = listener;
     }
 
