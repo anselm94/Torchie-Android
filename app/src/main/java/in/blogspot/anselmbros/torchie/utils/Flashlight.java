@@ -6,7 +6,7 @@ import android.util.Log;
 
 import java.util.List;
 
-import in.blogspot.anselmbros.torchie.listeners.FlashlightListener;
+import in.blogspot.anselmbros.torchie.listeners.FlashListener;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 
 /**
@@ -24,14 +24,14 @@ public class Flashlight {
     private int currentCameraID = 0;
     private int noOfCameras = 0;
 
-    private FlashlightListener mListener;
+    private FlashListener mListener;
 
     public Flashlight() {
         TAG = this.getClass().getName();
         noOfCameras = Camera.getNumberOfCameras();
     }
 
-    public void setFlashStateListener(FlashlightListener listener) {
+    public void setFlashStateListener(FlashListener listener) {
         this.mListener = listener;
     }
 

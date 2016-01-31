@@ -7,7 +7,7 @@ import android.hardware.camera2.CameraCharacteristics;
 import android.hardware.camera2.CameraManager;
 import android.util.Log;
 
-import in.blogspot.anselmbros.torchie.listeners.FlashlightListener;
+import in.blogspot.anselmbros.torchie.listeners.FlashListener;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 
 /**
@@ -22,7 +22,7 @@ public class Flashlight2 {
     private CameraManager mCameraManager;
     private String[] mCameraIDList;
 
-    private FlashlightListener mListener;
+    private FlashListener mListener;
 
     public Flashlight2() {
         TAG = this.getClass().getName();
@@ -52,7 +52,7 @@ public class Flashlight2 {
         }
     }
 
-    public void setFlash2StateListener(FlashlightListener listener) {
+    public void setFlash2StateListener(FlashListener listener) {
         this.mListener = listener;
     }
 
