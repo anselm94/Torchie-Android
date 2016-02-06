@@ -92,6 +92,6 @@
     <string name="language_select">Choose language</string>
 
     <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nTorchie comes with absolutely no warranty. This program is free software licensed under
-    GNU General Public License v2.0\nFull source-code for is available here https://github.com/anselm94/torchie-android\n</string>
+    \nGNU General Public License v2.0\nFull source-code is available here https://github.com/anselm94/torchie-android\n</string>
 
 </resources>
