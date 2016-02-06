@@ -13,6 +13,13 @@ Turn on/off flashlight/LED/torch/Screenlight on Android smartphones running Andr
 ***
 
 
+##Wiki
+[Torchie Wiki](https://github.com/anselm94/Torchie-Android/wiki)
+
+
+***
+
+
 ##Follow
 * [Like Torchie](https://facebook.com/torchieapp) on **Facebook**
 * [Follow Torchie](https://plus.google.com/111668132285982978436) via **Google+**
