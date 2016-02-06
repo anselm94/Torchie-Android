@@ -36,6 +36,9 @@ import in.blogspot.anselmbros.torchie.manager.FlashManager;
 import in.blogspot.anselmbros.torchie.manager.TorchieActionManager;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 
+/**
+ * The Accessibility Service which controls flashlight and responds to key events
+ */
 public class TorchieQuick extends AccessibilityService implements SharedPreferences.OnSharedPreferenceChangeListener, FlashListener, VolumeKeyComboListener {
 
     private static TorchieQuick sharedInstance;
@@ -73,23 +76,22 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
         mFlashManager.notifyScreenlightStatus(status);
     }
 
-    @Override
-    protected void onServiceConnected() {
-        sharedInstance = this;
-        preferences = getSharedPreferences(TorchieConstants.PREF_KEY_APP, Context.MODE_PRIVATE);
-        prefEditor = preferences.edit();
-        preferences.registerOnSharedPreferenceChangeListener(this);
-
+    private void initIntentReceiver(){
         IntentFilter filter = new IntentFilter();
         filter.addAction(Intent.ACTION_SCREEN_ON);
         filter.addAction(Intent.ACTION_SCREEN_OFF);
         filter.addAction(Intent.ACTION_USER_PRESENT);
         mReceiver = new ScreenReceiver();
         registerReceiver(mReceiver, filter);
+    }
 
+    private void initFlashManager(){
         mFlashManager = new FlashManager(TorchieQuick.this);
         mFlashManager.setFlashlightListener(this);
         mFlashManager.setFlashSource(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
+    }
+
+    private void initTorchieActionManager(){
         mTorchieActionManager = new TorchieActionManager(TorchieQuick.this);
         mTorchieActionManager.setListener(this);
         mTorchieActionManager.setKeyComboMode(TorchieActionManager.KeyComboMode.AUTO);
@@ -98,7 +100,21 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
         mTorchieActionManager.setSettingScreenUnlocked(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_UNLOCKED, true));
         mTorchieActionManager.setSettingsScreenOffIndefinite(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_OFF_INDEFINITE, false));
         mTorchieActionManager.setSettingsScreenOffTime(preferences.getLong(TorchieConstants.PREF_FUNC_SCREEN_OFF_TIME, TorchieConstants.DEFAULT_SCREENOFF_TIME));
+    }
+
+    @Override
+    protected void onServiceConnected() {
+        sharedInstance = this;
+        preferences = getSharedPreferences(TorchieConstants.PREF_KEY_APP, Context.MODE_PRIVATE);
+        prefEditor = preferences.edit();
+        preferences.registerOnSharedPreferenceChangeListener(this);
+
+        initIntentReceiver();
+        initFlashManager();
+        initTorchieActionManager();
+
         isVibrateEnabled = preferences.getBoolean(TorchieConstants.PREF_FUNC_VIBRATE, false);
+
         super.onServiceConnected();
     }
 
@@ -161,7 +177,7 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
     protected boolean onKeyEvent(KeyEvent event) {
         super.onKeyEvent(event);
         if (event != null) {
-            if ((event.getKeyCode() == KeyEvent.KEYCODE_VOLUME_DOWN) || (event.getKeyCode() == KeyEvent.KEYCODE_VOLUME_UP)) {
+            if ((event.getKeyCode() == KeyEvent.KEYCODE_VOLUME_DOWN) || (event.getKeyCode() == KeyEvent.KEYCODE_VOLUME_UP)) { //Filters ONLY the Volume Button key events
                 mTorchieActionManager.handleVolumeKeyEvents(event);
             }
         }

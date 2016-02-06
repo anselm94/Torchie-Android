@@ -28,6 +28,8 @@ import in.blogspot.anselmbros.torchie.R;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 
 /**
+ * This class is not the system wakelock but simulates the wakelock functionality with Media player wakelock
+ *
  * Created by anselm94 on 3/12/15.
  */
 public class TorchieWakelock {
@@ -44,6 +46,10 @@ public class TorchieWakelock {
         return isWakelockHeld;
     }
 
+    /**
+     *  * Once wakelock is acquired, a dummy zero-volume wave file starts playing in a loop.
+     * @param context context
+     */
     public void acquire(Context context) {
         if (!isWakelockHeld) {
             if (mediaPlayer == null) {

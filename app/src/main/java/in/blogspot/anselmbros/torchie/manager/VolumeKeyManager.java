@@ -24,6 +24,8 @@ import in.blogspot.anselmbros.torchie.listeners.VolumeKeyComboListener;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 
 /**
+ * Manager for Volume Key presses
+ * Used only for Android 4.3+
  * Created by anselm94 on 26/11/15.
  */
 public class VolumeKeyManager {
@@ -41,6 +43,10 @@ public class VolumeKeyManager {
         this.mListener = listener;
     }
 
+    /**
+     * Parses Volume Key Event
+     * @param event Hardware Key Event
+     */
     public void handleVolumeKeyEvent(KeyEvent event) {
         if (event.getAction() == KeyEvent.ACTION_DOWN) {
             if (event.getKeyCode() == KeyEvent.KEYCODE_VOLUME_DOWN) {
@@ -59,6 +65,9 @@ public class VolumeKeyManager {
         }
     }
 
+    /**
+     * checks if both volume keys are pressed
+     */
     private void keyComboPerformed() {
         if (volumeDownPressed && volumeUpPressed) {
             if (mListener != null) {

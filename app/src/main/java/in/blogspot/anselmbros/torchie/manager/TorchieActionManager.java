@@ -28,6 +28,7 @@ import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 import in.blogspot.anselmbros.torchie.utils.TorchieWakelock;
 
 /**
+ * Manages Torchie Action i.e Pressing Volume Buttons
  * Created by anselm94 on 2/12/15.
  */
 public class TorchieActionManager implements VolumeKeyComboListener {
@@ -87,6 +88,10 @@ public class TorchieActionManager implements VolumeKeyComboListener {
         this.flagScreenOff = flagScreenOff;
     }
 
+    /**
+     * to get notified of screen state and to initialise screen off timer
+     * @param screenState current state of display
+     */
     public void notifyScreenState(TorchieConstants.ScreenState screenState) {
         this.currentScreenState = screenState;
         notifyWakelock();
@@ -103,6 +108,10 @@ public class TorchieActionManager implements VolumeKeyComboListener {
         }
     }
 
+    /**
+     * Sets the key combo method
+     * @param mode the key combo method
+     */
     public void setKeyComboMode(KeyComboMode mode) {
         switch (mode) {
             case AUTO:
@@ -125,18 +134,29 @@ public class TorchieActionManager implements VolumeKeyComboListener {
         }
     }
 
+    /**Used by KeyComboCompat manager
+     * @param prevValue previous volume value
+     * @param currentValue next volume value
+     */
     public void handleVolumeValues(int prevValue, int currentValue) {
         if ((currentKeyComboMode == KeyComboMode.KEYCOMBO_COMPAT) || ((currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF) && settingScreenOff)) {
             mKeyComboCompatManager.pushVolumeToBuffer(prevValue, currentValue);
         }
     }
 
+    /**
+     * Handles volume key presses <b>only</b>
+     * @param event Hardware key event
+     */
     public void handleVolumeKeyEvents(KeyEvent event) {
         if (currentKeyComboMode == KeyComboMode.KEYCOMBO) {
             mKeyComboManager.handleVolumeKeyEvent(event);
         }
     }
 
+    /**
+     * Acquires and releases wakelock
+     */
     private void notifyWakelock() {
         if (settingScreenOff && (currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF)) {
             wakeLock.acquire(mContext);
@@ -160,16 +180,26 @@ public class TorchieActionManager implements VolumeKeyComboListener {
         }
     }
 
+    /**
+     * Initialises KeyComboManager
+     */
     private void initKeyComboManager() {
         mKeyComboManager = new VolumeKeyManager();
         mKeyComboManager.setVolumeKeyListener(this);
     }
 
+    /**
+     * Initialises KeyCombocompatManager
+     */
     private void initKeyComboCompatManager() {
         mKeyComboCompatManager = new VolumeRockerManager();
         mKeyComboCompatManager.setVolumeRockerListener(this);
     }
 
+    /**
+     * Checks if Torchie functionality is allowed in particular screen state
+     * @return true if functionality is enabled for particular display screen state
+     */
     private boolean isAccessProvided() {
         return (settingScreenOff && (currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF)) && flagScreenOff || (settingScreenLock && (currentScreenState == TorchieConstants.ScreenState.SCREEN_LOCK)) || (settingScreenUnlocked && (currentScreenState == TorchieConstants.ScreenState.SCREEN_UNLOCK));
     }
@@ -181,12 +211,20 @@ public class TorchieActionManager implements VolumeKeyComboListener {
         }
     }
 
+    /**
+     * KeyComboMode.KEYCOMBO -  key events are captured - Used for Android 4.3+ only
+     * KeyComboMode.KEYCOMBO_COMPAT -  volume changes are used - Used for Android 4.2.2 or lesser and used in Screen off for all Android version
+     * KeyComboMode.AUTO - Selects automatically based on API level
+     */
     public enum KeyComboMode {
         AUTO,           //For Auto setup
         KEYCOMBO,       //Android 4.3+ as onKeyEvent() is accessible
-        KEYCOMBO_COMPAT //Android < 4.3 for Torchie Trick (C)
+        KEYCOMBO_COMPAT //Android < 4.3 for Torchie Trick
     }
 
+    /**
+     * A timer for Screen-Off Torchie functionality timer
+     */
     private class ScreenOffTimer extends CountDownTimer{
         public ScreenOffTimer(long startTime, long interval){
             super(startTime, interval);

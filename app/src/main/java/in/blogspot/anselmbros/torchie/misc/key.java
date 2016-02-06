@@ -19,6 +19,7 @@
 package in.blogspot.anselmbros.torchie.misc;
 
 /**
+ * Component for dynamic construction of keys
  * Created by anselm94 on 8/12/15.
  */
 public class key {

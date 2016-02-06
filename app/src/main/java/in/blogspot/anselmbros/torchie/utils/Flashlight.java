@@ -151,7 +151,7 @@ public class Flashlight {
                 try {
                     currentCamera.setPreviewTexture(new SurfaceTexture(0));//Thanks to http://github.com/bleeding182/minimalist-flashlight
                     currentCamera.startPreview();
-//                currentCamera.autoFocus(null); //TODO Causing error in Oxygen OS 2.2.0 (based on Android 5.1.1) marked by Piotr Zaborowski
+//                currentCamera.autoFocus(null); //Causing error in Oxygen OS 2.2.0 (based on Android 5.1.1) marked by Piotr Zaborowski
                     isFlashOn = true;
                     if (mListener != null) mListener.onFlashStateChanged(true);
                 } catch (Exception e) {

@@ -19,11 +19,12 @@
 package in.blogspot.anselmbros.torchie.misc;
 
 /**
+ * All the constant values
  * Created by anselm94 on 1/12/15.
  */
 public class TorchieConstants {
 
-    public final static String INFO = "Torchie will soon become Open-Source! But it takes time until it get 100,000+ installs";
+    public final static String INFO = "Torchie is 'free' as in 'freedom' and licensed under GNU GPL v2";
 
     public final static String APP_TAG = "in.blogspot.anselmbros.torchie";
     public final static String APP_NAME = "Torchie";
@@ -63,8 +64,8 @@ public class TorchieConstants {
     public final static int SOURCE_FLASH_SCREEN = 1;
 
     public enum ScreenState {
-        SCREEN_OFF, //SCREEN_OFF AhOFj Lt
-        SCREEN_LOCK, //SCREEN_LOCK XgLOC tk
-        SCREEN_UNLOCK //SCREEN_UNLOCK KrULoC dw
+        SCREEN_OFF, //SCREEN_OFF
+        SCREEN_LOCK, //SCREEN_LOCK
+        SCREEN_UNLOCK //SCREEN_UNLOCK
     }
 }

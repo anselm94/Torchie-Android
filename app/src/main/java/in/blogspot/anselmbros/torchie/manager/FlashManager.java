@@ -72,11 +72,17 @@ public class FlashManager implements FlashListener {
         }
     }
 
+    /**
+     * toggles flash state
+     */
     public void toggleFlash() {
         if (isFlashOn) turnOffFlash();
         else turnOnFlash();
     }
 
+    /**
+     * turns on flash
+     */
     private void turnOnFlash() {
         if (currentFlashSource == TorchieConstants.SOURCE_FLASH_CAMERA) {
             if (currentFlashAPIMode == Mode.STD_CAMERA2_API) {
@@ -98,6 +104,9 @@ public class FlashManager implements FlashListener {
         }
     }
 
+    /**
+     * turns off flash
+     */
     private void turnOffFlash() {
         if (currentFlashSource == TorchieConstants.SOURCE_FLASH_CAMERA) {
             if (currentFlashAPIMode == Mode.STD_CAMERA2_API) {
@@ -115,10 +124,19 @@ public class FlashManager implements FlashListener {
         }
     }
 
+
+    /**
+     * @return flash state
+     */
     public boolean isFlashOn() {
         return isFlashOn;
     }
 
+    /**
+     * Uses android.hardware.camera till Android 5.1 (API 22)
+     * android.hardware.camera2 from Android 6.0 onwards
+     * @return returns the Camera API
+     */
     private Mode getCurrentFlashAPIMode() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             return Mode.STD_CAMERA2_API;
@@ -127,6 +145,9 @@ public class FlashManager implements FlashListener {
         }
     }
 
+    /**
+     * initialises camera based on API
+     */
     private void initFlashCamera() {
         cleanMemory();
         currentFlashAPIMode = getCurrentFlashAPIMode();
@@ -139,18 +160,28 @@ public class FlashManager implements FlashListener {
         }
     }
 
+    /**
+     * initialises screen flash
+     */
     private void initFlashScreen() {
         cleanMemory();
         screenflash = new Screenflash(mContext);
         screenflash.setFlashStatelistener(this);
     }
 
+    /**
+     * notifies the screen-flash status to the listener when activity force killed
+     * @param status state of screen
+     */
     public void notifyScreenlightStatus(boolean status){
         if(screenflash!= null){
             screenflash.notifyScreenflashStatus(status);
         }
     }
 
+    /**
+     * cleans unused components
+     */
     private void cleanMemory() {
         flashlight1 = null;
         flashlight2 = null;
@@ -169,7 +200,7 @@ public class FlashManager implements FlashListener {
     }
 
     private enum Mode {
-        STD_CAMERA_API, //For Android version < 6.0
-        STD_CAMERA2_API //For Android version >= 6.0
+        STD_CAMERA_API, //For Android version < 6.0  Uses android.hardware.camera
+        STD_CAMERA2_API //For Android version >= 6.0 Uses android.hardware.camera2
     }
 }

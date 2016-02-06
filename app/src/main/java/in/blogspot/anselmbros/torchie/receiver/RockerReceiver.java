@@ -28,6 +28,9 @@ import android.view.accessibility.AccessibilityManager;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
 import in.blogspot.anselmbros.torchie.service.TorchieQuick;
 
+/**
+ * Broadcast receiver for intent - android.media.VOLUME_CHANGED_ACTION
+ */
 public class RockerReceiver extends BroadcastReceiver {
 
     public String TAG = TorchieConstants.INFO;
