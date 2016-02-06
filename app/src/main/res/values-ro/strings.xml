@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Setari Torchie</string>
+    <string name="service_torchiequick_name">Torchie Rapid</string>
+    <string name="accessibility_service_description">Cand \'Torchie Rapid\' este pornit, aprindeti/stingeti Lanterna doar apasand ambele butoane de volum</string>
+
+    <string name="torchie_functionality">Functionalitati Torchie</string>
+    <string name="screen_on">Display pornit</string>
+    <string name="screen_lock">Blocheaza display</string>
+    <string name="screen_off">Display oprit</string>
+    <string name="miscellaneous">Diverse</string>
+    <string name="optimize_led_screen">Optimizare display AMOLED</string>
+    <string name="battery_drain_warn">Va descarca bateria rapid</string>
+
+    <string name="donate">Doneaza</string>
+    <string name="tellfriend">Spune unui prieten</string>
+    <string name="rate">Voteaza Torchie</string>
+    <string name="about">Despre</string>
+    <string name="settings">Setari</string>
+    <string name="help_feedback">Ajutor &amp; Pareri</string>
+    <string name="enable">Permite</string>
+    <string name="later">mai tarziu</string>
+    <string name="loading">incarcare</string>
+    <string name="select_donation_amount">Selecteaza suma <b>donatiei</b></string>
+    <string name="thank_you">Multumesc!</string>
+    <string name="donate_via_paypal">Doneaza prin Paypal</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Continua</string>
+    <string name="dismiss">Inchide</string>
+    <string name="share">Distribuie</string>
+
+    <string name="share_info">Aprindeti lanterna doar apasand ambele butoane de volum. Descarca Torchie acum! </string>
+    <string name="share_via">Distribuie un cuvant impreuna cu Torchie</string>
+
+    <string name="welcome"><b>Bun Venit</b></string>
+    <string name="welcome_note">Viata e mai usoara cu <b>Torchie</b>! \n\nPorneste <b>\'Functionalitatile Torchie\'</b> pentru a inchide/porni lanterna <b>tinand apasate ambele butoane de volum</b>!\n\nVezi mai multe in Torchie <b>Setari</b>!</string>
+    <string name="got_it">Am inteles</string>
+    <string name="permission_note">Activeaza <b>\'Torchie Rapid\'</b> din <b>Servicii</b> Accesibilitate pentru a te bucura de Torchie.</string>
+    <string name="permission_warn"><b>Despre PERMISIUNI - </b> \"<i>...captureaza textul introdus &amp; urmareste actiunile tale...</i>\"\nVai e amenintator\! Android avertizeaza despre \'Evenimentele de taste\'ca tastele HARDWARE sunt apasate/urmarite. Pentru ca  Torchies captureaza tastele hardware pentru a putea functiona. Aceasta permisiune/avertisment este o  <i>regula</i> Android\ , acest avertisment este afisat si la telefoanele fara taste (exceptie pentru dispozitivele cu o versiune de Android foarte veche si Blackberry Priv ce are tastatura de scriere). Este imposibil sa functioneze torchie fara aceasta permisiune
+        \nasemeni, Torchie <b>NU ARE ACCES LA INTERNET</b>, asa ca e imposibil sa <i>trimita</i> ceva catre cineva\n\n Torchie NU POATE <i>COLECTA</i> nimic de la nimeni. Va rugam permiteti Torchie astfel nu va functiona corect! <a href="https://torchieapp.wordpress.com/help/">Afla mai multe</a> </string>
+    <string name="permission">Activezi functiile Torchie?</string>
+
+    <string name="about_note"><i>Torchie - Touch to Torch &#169; 2016</i> \n\n<b>Torchie</b> este facut de doi frati \nMerbin J Anselm si Rebin J Anselm\nanselmbros@gmail.com\n\nMulte multumiri oamenilor cu inima mare, care a ajutat la traducerea Torchie</string>
+    <string name="about_anselm">Despre Anselm &amp; Anselm</string>
+    <string name="official_website">Viziteaza situl oficial</string>
+    <string name="join_community">Inscrie-te in comunitatea BETA</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Am\pierdut\multe <b>ore</b> cand am facut Torchie, pentru ca tu sa nu <b>pierzi o secunda</b> aprinzand lanterna!\nSprijina munca depusa la  Torchie ajutand cu o donatie</string>
+    <string name="thank_you_note">Îngrijirea dumneavoastră ne motivează!\n\nImparte Torchie impreuna cu prietenii si familia!</string>
+    <string name="donation_error">UPS! A aparut o eroare cand ai incercat sa imparti dragostea pentru noi!</string>
+    <string name="proceed_paypal">Continuati la Paypal?</string>
+
+
+    <string name="indefinite">Nedefinit</string>
+    <string name="minutes">Minute</string>
+    <string name="seconds">Secunde</string>
+    <string name="milliseconds">Milisecunde</string>
+    <string name="vibrate">Vibratii</string>
+    <string name="torch_source">Sursa Lanterna</string>
+    <string name="flash_or_led">Blitz/LED</string>
+    <string name="screen_light">Lumina display</string>
+    <string name="toggle_method">Inverseaza metoda</string>
+    <string name="both_vol_buttons">Volum + &amp; Volum -</string>
+    <string name="volume_up">Volum +</string>
+    <string name="volume_down">Volum -</string>
+    <string name="hold_delay">Timp de apasare taste</string>
+    <string name="immediate">Imediat</string>
+    <string name="not_work_screen_off">Nu va functiona cu diaplay-ul oprit!</string>
+    <string name="torch_time_out">Timp expirat lanterna</string>>
+    <string name="language_select">Alege limba</string>
+</resources>
