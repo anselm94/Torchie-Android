@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Flitsie Instellings</string>
+    <string name="service_torchiequick_name">Flitsie Snel</string>
+    <string name="accessibility_service_description">Wanneer \'Flitsie Snel\' geaktiveer is, skakel die flits aan deur net die volume knoppies saam te druk</string>
+
+    <string name="torchie_functionality">Flitsie funksionaliteit</string>
+    <string name="screen_on">Skerm Aan</string>
+    <string name="screen_lock">Skerm Slot</string>
+    <string name="screen_off">Skerm Af</string>
+    <string name="miscellaneous">Allerlei</string>
+    <string name="optimize_led_screen">AMOLED skerm optimering</string>
+    <string name="battery_drain_warn">Sal battery-dreinering veroorsaak</string>
+
+    <string name="donate">Skenk</string>
+    <string name="tellfriend">Vertel vir \'n vriend</string>
+    <string name="rate">Beoordeel Flitsie</string>
+    <string name="about">Inlugting</string>
+    <string name="settings">Instellings</string>
+    <string name="help_feedback">Help &amp; Terugvoer</string>
+    <string name="enable">Aktiveer</string>
+    <string name="later">Later</string>
+    <string name="loading">laai</string>
+    <string name="select_donation_amount">Kies \'n bedrag vir <b>skenking</b></string>
+    <string name="thank_you">Dankie!</string>
+    <string name="donate_via_paypal">Skenk deur middel van Paypal</string>
+    <string name="ok">Reg</string>
+    <string name="proceed">Gaan Voort</string>
+    <string name="dismiss">Ontslaan</string>
+    <string name="share">Deel</string>
+
+    <string name="share_info">Skakel die flits aan deur net die volume knoppies saam te druk met Flitsie. Aflaai Flitsie nou! </string>
+    <string name="share_via">Deel 'n woord oor Flitsie via</string>
+
+    <string name="welcome"><b>Welkom</b></string>
+    <string name="welcome_note">Maak jou lewe makliker met <b>Flitsie</b>! \n\nAktiveer <b>\'Flitsie funksionaliteit\'</b> om die flits aan/af te skakel net deur die<b>volume knoppies saam te hou</b>!\n\nVerander meer in Flitsie <b>Instellings</b>!</string>
+    <string name="got_it">Reg So</string>
+    <string name="permission_note">Aktiveer <b>\'Flitsie Snel\'</b> van Toegangklikheid <b>Dienste</b> om Flitsie te ervaar.</string>
+    <string name="permission_warn"><b>About the PERMISSION - </b> \"<i>...observe text that you type &amp; observe your actions...</i>\"\nAlas! It\'s threatening! Android throws a \'Key Event\' only when a HARDWARE KEY is pressed. It is by this way, Torchie captures Volume Key presses. But It is Android\'s <i>flaw</i>, showing the same WARNING even for NON-HARDWARE KEYBOARD ENABLED PHONES (except very old Android devices and Blackberry Priv which had/have hardware keyboard for typing). It is impossible to design Torchie Functionality without this permission
+        \nAlso, Torchie <b>DOES NOT HAVE INTERNET PERMISSION</b>, so it is impossible to <i>send</i> anything to anyone\n\n Torchie CANNOT <i>COLLECT</i> anything from anyone. Feel free to enable Torchie functionality! <a href="https://torchieapp.wordpress.com/help/">Leer nog</a> </string>
+    <string name="permission">Aktiveer Flitsie Funksionaliteit?</string>
+
+    <string name="about_note"><i>Flitsie - Raak vir Flits &#169; 2016</i> \n\n<b>Flitsie</b> is deur twee broers gemaak,\nMerbin J Anselm en Rebin J Anselm\nanselmbros@gmail.com\n\nBaie danke aan die onderstaande reuse harte, wat gehelp het om Flitsie te vertaal</string>
+    <string name="about_anselm">Inlugting oor Anselm &amp; Anselm</string>
+    <string name="official_website">Besoek amptelike webblad</string>
+    <string name="join_community">Sluit aan by die Beta gemeenskap</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Ons het baie <b>ure</b> spandeer om Flitsie te maak, sodat jy <b>nie \'n sekond verloor</b> as jy die flits aanskakel!\nOndersteun die werk van Flitsie deur aan ons te skenk</string>
+    <string name="thank_you_note">Jou omgee motiveer ons!\n\nDeel \'n woord oor Flitsie met jou Vriende en Familie!</string>
+    <string name="donation_error">Eitsa! Fout terwyl jy liefde met ons gedeel het!</string>
+    <string name="proceed_paypal">Gaan voort na Paypal?</string>
+
+
+    <string name="indefinite">Onbepaal</string>
+    <string name="minutes">Minute</string>
+    <string name="seconds">Sekondes</string>
+    <string name="milliseconds">Millisekondes</string>
+    <string name="vibrate">Vibreer</string>
+    <string name="torch_source">Flits bron</string>
+    <string name="flash_or_led">Flash/LED</string>
+    <string name="screen_light">Skerm Lig</string>
+    <string name="toggle_method">Skakel metode</string>
+    <string name="both_vol_buttons">Volume + &amp; Volume -</string>
+    <string name="volume_up">Volume +</string>
+    <string name="volume_down">Volume -</string>
+    <string name="hold_delay">Hold delay</string>
+    <string name="immediate">Immediate</string>
+    <string name="not_work_screen_off">Will not work in Screen off!</string>
+    <string name="torch_time_out">Torch time-out</string>>
+    <string name="language_select">Choose language</string>
+</resources>
