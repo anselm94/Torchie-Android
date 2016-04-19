@@ -44,6 +44,7 @@ public class TorchieActionManager implements VolumeKeyComboListener {
     private long settingsScreenOffTime;           //User Settings
 
     private boolean flagScreenOff;         //Changes when screen off time runs out
+    private boolean flashStatus = false;
 
     private TorchieConstants.ScreenState currentScreenState = TorchieConstants.ScreenState.SCREEN_UNLOCK; //Current State of screen
     private KeyComboMode currentKeyComboMode;
@@ -154,6 +155,10 @@ public class TorchieActionManager implements VolumeKeyComboListener {
         }
     }
 
+    public void notifyFlashStatus(boolean status){
+        this.flashStatus = status;
+    }
+
     /**
      * Acquires and releases wakelock
      */
@@ -189,7 +194,7 @@ public class TorchieActionManager implements VolumeKeyComboListener {
     }
 
     /**
-     * Initialises KeyCombocompatManager
+     * Initialises KeyComboCompatManager
      */
     private void initKeyComboCompatManager() {
         mKeyComboCompatManager = new VolumeRockerManager();
@@ -201,7 +206,7 @@ public class TorchieActionManager implements VolumeKeyComboListener {
      * @return true if functionality is enabled for particular display screen state
      */
     private boolean isAccessProvided() {
-        return (settingScreenOff && (currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF)) && flagScreenOff || (settingScreenLock && (currentScreenState == TorchieConstants.ScreenState.SCREEN_LOCK)) || (settingScreenUnlocked && (currentScreenState == TorchieConstants.ScreenState.SCREEN_UNLOCK));
+        return (settingScreenOff && (currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF)) && flagScreenOff || (settingScreenLock && (currentScreenState == TorchieConstants.ScreenState.SCREEN_LOCK)) || (settingScreenUnlocked && (currentScreenState == TorchieConstants.ScreenState.SCREEN_UNLOCK)) || flashStatus;
     }
 
     @Override

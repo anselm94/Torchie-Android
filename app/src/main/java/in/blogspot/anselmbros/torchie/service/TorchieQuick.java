@@ -186,6 +186,7 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
 
     @Override
     public void onFlashStateChanged(boolean enabled) {
+        mTorchieActionManager.notifyFlashStatus(enabled);
         if (mListener != null) {
             mListener.onFlashStateChanged(enabled);
         }
