@@ -42,8 +42,6 @@ public class FlashManager implements FlashListener {
     private Flashlight2 flashlight2;//API >= 23
     private Screenflash screenflash;
 
-    private TorchieWakelock wakelock;
-
     private Context mContext;
 
     private boolean isFlashOn = false;
@@ -54,7 +52,6 @@ public class FlashManager implements FlashListener {
         TAG = this.getClass().getName();
         this.mContext = context;
         setFlashSource(TorchieConstants.SOURCE_FLASH_CAMERA);
-        wakelock = new TorchieWakelock();
     }
 
     public void setFlashlightListener(FlashListener listener) {
@@ -106,7 +103,6 @@ public class FlashManager implements FlashListener {
         } else if (currentFlashSource == TorchieConstants.SOURCE_FLASH_SCREEN) {
             screenflash.turnOn();
         }
-        wakelock.acquire(mContext);
     }
 
     /**
@@ -127,7 +123,6 @@ public class FlashManager implements FlashListener {
         } else if (currentFlashSource == TorchieConstants.SOURCE_FLASH_SCREEN) {
             screenflash.turnOff();
         }
-        wakelock.release();
     }
 
 
