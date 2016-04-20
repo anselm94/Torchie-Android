@@ -89,6 +89,8 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
         mFlashManager = new FlashManager(TorchieQuick.this);
         mFlashManager.setFlashlightListener(this);
         mFlashManager.setFlashSource(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
+        mFlashManager.setFlashTimeIndefinite(preferences.getBoolean(TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE, true));
+        mFlashManager.setFlashTimeOut(preferences.getLong(TorchieConstants.PREF_FUNC_FLASH_OFF_TIME, TorchieConstants.DEFAULT_FLASHOFF_TIME));
     }
 
     private void initTorchieActionManager(){
@@ -153,6 +155,12 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
                 break;
             case TorchieConstants.PREF_FLASH_SOURCE:
                 mFlashManager.setFlashSource(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
+                break;
+            case TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE:
+                mFlashManager.setFlashTimeIndefinite(preferences.getBoolean(TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE, true));
+                break;
+            case TorchieConstants.PREF_FUNC_FLASH_OFF_TIME:
+                mFlashManager.setFlashTimeOut(preferences.getLong(TorchieConstants.PREF_FUNC_FLASH_OFF_TIME, TorchieConstants.DEFAULT_FLASHOFF_TIME));
                 break;
         }
     }

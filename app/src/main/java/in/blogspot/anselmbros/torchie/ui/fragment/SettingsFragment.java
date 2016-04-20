@@ -46,8 +46,9 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
     SharedPreferences.Editor prefEditor;
 
     SwitchCompat sw_screen_on, sw_lock_screen, sw_screen_off;
-    RadioGroup rg_screen_off_options, rg_flash_source;
+    RadioGroup rg_screen_off_options, rg_flash_source, rg_flash_time_options;
     EditText et_screen_off_mins, et_screen_off_sec;
+    EditText et_flash_off_mins, et_flash_off_sec;
     AppCompatCheckBox cb_vibrate;
 
     @Override
@@ -63,6 +64,7 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
     @Override
     public void onPause() {
         saveScreenOffPref();
+        saveFlashTimeOutPref();
         super.onPause();
     }
 
@@ -100,6 +102,13 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
                 prefEditor.putInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_SCREEN).commit();
             }
         }
+        else if (group.equals(rg_flash_time_options)){
+            if(checkedId == R.id.rb_flash_off_time_indefinite){
+                prefEditor.putBoolean(TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE, true).commit();
+            }else if (checkedId == R.id.rb_flash_off_time){
+                prefEditor.putBoolean(TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE, false).commit();
+            }
+        }
     }
 
     private void initUI() {
@@ -111,6 +120,9 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
         et_screen_off_sec = (EditText) rootView.findViewById(R.id.et_settings_screen_off_seconds);
         cb_vibrate = (AppCompatCheckBox) rootView.findViewById(R.id.cb_vibrate);
         rg_flash_source = (RadioGroup) rootView.findViewById(R.id.rg_flash_source);
+        rg_flash_time_options = (RadioGroup) rootView.findViewById(R.id.rg_flash_off_time_option);
+        et_flash_off_mins = (EditText) rootView.findViewById(R.id.et_settings_flash_off_minutes);
+        et_flash_off_sec = (EditText) rootView.findViewById(R.id.et_settings_flash_off_seconds);
 
         sw_screen_on.setOnCheckedChangeListener(this);
         sw_lock_screen.setOnCheckedChangeListener(this);
@@ -118,6 +130,7 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
         rg_screen_off_options.setOnCheckedChangeListener(this);
         cb_vibrate.setOnCheckedChangeListener(this);
         rg_flash_source.setOnCheckedChangeListener(this);
+        rg_flash_time_options.setOnCheckedChangeListener(this);
     }
 
     private void loadPreferences() {
@@ -135,6 +148,12 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
         } else if(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA) == TorchieConstants.SOURCE_FLASH_SCREEN){
             rg_flash_source.check(R.id.rb_settings_flash_screen);
         }
+        if (preferences.getBoolean(TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE, true)) {
+            rg_flash_time_options.check(R.id.rb_flash_off_time_indefinite);
+        } else if(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA) == TorchieConstants.SOURCE_FLASH_SCREEN){
+            rg_flash_source.check(R.id.rb_flash_off_time);
+        }
+        setFlashOffOptionsUI(preferences.getBoolean(TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE, true));
     }
 
     private void saveScreenOffPref() {
@@ -144,7 +163,6 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
         st_min = et_screen_off_mins.getText().toString();
         st_sec = et_screen_off_sec.getText().toString();
 
-
         try{
             min = TextUtils.isEmpty(st_min) ? 0 : Long.parseLong(st_min);
             sec = TextUtils.isEmpty(st_sec) ? 0 : Long.parseLong(st_sec);
@@ -153,8 +171,37 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
             sec = TorchieConstants.DEFAULT_SCREENOFF_TIME;
         }
 
+        if(((min<=0)&&(sec<1))||(min<0)){
+            min = 0;
+            sec = TorchieConstants.DEFAULT_SCREENOFF_TIME;
+        }
+
         long timeOut = ((min * 60) + sec) * 1000;
         prefEditor.putLong(TorchieConstants.PREF_FUNC_SCREEN_OFF_TIME, timeOut).commit();
+    }
+
+    private void saveFlashTimeOutPref(){
+        long min, sec;
+        String st_min, st_sec;
+
+        st_min = et_flash_off_mins.getText().toString();
+        st_sec = et_flash_off_sec.getText().toString();
+
+        try{
+            min = TextUtils.isEmpty(st_min) ? 0 : Long.parseLong(st_min);
+            sec = TextUtils.isEmpty(st_sec) ? 0 : Long.parseLong(st_sec);
+        }catch (Exception e){
+            min = 0;
+            sec = TorchieConstants.DEFAULT_FLASHOFF_TIME;
+        }
+
+        if(((min<=0)&&(sec<1))||(min<0)){
+            min = TorchieConstants.DEFAULT_FLASHOFF_TIME / 60000;
+            sec = (TorchieConstants.DEFAULT_FLASHOFF_TIME % 60000) / 1000;
+        }
+
+        long timeOut = ((min * 60) + sec) * 1000;
+        prefEditor.putLong(TorchieConstants.PREF_FUNC_FLASH_OFF_TIME, timeOut).commit();
     }
 
     private void setScreenOffOptionsUI(boolean screenOffEnabled) {
@@ -171,6 +218,13 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
         boolean etEnableFlag = preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_OFF, false) && !preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_OFF_INDEFINITE, false);
         et_screen_off_mins.setEnabled(etEnableFlag);
         et_screen_off_sec.setEnabled(etEnableFlag);
+    }
+
+    private void setFlashOffOptionsUI(boolean flashInfiniteEnabled) {
+        et_flash_off_sec.setText(String.valueOf((preferences.getLong(TorchieConstants.PREF_FUNC_FLASH_OFF_TIME, TorchieConstants.DEFAULT_FLASHOFF_TIME) % 60000) / 1000), TextView.BufferType.EDITABLE);
+        et_flash_off_mins.setText(String.valueOf(preferences.getLong(TorchieConstants.PREF_FUNC_FLASH_OFF_TIME, TorchieConstants.DEFAULT_FLASHOFF_TIME) / 60000), TextView.BufferType.EDITABLE);
+        et_flash_off_mins.setEnabled(!flashInfiniteEnabled);
+        et_flash_off_sec.setEnabled(!flashInfiniteEnabled);
     }
 
     private void vibrate(long time) {
@@ -196,6 +250,8 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
                     vibrate(TorchieConstants.DEFAULT_VIBRATOR_TIME);
                 }
                 break;
+            case TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE:
+                setFlashOffOptionsUI(preferences.getBoolean(TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE, true));
         }
     }
 }

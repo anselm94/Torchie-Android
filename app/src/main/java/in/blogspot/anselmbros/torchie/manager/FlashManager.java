@@ -20,6 +20,8 @@ package in.blogspot.anselmbros.torchie.manager;
 
 import android.content.Context;
 import android.os.Build;
+import android.os.CountDownTimer;
+import android.util.Log;
 
 import in.blogspot.anselmbros.torchie.listeners.FlashListener;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
@@ -47,6 +49,19 @@ public class FlashManager implements FlashListener {
     private boolean isFlashOn = false;
     private Mode currentFlashAPIMode;
     private int currentFlashSource;
+    private long flashTimeOut = TorchieConstants.DEFAULT_FLASHOFF_TIME;
+
+    private FlashTimer flashTimer;
+
+    public void setFlashTimeOut(long flashTimeOut) {
+        this.flashTimeOut = flashTimeOut;
+    }
+
+    public void setFlashTimeIndefinite(boolean flashTimeIndefinite) {
+        this.flashTimeIndefinite = flashTimeIndefinite;
+    }
+
+    private boolean flashTimeIndefinite = true;
 
     public FlashManager(Context context) {
         TAG = this.getClass().getName();
@@ -103,6 +118,10 @@ public class FlashManager implements FlashListener {
         } else if (currentFlashSource == TorchieConstants.SOURCE_FLASH_SCREEN) {
             screenflash.turnOn();
         }
+        if(!flashTimeIndefinite) {
+            flashTimer = new FlashTimer(this.flashTimeOut, 1000);
+            flashTimer.start();
+        }
     }
 
     /**
@@ -122,6 +141,10 @@ public class FlashManager implements FlashListener {
             }
         } else if (currentFlashSource == TorchieConstants.SOURCE_FLASH_SCREEN) {
             screenflash.turnOff();
+        }
+        if(flashTimer != null){
+            flashTimer.cancel();
+            flashTimer = null;
         }
     }
 
@@ -203,5 +226,21 @@ public class FlashManager implements FlashListener {
     private enum Mode {
         STD_CAMERA_API, //For Android version < 6.0  Uses android.hardware.camera
         STD_CAMERA2_API //For Android version >= 6.0 Uses android.hardware.camera2
+    }
+
+    private class FlashTimer extends CountDownTimer {
+        public FlashTimer(long startTime, long interval) {
+            super(startTime, interval);
+        }
+
+        @Override
+        public void onTick(long millisUntilFinished) {
+        }
+
+        @Override
+        public void onFinish() {
+            if(isFlashOn())
+                turnOffFlash();
+        }
     }
 }
