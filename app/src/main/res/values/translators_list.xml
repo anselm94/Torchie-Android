@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
   ~
   ~     This program is free software; you can redistribute it and/or modify
@@ -46,4 +45,36 @@
         25. български (Bulgarian) - <a href="http://forum.xda-developers.com/member.php?u=6335534">S.Y.@XDA</a>\n
         26. 中国的 (Chinese) - <a href="https://github.com/efni">efni@GitHub</a>\n
     </string>
+
+
+    <string-array name="language_codes">
+        <item>Afrikaans,af</item>
+        <item>български,bg</item>
+        <item>čeština,cs</item>
+        <item>Deutsche,de</item>
+        <item>English,en</item>
+        <item>Español,es</item>
+        <item>eesti,et</item>
+        <item>فارسی ,fa</item>
+        <item>français,fr</item>
+        <item>hrvatski,hr</item>
+        <item>Magyar,hu</item>
+        <item>bahasa Indonesia,in</item>
+        <item>italiano,it</item>
+        <item>ქართული,ka</item>
+        <item>한국의
+,ko</item>
+        <item>Lietuvos,lt</item>
+        <item>Монгол,mn</item>
+        <item>Polski,pl</item>
+        <item>português,pt</item>
+        <item>român,ro</item>
+        <item>русский,ru</item>
+        <item>shqip,sq</item>
+        <item>српски,sr</item>
+        <item>svenska,sv</item>
+        <item>தமிழ்,ta</item>
+        <item>Türk,tr</item>
+        <item>中国的,zh</item>
+    </string-array>
 </resources>
