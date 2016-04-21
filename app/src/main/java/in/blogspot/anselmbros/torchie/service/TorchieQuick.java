@@ -40,6 +40,7 @@ import in.blogspot.anselmbros.torchie.listeners.VolumeKeyComboListener;
 import in.blogspot.anselmbros.torchie.manager.FlashManager;
 import in.blogspot.anselmbros.torchie.manager.TorchieActionManager;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
+import in.blogspot.anselmbros.torchie.utils.Notifier;
 
 /**
  * The Accessibility Service which controls flashlight and responds to key events
@@ -58,6 +59,7 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
     private Sensor proximitySensor;
 
     private TorchieActionManager mTorchieActionManager;
+    private Notifier notifier;
 
     private boolean isVibrateEnabled;
 
@@ -130,6 +132,8 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
         mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
         proximitySensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
         mSensorManager.registerListener(this, proximitySensor, SensorManager.SENSOR_DELAY_NORMAL);
+
+        notifier = new Notifier(this);
         super.onServiceConnected();
     }
 
