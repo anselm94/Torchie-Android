@@ -52,6 +52,7 @@ public class TorchieConstants {
     public final static String PREF_FLASH_SOURCE = "dRuXsI";
     public final static String PREF_FUNC_FLASH_OFF_TIME = "moGsBrqz";
     public final static String PREF_FUNC_FLASH_OFF_INDEFINITE = "dExGhosH";
+    public final static String PREF_FUNC_PROXIMITY = "xDrTjoY";
     //Broadcast Key
     public final static String BROADCAST_CLOSE_ACTIVITY = "in.blogspot.anselmbros.torchie.CLOSE_ACTIVITY";
     //Camera Errors

@@ -23,6 +23,7 @@ import android.os.Build;
 import android.os.CountDownTimer;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.widget.Toast;
 
 import in.blogspot.anselmbros.torchie.listeners.VolumeKeyComboListener;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
@@ -46,6 +47,16 @@ public class TorchieActionManager implements VolumeKeyComboListener {
 
     private boolean flagScreenOff;         //Changes when screen off time runs out
     private boolean flashStatus = false;
+    private boolean isProximityEnabled = false;
+    private boolean isInPocket = false;
+
+    public void setProximityEnabled(boolean proximityEnabled) {
+        isProximityEnabled = proximityEnabled;
+    }
+
+    public void setInPocket(boolean inPocket) {
+        isInPocket = inPocket;
+    }
 
     private TorchieConstants.ScreenState currentScreenState = TorchieConstants.ScreenState.SCREEN_UNLOCK; //Current State of screen
     private KeyComboMode currentKeyComboMode;
@@ -230,7 +241,14 @@ public class TorchieActionManager implements VolumeKeyComboListener {
      */
     private boolean isAccessProvided() {
         Log.e("Test1", "Access requested");
-        return (settingScreenOff && (currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF)) && flagScreenOff || (settingScreenLock && (currentScreenState == TorchieConstants.ScreenState.SCREEN_LOCK)) || (settingScreenUnlocked && (currentScreenState == TorchieConstants.ScreenState.SCREEN_UNLOCK)) || flashStatus;
+        boolean screenOffAccess = (settingScreenOff && (currentScreenState == TorchieConstants.ScreenState.SCREEN_OFF)) && flagScreenOff;
+        boolean screenLockAccess = (settingScreenLock && (currentScreenState == TorchieConstants.ScreenState.SCREEN_LOCK));
+        boolean screenOnAccess = (settingScreenUnlocked && (currentScreenState == TorchieConstants.ScreenState.SCREEN_UNLOCK));
+        boolean proximityAccess = !(isProximityEnabled&&isInPocket);
+        if(!proximityAccess){
+            Toast.makeText(mContext,"Move your phone away and try again", Toast.LENGTH_SHORT).show();
+        }
+        return (screenOffAccess || screenLockAccess || screenOnAccess || flashStatus) && proximityAccess;
     }
 
     @Override

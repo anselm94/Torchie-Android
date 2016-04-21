@@ -50,6 +50,7 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
     EditText et_screen_off_mins, et_screen_off_sec;
     EditText et_flash_off_mins, et_flash_off_sec;
     AppCompatCheckBox cb_vibrate;
+    AppCompatCheckBox cb_proximity;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -84,6 +85,8 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
             prefEditor.putBoolean(TorchieConstants.PREF_FUNC_SCREEN_OFF, isChecked).commit();
         } else if (buttonView.equals(cb_vibrate)) {
             prefEditor.putBoolean(TorchieConstants.PREF_FUNC_VIBRATE, isChecked).commit();
+        } else if (buttonView.equals(cb_proximity)) {
+            prefEditor.putBoolean(TorchieConstants.PREF_FUNC_PROXIMITY, isChecked).commit();
         }
     }
 
@@ -123,6 +126,7 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
         rg_flash_time_options = (RadioGroup) rootView.findViewById(R.id.rg_flash_off_time_option);
         et_flash_off_mins = (EditText) rootView.findViewById(R.id.et_settings_flash_off_minutes);
         et_flash_off_sec = (EditText) rootView.findViewById(R.id.et_settings_flash_off_seconds);
+        cb_proximity = (AppCompatCheckBox) rootView.findViewById(R.id.cb_proximity);
 
         sw_screen_on.setOnCheckedChangeListener(this);
         sw_lock_screen.setOnCheckedChangeListener(this);
@@ -131,6 +135,7 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
         cb_vibrate.setOnCheckedChangeListener(this);
         rg_flash_source.setOnCheckedChangeListener(this);
         rg_flash_time_options.setOnCheckedChangeListener(this);
+        cb_proximity.setOnCheckedChangeListener(this);
     }
 
     private void loadPreferences() {
@@ -154,6 +159,7 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
             rg_flash_source.check(R.id.rb_flash_off_time);
         }
         setFlashOffOptionsUI(preferences.getBoolean(TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE, true));
+        cb_proximity.setChecked(preferences.getBoolean(TorchieConstants.PREF_FUNC_PROXIMITY, false));
     }
 
     private void saveScreenOffPref() {
@@ -252,6 +258,7 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
                 break;
             case TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE:
                 setFlashOffOptionsUI(preferences.getBoolean(TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE, true));
+                break;
         }
     }
 }
