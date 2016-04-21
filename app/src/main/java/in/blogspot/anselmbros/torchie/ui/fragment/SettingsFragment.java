@@ -20,25 +20,34 @@ package in.blogspot.anselmbros.torchie.ui.fragment;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.AppCompatCheckBox;
 import android.support.v7.widget.SwitchCompat;
 import android.text.TextUtils;
+import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import java.util.Locale;
+
 import in.blogspot.anselmbros.torchie.R;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
+import in.blogspot.anselmbros.torchie.ui.activity.SettingsActivity;
+import in.blogspot.anselmbros.torchie.ui.dialog.LangSelectDialog;
 
-public class SettingsFragment extends Fragment implements SharedPreferences.OnSharedPreferenceChangeListener, CompoundButton.OnCheckedChangeListener, RadioGroup.OnCheckedChangeListener {
+public class SettingsFragment extends Fragment implements SharedPreferences.OnSharedPreferenceChangeListener, CompoundButton.OnCheckedChangeListener, RadioGroup.OnCheckedChangeListener, View.OnClickListener {
 
     View rootView;
 
@@ -51,6 +60,7 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
     EditText et_flash_off_mins, et_flash_off_sec;
     AppCompatCheckBox cb_vibrate;
     AppCompatCheckBox cb_proximity;
+    LinearLayout ll_choose_lang;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -127,6 +137,7 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
         et_flash_off_mins = (EditText) rootView.findViewById(R.id.et_settings_flash_off_minutes);
         et_flash_off_sec = (EditText) rootView.findViewById(R.id.et_settings_flash_off_seconds);
         cb_proximity = (AppCompatCheckBox) rootView.findViewById(R.id.cb_proximity);
+        ll_choose_lang = (LinearLayout) rootView.findViewById(R.id.ll_choose_lang);
 
         sw_screen_on.setOnCheckedChangeListener(this);
         sw_lock_screen.setOnCheckedChangeListener(this);
@@ -136,6 +147,7 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
         rg_flash_source.setOnCheckedChangeListener(this);
         rg_flash_time_options.setOnCheckedChangeListener(this);
         cb_proximity.setOnCheckedChangeListener(this);
+        ll_choose_lang.setOnClickListener(this);
     }
 
     private void loadPreferences() {
@@ -239,6 +251,11 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
             vib.vibrate(time);
     }
 
+    private void showDialogLangSelect() {
+        LangSelectDialog langSelDialog = new LangSelectDialog();
+        langSelDialog.show(getActivity().getFragmentManager(), "Welcome Dialog");
+    }
+
     @Override
     public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
         switch (key) {
@@ -259,6 +276,15 @@ public class SettingsFragment extends Fragment implements SharedPreferences.OnSh
             case TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE:
                 setFlashOffOptionsUI(preferences.getBoolean(TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE, true));
                 break;
+            case TorchieConstants.PREF_LOCALE:
+
+        }
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v.equals(ll_choose_lang)){
+            showDialogLangSelect();
         }
     }
 }
