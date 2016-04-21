@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie opsione</string>
+    <string name="service_torchiequick_name">Torchie I shpejt</string>
+    <string name="accessibility_service_description">Kur \'Torchie I shpejt\' eshte i aktivizuar, hap/mbyll Torch duke mbajtur butonat e volumit bashkë</string>
+    <string name="torchie_functionality">Torchie Funksione</string>
+    <string name="screen_on">Ekrani i hapur</string>
+    <string name="screen_lock">Ekrani i kycur</string>
+    <string name="screen_off">Ekrani i mbyllur</string>
+    <string name="miscellaneous">i shumllojshem</string>
+    <string name="optimize_led_screen">AMOLED ekrani i optimizuar</string>
+    <string name="battery_drain_warn">Do të shkaktojë ikjen e baterisë</string>
+
+    <string name="donate">Dhuro</string>
+    <string name="tellfriend">Shperndaje</string>
+    <string name="rate">Vlereso Torchie</string>
+    <string name="about">Rreth</string>
+    <string name="settings">Opsione</string>
+    <string name="help_feedback">Ndihmo &amp; Feedback</string>
+    <string name="enable">mundësoj</string>
+    <string name="later">me vone</string>
+    <string name="loading">ngarkim</string>
+    <string name="select_donation_amount">Zgjidh nje <b>dhuro</b> vlere</string>
+    <string name="thank_you">Faleminderit!</string>
+    <string name="donate_via_paypal">Dhuro me paypal</string>
+    <string name="ok">OK</string>
+    <string name="proceed">Vazhdo</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="share">Shperndaje</string>
+
+    <string name="share_info">Aktivizo Torch duke mbajtur butonat e volumit shtypur . Shkarko Torchie tani! </string>
+    <string name="share_via">Ndaj nje fjale me Torch</string>
+
+    <string name="welcome"><b>Mirëseerdhët</b></string>
+    <string name="welcome_note">Beje jeten me te thjeshtë me <b>Torchie</b>! \n\nHap <b>\'Torchie Funksionet\'</b> hap/mbyll duke <b>mbajtur butonat e volumit</b>!\n\nTweak more in Torchie <b>Opsionet</b>!</string>
+    <string name="got_it">E kuptova</string>
+    <string name="permission_note">Hapur <b>\'Torchie i shpejtë\'</b> nga Aksesi <b>shërbimet</b> te provosh Torche</string>
+    <string name="permission_warn"><b>Rreth PERMISSION - </b> \"<i>...për të vëzhguar tekstin që ju shkruani &amp; vezhgoni veprimet tuaja...</i>\"\nAlas! It\'s threatening! Android throws a \'Key Event\' only when a HARDWARE KEY is pressed. It is by this way, Torchie captures Volume Key presses. But It is Android\'s <i>flaw</i>, showing the same WARNING even for NON-HARDWARE KEYBOARD ENABLED PHONES (except very old Android devices and Blackberry Priv which had/have hardware keyboard for typing). It is impossible to design Torchie Functionality without this permission
+        \nAlso, Torchie <b>Nese nuk keni internet</b>, atehere eshte e pamundur <i>qe te dergoj</i>donje te dhene\n\n Torchie nuk mundet <i>te mbledh</i> asgje prej askujt. Dihuni te lire per te perdorur Torch-in! <a href="https://torchieapp.wordpress.com/help/">Per me shume</a> </string>
+    <string name="permission">Enable Torchie Functionality?</string>
+
+    <string name="about_note"><i>Torchie - Touch to Torch &#169; 2016</i> \n\n<b>Torchie</b> eshte projektuar prej dy vellezerve\nMerbin J Anselm and Rebin J Anselm\nanselmbros@gmail.com\n\nShume falenderime per mbeshtetjen, dhe per ata qe kane perkthyer Torchie</string>
+    <string name="about_anselm">Rreth Anselm &amp; Anselm</string>
+    <string name="official_website">Vizitoni faqen zyrtare</string>
+    <string name="join_community">Join Beta Community</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Ne kemi shpenzuar shume <b>kohe</b> per te krijuar Torchie, qe ju mos humbisni <b>asnje sekondë</b> per te hapur torch!\nSupport the work of Torchie by donating us</string>
+    <string name="thank_you_note"> Kujdesi juaj na motivon !\n\nShpernda nje fjale rreth Torchi te shoket ose te të afërmit e tu!</string>
+    <string name="donation_error">Ups! Error while sharing love with us!</string>
+    <string name="proceed_paypal">Vazhdo ne paypal?</string>
+
+
+    <string name="indefinite"> i papërcaktuar </string>
+    <string name="minutes">Minutat</string>
+    <string name="seconds">Sekondat</string>
+    <string name="milliseconds">Millis</string>
+    <string name="vibrate">Dridhje</string>
+    <string name="torch_source">Torch source</string>
+    <string name="flash_or_led">Flash/LED</string>
+    <string name="screen_light">Drita e ekranit</string>
+    <string name="toggle_method">Metoda Toggle</string>
+    <string name="both_vol_buttons">Volume + &amp; Volume -</string>
+    <string name="volume_up">Volume +</string>
+    <string name="volume_down">Volume -</string>
+    <string name="hold_delay">Hold delay</string>
+    <string name="immediate"> i menjëhershëm</string>
+    <string name="not_work_screen_off"> nuk do të funksionojë në Screen off !</string>
+    <string name="torch_time_out">Torch time-out</string>>
+    <string name="language_select">Zgjidhe gjuhen</string>
+</resources>
