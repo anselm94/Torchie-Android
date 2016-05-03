@@ -91,7 +91,7 @@
     <string name="torch_time_out">Torch time-out</string>
     <string name="language_select">Choose language</string>
     <string name="proximity_sense">Proximity sense</string>
-    <string name="proximity_note">Enable to prevent response while in pocket etc.</string>
+    <string name="proximity_note">Prevents response while in pocket etc.</string>
     <string name="notify_title">Torchie service is disabled</string>
     <string name="notify_text">Touch to enable \'Torchie Quick\'</string>
 
