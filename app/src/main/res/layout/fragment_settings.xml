@@ -468,7 +468,8 @@
             android:paddingTop="16dp">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
@@ -492,11 +493,6 @@
                     android:textColor="@color/colorGrey500" />
 
             </LinearLayout>
-
-            <Space
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1" />
 
             <android.support.v7.widget.AppCompatCheckBox
                 android:id="@+id/cb_proximity"
@@ -522,15 +518,11 @@
 
                 <TextView
                     style="@style/TextAppearance.AppCompat.Menu"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
                     android:layout_height="wrap_content"
                     android:text="@string/vibrate"
                     android:textColor="@color/colorWhite" />
-
-                <Space
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
 
                 <android.support.v7.widget.AppCompatCheckBox
                     android:id="@+id/cb_vibrate"
