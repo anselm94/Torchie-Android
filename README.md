@@ -4,10 +4,19 @@ Turn on/off flashlight/LED/torch/Screenlight on Android smartphones running Andr
 
 
   <a href="https://play.google.com/store/apps/details?id=in.blogspot.anselmbros.torchie"><img width="202" height="66" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge-border.png" /></a>
+  
+  <a href="https://f-droid.org/repository/browse/?fdid=in.blogspot.anselmbros.torchie"><img width="202" height="66" alt="Get it on F-Droid" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Get_it_on_F-Droid.svg/220px-Get_it_on_F-Droid.svg.png" /></a>
 
 
 ###Official Website
 <https://torchieapp.wordpress.com>
+
+
+***
+
+
+##Wiki
+[Torchie Wiki](https://github.com/anselm94/Torchie-Android/wiki)
 
 
 ***
