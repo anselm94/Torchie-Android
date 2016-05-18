@@ -24,7 +24,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Vibrator;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.Toast;
@@ -35,11 +40,12 @@ import in.blogspot.anselmbros.torchie.listeners.VolumeKeyComboListener;
 import in.blogspot.anselmbros.torchie.manager.FlashManager;
 import in.blogspot.anselmbros.torchie.manager.TorchieActionManager;
 import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
+import in.blogspot.anselmbros.torchie.utils.Notifier;
 
 /**
  * The Accessibility Service which controls flashlight and responds to key events
  */
-public class TorchieQuick extends AccessibilityService implements SharedPreferences.OnSharedPreferenceChangeListener, FlashListener, VolumeKeyComboListener {
+public class TorchieQuick extends AccessibilityService implements SharedPreferences.OnSharedPreferenceChangeListener, FlashListener, VolumeKeyComboListener, SensorEventListener {
 
     private static TorchieQuick sharedInstance;
     public String TAG = TorchieConstants.INFO;
@@ -48,7 +54,12 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
     TorchieQuickListener mListener;
     BroadcastReceiver mReceiver;
     private FlashManager mFlashManager;
+
+    private SensorManager mSensorManager;
+    private Sensor proximitySensor;
+
     private TorchieActionManager mTorchieActionManager;
+    private Notifier notifier;
 
     private boolean isVibrateEnabled;
 
@@ -89,6 +100,8 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
         mFlashManager = new FlashManager(TorchieQuick.this);
         mFlashManager.setFlashlightListener(this);
         mFlashManager.setFlashSource(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
+        mFlashManager.setFlashTimeIndefinite(preferences.getBoolean(TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE, true));
+        mFlashManager.setFlashTimeOut(preferences.getLong(TorchieConstants.PREF_FUNC_FLASH_OFF_TIME, TorchieConstants.DEFAULT_FLASHOFF_TIME));
     }
 
     private void initTorchieActionManager(){
@@ -100,6 +113,7 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
         mTorchieActionManager.setSettingScreenUnlocked(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_UNLOCKED, true));
         mTorchieActionManager.setSettingsScreenOffIndefinite(preferences.getBoolean(TorchieConstants.PREF_FUNC_SCREEN_OFF_INDEFINITE, false));
         mTorchieActionManager.setSettingsScreenOffTime(preferences.getLong(TorchieConstants.PREF_FUNC_SCREEN_OFF_TIME, TorchieConstants.DEFAULT_SCREENOFF_TIME));
+        mTorchieActionManager.setProximityEnabled(preferences.getBoolean(TorchieConstants.PREF_FUNC_PROXIMITY,false));
     }
 
     @Override
@@ -115,6 +129,11 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
 
         isVibrateEnabled = preferences.getBoolean(TorchieConstants.PREF_FUNC_VIBRATE, false);
 
+        mSensorManager = (SensorManager) getSystemService(SENSOR_SERVICE);
+        proximitySensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        mSensorManager.registerListener(this, proximitySensor, SensorManager.SENSOR_DELAY_NORMAL);
+
+        notifier = new Notifier(this);
         super.onServiceConnected();
     }
 
@@ -154,6 +173,15 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
             case TorchieConstants.PREF_FLASH_SOURCE:
                 mFlashManager.setFlashSource(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
                 break;
+            case TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE:
+                mFlashManager.setFlashTimeIndefinite(preferences.getBoolean(TorchieConstants.PREF_FUNC_FLASH_OFF_INDEFINITE, true));
+                break;
+            case TorchieConstants.PREF_FUNC_FLASH_OFF_TIME:
+                mFlashManager.setFlashTimeOut(preferences.getLong(TorchieConstants.PREF_FUNC_FLASH_OFF_TIME, TorchieConstants.DEFAULT_FLASHOFF_TIME));
+                break;
+            case TorchieConstants.PREF_FUNC_PROXIMITY:
+                mTorchieActionManager.setProximityEnabled(preferences.getBoolean(TorchieConstants.PREF_FUNC_PROXIMITY,false));
+                break;
         }
     }
 
@@ -169,6 +197,7 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
             mFlashManager.toggleFlash();
         }
         preferences.unregisterOnSharedPreferenceChangeListener(this);
+        mSensorManager.unregisterListener(this);
         unregisterReceiver(mReceiver);
         super.onDestroy();
     }
@@ -186,6 +215,7 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
 
     @Override
     public void onFlashStateChanged(boolean enabled) {
+        mTorchieActionManager.notifyFlashStatus(enabled);
         if (mListener != null) {
             mListener.onFlashStateChanged(enabled);
         }
@@ -208,6 +238,20 @@ public class TorchieQuick extends AccessibilityService implements SharedPreferen
     @Override
     public void onKeyComboPerformed() {
         mFlashManager.toggleFlash();
+    }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        if(event.values[0] == 0){
+            mTorchieActionManager.setInPocket(true);
+        }else{
+            mTorchieActionManager.setInPocket(false);
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int accuracy) {
+
     }
 
     public class ScreenReceiver extends BroadcastReceiver {

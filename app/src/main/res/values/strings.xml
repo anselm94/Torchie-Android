@@ -90,6 +90,10 @@
     <string name="not_work_screen_off">Will not work in Screen off!</string>
     <string name="torch_time_out">Torch time-out</string>
     <string name="language_select">Choose language</string>
+    <string name="proximity_sense">Proximity sense</string>
+    <string name="proximity_note">Prevents response while in pocket etc.</string>
+    <string name="notify_title">Torchie service is disabled</string>
+    <string name="notify_text">Touch to enable \'Torchie Quick\'</string>
 
     <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nTorchie comes with absolutely no warranty. This program is free software licensed under
     \nGNU General Public License v2.0\nFull source-code is available here https://github.com/anselm94/torchie-android\n</string>

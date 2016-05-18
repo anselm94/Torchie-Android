@@ -26,14 +26,17 @@ android {
         applicationId "in.blogspot.anselmbros.torchie"
         minSdkVersion 15
         targetSdkVersion 23
-        versionCode 25
-        versionName "1.2.0"
+        versionCode 27
+        versionName "2.0"
     }
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
     }
 }
 
