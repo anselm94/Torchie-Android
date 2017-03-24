@@ -67,7 +67,7 @@
     <string name="facebook">Facebook</string>
     <string name="google_plus">Google+</string>
 
-    <string name="donation_note">We\'ve spent lot\'s of <b>hours</b> making Torchie, that you may not <b>loose a second</b> turning on torch!\nSupport the work of Torchie by donating us</string>
+    <string name="donation_note">We\'ve spent lot\'s of <b>hours</b> making Torchie, that you may not <b>lose a second</b> turning on torch!\nSupport the work of Torchie by donating us</string>
     <string name="thank_you_note">Your care motivates us!\n\nShare a word about Torchie with your family and friends!</string>
     <string name="donation_error">Oops! Error while sharing love with us!</string>
     <string name="proceed_paypal">Proceed to Paypal?</string>
