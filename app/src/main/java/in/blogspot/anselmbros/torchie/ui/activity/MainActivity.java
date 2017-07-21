@@ -23,6 +23,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
 import android.graphics.drawable.TransitionDrawable;
 import android.net.Uri;
 import android.os.Build;
@@ -39,6 +40,8 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import java.util.Locale;
+
 import in.blogspot.anselmbros.torchie.R;
 import in.blogspot.anselmbros.torchie.listeners.FlashListener;
 import in.blogspot.anselmbros.torchie.listeners.TorchieQuickListener;
@@ -51,6 +54,7 @@ import in.blogspot.anselmbros.torchie.ui.dialog.DonateFailDialog;
 import in.blogspot.anselmbros.torchie.ui.dialog.DonateSuccessDialog;
 import in.blogspot.anselmbros.torchie.ui.dialog.PermissionDialog;
 import in.blogspot.anselmbros.torchie.ui.dialog.WelcomeDialog;
+import in.blogspot.anselmbros.torchie.utils.Notifier;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener, FlashListener, TorchieQuickListener {
 
@@ -82,12 +86,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         TAG = this.getClass().getName();
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
         preferences = getSharedPreferences(TorchieConstants.PREF_KEY_APP, Context.MODE_PRIVATE);
         prefEditor = preferences.edit();
+        setLocale(preferences.getString(TorchieConstants.PREF_LOCALE,TorchieConstants.DEFAULT_LANG));
+        setContentView(R.layout.activity_main);
 
         if (!isTorchieQuickRunning()) {
+            Notifier notifier = new Notifier(this);
+            notifier.show();
             initFlashManager();
         }
         initUI();
@@ -315,6 +321,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void showDialogAbout() {
         AboutDialog aboutDialog = new AboutDialog();
         aboutDialog.show(mFragmentManager, "About Dialog");
+    }
+
+    public void setLocale(String lang) {
+        if(!lang.equals(TorchieConstants.DEFAULT_LANG)) {
+            Locale mLocale = new Locale(lang);
+            Locale.setDefault(mLocale);
+            Configuration config = getBaseContext().getResources().getConfiguration();
+            if (!config.locale.equals(mLocale)) {
+                config.locale = mLocale;
+                getBaseContext().getResources().updateConfiguration(config, null);
+            }
+        }else{
+            Locale mLocale = Locale.getDefault();
+            Locale.setDefault(mLocale);
+            Configuration config = getBaseContext().getResources().getConfiguration();
+            if (!config.locale.equals(mLocale)) {
+                config.locale = mLocale;
+                getBaseContext().getResources().updateConfiguration(config, null);
+            }
+        }
     }
 
     @Override

@@ -1,0 +1,95 @@
+<!--
+  ~     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Настройки</string>
+    <string name="service_torchiequick_name">Бързо Фенерче</string>
+    <string name="accessibility_service_description">Когато Бързото Фенерче е включено, ще можете да включвате фенера само като натиснете бутоните за звука</string>
+
+
+    <string name="torchie_functionality">Torchie функция</string>
+    <string name="screen_on">Включен екран</string>
+    <string name="screen_lock">Заключен екран</string>
+    <string name="screen_off">Изключен</string>
+    <string name="miscellaneous">Разни</string>
+    <string name="optimize_led_screen">Оптимизации за AMOLED екран</string>
+
+    <string name="battery_drain_warn">Ще предизвика изтощаване на батерията</string>
+
+    <string name="donate">Дарения</string>
+    <string name="tellfriend">Споделете с приятел</string>
+    <string name="rate">Оценете приложението</string>
+    <string name="about">За приложението</string>
+    <string name="settings">Настройки</string>
+    <string name="help_feedback">Помощ и обратна връзка</string>
+    <string name="enable">Включване</string>
+    <string name="later">По-късно</string>
+    <string name="loading">зарежда се</string>
+    <string name="select_donation_amount">Select a <b>donation</b>сума</string>
+    <string name="thank_you">Благодарим Ви!</string>
+    <string name="donate_via_paypal">Дарение през Paypal</string>
+    <string name="ok">ОК</string>
+    <string name="proceed">Продължи</string>
+    <string name="dismiss">Отхвърли</string>
+    <string name="share">Споделяне</string>
+
+    <string name="share_info">Включвайте фенерчето Ви само с натискане на бутоните за звук! Изтеглете си Torchie сега!</string>
+    <string name="share_via">Кажете нещо за Torchie чрез</string>
+
+    <string name="welcome"><b>Добре дошли</b></string>
+    <string name="welcome_note">Улеснете живота си с Torchie! Включете Torchie функцията за да може да пускате фенерчето само с натискане на копчетата за звука! Вижте какво още може да Ви предложи приложението в Настройките!</string>
+    <string name="got_it">Ясно</string>
+    <string name="permission_note">Включете Бързо Фенерче от Услуги за Достъпност за да ползвате Torchie.</string>
+    <string name="permission_warn">Що се отнася до Позволението за достъп до клавиатурата Ви, уви, вината е на Android. Операционната система счита бутоните за звука за част от клавиатурата. Няма как Torchie да работи без това разрешение, но въпреки това приложението не събира данни за това, което пишете на телефона си. Също така, Torchie не изисква позволение за ползване на интернет, не събира никакви данни от който и да е било. Така че спокойно може да ползвата Torchie Функцията. Научете повече на https://torchieapp.wordpress.com</string>
+    <string name="permission">Включване на Torchie функцията</string>
+
+    <string name="about_note"><b>Torchie</b> is made by two brothers\nMerbin J Anselm and Rebin J Anselm\nanselmbros@gmail.com\n\nMany thanks to following great hearts, who helped to translate Torchie</string>
+    <string name="about_anselm">Кои са Анселм и Анселм?</string>
+    <string name="official_website">Посетете официалния уебсайт</string>
+    <string name="join_community">Присъедините се към Beta групата</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">Отделили сме много часове на Torchie, за да може то да работи безотказно! Подкрепете работата ни със скромно дарение</string>
+    <string name="thank_you_note">Вашата подкрепа е важна за нас! Кажете няколко думи за нас на вашите приятели и семейство!</string>
+    <string name="donation_error">Опа! Възникна грешка!</string>
+    <string name="proceed_paypal">Продължи до PayPal?</string>
+
+
+    <string name="indefinite">Безкрайно</string>
+    <string name="minutes">Минути</string>
+    <string name="seconds">Секунди</string>
+    <string name="milliseconds">Милисекунди</string>
+    <string name="vibrate">Вибрация</string>
+    <string name="torch_source">Източник на светлина</string>
+    <string name="flash_or_led">Светкавица/екран</string>
+    <string name="screen_light">Светлина от екрана</string>
+    <string name="toggle_method">Начин на включване</string>
+    <string name="both_vol_buttons">Бутон за усилване и бутон за намаляване на звука</string>
+    <string name="volume_up">Бутон за усилване на звука</string>
+    <string name="volume_down">Бутон за намаляване на звука</string>
+    <string name="hold_delay">Време за задържане на бутоните за звука</string>
+    <string name="immediate">Незабавно</string>
+    <string name="not_work_screen_off">Няма да работи при изключен екран!</string>
+    <string name="torch_time_out">Таймер на фенерчето </string>
+    <string name="language_select">Избиране на език</string>
+
+    <string name="notice">Torchie не се предлага с каквото и да е била гаранция. Това приложение е свободен софтуер, лицензиран под GNU General Public License v2.0. Изходния код на приложението може да бъде намерен на https://github.com/anselm94/torchie-android\n</string>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+  ~     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie设置</string>
+    <string name="service_torchiequick_name">Torchie Quick</string>
+    <string name="accessibility_service_description">启用\'Torchie Quick\'，仅需按住音量键即可开/关手电</string>
+
+    <string name="torchie_functionality">Torchie功能</string>
+    <string name="screen_on">亮屏</string>
+    <string name="screen_lock">锁屏</string>
+    <string name="screen_off">关屏</string>
+    <string name="miscellaneous">杂项</string>
+    <string name="optimize_led_screen">AMOLED显示优化</string>
+    <string name="battery_drain_warn">会很耗电</string>
+
+    <string name="donate">捐助</string>
+    <string name="tellfriend">分享</string>
+    <string name="rate">评价</string>
+    <string name="about">关于</string>
+    <string name="settings">设置</string>
+    <string name="help_feedback">反馈</string>
+    <string name="enable">启用</string>
+    <string name="later">下次</string>
+    <string name="loading">加载中</string>
+    <string name="select_donation_amount">选择<b>捐助</b>数目</string>
+    <string name="thank_you">谢谢！</string>
+    <string name="donate_via_paypal">通过Paypal捐助</string>
+    <string name="ok">确定</string>
+    <string name="proceed">继续</string>
+    <string name="dismiss">撤销</string>
+    <string name="share">分享</string>
+
+    <string name="share_info">仅需按住音量键即可开/关手电，请下载Torchie！</string>
+    <string name="share_via">分享Torchie</string>
+
+    <string name="welcome"><b>欢迎使用</b></string>
+    <string name="welcome_note"><b>Torchie</b>优化了打开手电的方式！\n\n启用<b>\'Torchie功能\'</b>，仅需<b>按住音量键</b>即可开/关手电！\n\n更多选项在Torchie<b>设置</b>中！</string>
+    <string name="got_it">好的</string>
+    <string name="permission_note">在辅助功能-<b>服务</b>中启用<b>\'Torchie Quick\'</b>才能体验Torchie.</string>
+    <string name="permission_warn"><b>权限说明 - </b> \"<i>监测您输入的文字；监测您的操作</i>\"\nTorchie需要监测<b>实体</b>音量键是否按下，结果被Android<i>错误地</i>当成键盘输入了，想正常使用Torchie就必须启用这些权限
+        \n而且，Torchie<b>没有连网权限</b>，不可能<i>发出</i>任何信息\n\n Torchie<b>不会</b><i>收集</i>任何信息。乖乖启用Torchie功能吧！ <a href="https://torchieapp.wordpress.com/help/">了解更多</a> </string>
+    <string name="permission">启用Torchie功能？</string>
+
+    <string name="about_note"><b>Torchie</b>由两兄弟开发\nMerbin J Anselm 和 Rebin J Anselm\nanselmbros@gmail.com\n\n感谢热心的翻译者</string>
+    <string name="about_anselm">了解 Anselm 和 Anselm</string>
+    <string name="official_website">访问官方网站</string>
+    <string name="join_community">加入测试社区</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">我们花了很多<b>时间</b>开发Torchie，您的手电才能<b>想开就开</b>！\n您可以捐助我们支持Torchie开发</string>
+    <string name="thank_you_note">感谢您的鼓励！\n\n把Torchie分享给朋友吧！</string>
+    <string name="donation_error">呃...捐助没成功！</string>
+    <string name="proceed_paypal">继续Paypal？</string>
+
+
+    <string name="indefinite">一直启用</string>
+    <string name="minutes">分</string>
+    <string name="seconds">秒</string>
+    <string name="milliseconds">毫秒</string>
+    <string name="vibrate">振动</string>
+    <string name="torch_source">选择手电</string>
+    <string name="flash_or_led">闪光灯/LED</string>
+    <string name="screen_light">屏幕背光</string>
+    <string name="toggle_method">开关方式</string>
+    <string name="both_vol_buttons">音量+ 和 音量-</string>
+    <string name="volume_up">音量+</string>
+    <string name="volume_down">音量-</string>
+    <string name="hold_delay">按住延迟</string>
+    <string name="immediate">立即</string>
+    <string name="not_work_screen_off">关屏将无法工作！</string>
+    <string name="torch_time_out">自动关手电</string>
+    <string name="language_select">选择语言</string>
+
+    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nTorchie不为使用导致的任何损失承担责任。本程序使用自由软件许可证
+    \nGNU General Public License v2.0\n开放源代码项目 https://github.com/anselm94/torchie-android\n</string>
+
+</resources>

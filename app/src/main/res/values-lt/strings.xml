@@ -17,6 +17,59 @@
   -->
 
 <resources>
+
+
+    <string-array name="language_codes">
+        <item>afrikiečių,af</item>
+        <item>bulgarų,bg</item>
+        <item>čekų,cs</item>
+        <item>vokiečių,de</item>
+        <item>anglų,en</item>
+        <item>ispanų,es</item>
+        <item>estų,et</item>
+        <item>persų,fa</item>
+        <item>prancūzų,fr</item>
+        <item>kroatų,hr</item>
+        <item>vengrų,hu</item>
+        <item>indoneziečių,in</item>
+        <item>italų,it</item>
+        <item>gruzinų,ka</item>
+        <item>Korėjiečių ,ko</item>
+        <item>lietuvių,lt</item>
+        <item>mongolų,mn</item>
+        <item>lenkų,pl</item>
+        <item>portugalų,pt</item>
+        <item>rumunų,ro</item>
+        <item>rusų,ru</item>
+        <item>albanų,sq</item>
+        <item>serbų,sr</item>
+        <item>švedų,sv</item>
+        <item>tamilų,ta</item>
+        <item>Turkų,tr</item>
+        <item>kiniečių,zh</item>
+    </string-array>
+</resources>
+
+<!-- File "strings.xml" -->
+<!--
+  ~     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<resources>
     <string name="app_name">Torchie</string>
     <string name="activity_settings">Torchie Nustatymai</string>
     <string name="service_torchiequick_name">Torchie Greitai</string>
@@ -39,7 +92,7 @@
     <string name="enable">Įgalinti</string>
     <string name="later">Vėliau</string>
     <string name="loading">kraunasi</string>
-    <string name="select_donation_amount">Pasirinkite <b>aukojimo</b> sumą</string>
+    <string name="select_donation_amount">Pasirinkite <b >aukojimo</b> sumą</string>
     <string name="thank_you">Ačiū!</string>
     <string name="donate_via_paypal">Paaukokite per Paypal</string>
     <string name="ok">Gerai</string>
@@ -50,23 +103,48 @@
     <string name="share_info">Torchie: Įjunk savo telefono žibintuvelų vos garso mygtuko paspaudimu!</string>
     <string name="share_via">Papasakok savo draugams:</string>
 
-    <string name="welcome"><b>Sveiki</b></string>
-    <string name="welcome_note">Padarykite savo gyvenimą lengvesnį su <b>Torchie</b>! \n\nĮjunti <b>\'Torchie funkcionalumas\'</b> įjungti galite vos <b>palaike abu garso mygtukus</b>!\n\nReguliuokite <b>Nustatymuose</b>!</string>
+    <string name="welcome"><b >Sveiki</b></string>
+    <string name="welcome_note">Padarykite savo gyvenimą lengvesnį su <b >Torchie</b>! \n\nĮjunti <b >\'Torchie funkcionalumas\'</b> įjungti galite vos <b >palaike abu garso mygtukus</b>!\n\nReguliuokite <b >Nustatymuose</b>!</string>
     <string name="got_it">Supratau</string>
-    <string name="permission_note">Įjungti <b>\'Torchie Greitai\'</b> per Pasiekiamumo <b>Servisus</b> <i>Tai privaloma Torchie veikimui!</i>.</string>
-    <string name="permission_warn"><b>Apie Saugumą</b>Torchie prašo tik vieno leidimo, jis suteikia galimybe stebėti mygtukų paspaudimus.<i>Taigi jūsų rašomas tekstas ir veiksmai nėra sekami.</i></string>
+    <string name="permission_note">Įjungti <b >\'Torchie Greitai\'</b> per Pasiekiamumo <b >Servisus</b> <i >Tai privaloma Torchie veikimui!</i>.</string>
+    <string name="permission_warn"><b >Apie Saugumą</b>Torchie prašo tik vieno leidimo, jis suteikia galimybe stebėti mygtukų paspaudimus.<i >Taigi jūsų rašomas tekstas ir veiksmai nėra sekami.</i></string>
     <string name="permission">Įjungti Torchie?</string>
 
-    <string name="about_note"><i>Torchie - Touch to Torch &#169; 2016</i> \n\n<b>Torchie</b> Buvo sukurtas dviejų brolių\nMerbin J Anselm air Rebin J Anselm\nanselmbros@gmail.com\n\nEsame labai dėkingi žmonėms kurie išvertė mūsų programeles</string>
+    <string name="about_note"><i >Torchie - Touch to Torch © 2016</i> \n\n<b >Torchie</b> Buvo sukurtas dviejų brolių\nMerbin J Anselm air Rebin J Anselm\nanselmbros@gmail.com\n\nEsame labai dėkingi žmonėms kurie išvertė mūsų programeles</string>
     <string name="about_anselm">Apie Anselm &amp; Anselm</string>
     <string name="official_website">Apsilankyti oficialiame tinklapyje</string>
     <string name="join_community">Prisijunkti į Beta grupę</string>
     <string name="facebook">Facebook</string>
     <string name="google_plus">Google+</string>
 
-    <string name="donation_note">Mes praleidome daugybe <b>laiko</b> kurdami Torchie, jog jūs neprarastumėte  <b>nė sekundes</b> įjunginėjant žibintuvėlį!\nPadėkite mums paaukodami!</string>
+    <string name="donation_note">Mes praleidome daugybe <b >laiko</b> kurdami Torchie, jog jūs neprarastumėte  <b >nė sekundes</b> įjunginėjant žibintuvėlį!\nPadėkite mums paaukodami!</string>
     <string name="thank_you_note">Jūsų rūpestis mus motyvuoja kurto toliau!\n\nPasidalinkite Torchie su savo draugais ir šeima!</string>
     <string name="donation_error">Kažkas ivyko ne taip!</string>
     <string name="proceed_paypal">Atidaryti su Paypal?</string>
+
+
+    <string name="indefinite">Neribotą laiką</string>
+    <string name="minutes">Minutės</string>
+    <string name="seconds">Sekundės</string>
+    <string name="milliseconds">Milisekundės</string>
+    <string name="vibrate">Vibruoti</string>
+    <string name="torch_source">Šviesos šaltinis</string>
+    <string name="flash_or_led">Žibintuvėlis/LED</string>
+    <string name="screen_light">Ekrano šviesa</string>
+    <string name="toggle_method">Pasirinkimo metodas</string>
+    <string name="both_vol_buttons">Pagarsinti arba mažinti garsą</string>
+    <string name="volume_up">Garsinti</string>
+    <string name="volume_down">Mažinti garsą</string>
+    <string name="hold_delay">Užlaikymas</string>
+    <string name="immediate">Tuojau</string>
+    <string name="not_work_screen_off">Neveiks kai ekranas išjungtas</string>
+    <string name="torch_time_out">Žibintuvėlio automatinis išsijungimo laikas</string>
+    <string name="language_select">Pasirinkite kalbą</string>
+    <string name="proximity_sense">Artumo daviklis</string>
+    <string name="proximity_note">Apsaugo nuo įjungimo kišenėje ir t.t.</string>
+    <string name="notify_title">Torchie paslauga išjungta</string>
+    <string name="notify_text">Palieskite, kad įgalinti \"Torchie greitai"</string>
+
+    <string name="notice">Torchie neduoda jokios garantijos. Ši programa yra nemokama licenzijuota pagal\nGNU General Public License v2.0\nPilnas išeities kodas yra čia https://github.com/anselm94/torchie-android</string>
 
 </resources>

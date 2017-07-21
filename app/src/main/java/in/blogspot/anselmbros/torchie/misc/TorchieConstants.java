@@ -38,6 +38,8 @@ public class TorchieConstants {
     //Default Values
     public final static long DEFAULT_SCREENOFF_TIME = 10000; //in millis
     public final static long DEFAULT_VIBRATOR_TIME = 100; //in millis
+    public final static long DEFAULT_FLASHOFF_TIME = 120000; //in millis
+    public final static String  DEFAULT_LANG = "system"; //in millis
     //Preferences
     public final static String PREF_KEY_APP = "in.blogspot.anselmbros.torchie.PREF_KEY_TORCHIE";
     public final static String PREF_FIRST_TIME = "zFtLrXG";
@@ -49,6 +51,10 @@ public class TorchieConstants {
     public final static String PREF_FUNC_SCREEN_OFF_INDEFINITE = "tQcIdjel";
     public final static String PREF_FUNC_VIBRATE = "vTkOdxzH";
     public final static String PREF_FLASH_SOURCE = "dRuXsI";
+    public final static String PREF_FUNC_FLASH_OFF_TIME = "moGsBrqz";
+    public final static String PREF_FUNC_FLASH_OFF_INDEFINITE = "dExGhosH";
+    public final static String PREF_FUNC_PROXIMITY = "xDrTjoY";
+    public final static String PREF_LOCALE = "xKoRSeZ";
     //Broadcast Key
     public final static String BROADCAST_CLOSE_ACTIVITY = "in.blogspot.anselmbros.torchie.CLOSE_ACTIVITY";
     //Camera Errors
