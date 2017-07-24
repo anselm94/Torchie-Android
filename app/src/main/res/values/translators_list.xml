@@ -43,7 +43,7 @@
         23. shqip (Albanian) - <a href="http://forum.xda-developers.com/member.php?u=7206829">DhimitriAG@XDA</a>\n
         24. Afrikaans (Afrikaans) - <a href="http://forum.xda-developers.com/member.php?u=5982344">SniperShotgun@XDA</a>\n
         25. български (Bulgarian) - <a href="http://forum.xda-developers.com/member.php?u=6335534">S.Y.@XDA</a>\n
-        26. 中国的 (Chinese) - <a href="https://github.com/efni">efni@GitHub</a>\n
+        26. 中文 (Chinese) - <a href="https://github.com/efni">efni@GitHub</a>\n
     </string>
 
 
@@ -75,6 +75,6 @@
         <item>svenska,sv</item>
         <item>தமிழ்,ta</item>
         <item>Türk,tr</item>
-        <item>中国的,zh</item>
+        <item>中文,zh</item>
     </string-array>
 </resources>
