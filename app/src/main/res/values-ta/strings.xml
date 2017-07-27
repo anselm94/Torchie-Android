@@ -73,19 +73,31 @@
 
     <string name="indefinite">காலவரையில்லை</string>
     <string name="minutes">நிமிடம்</string>
-    <string name="seconds">விநாடிகள்</string>
+    <string name="seconds">விநாடி</string>
     <string name="milliseconds">மில்லி விநாடி</string>
     <string name="vibrate">அதிர்வுறு</string>
-    <string name="torch_source">வெளிச்சத்தின் ஆதாரம்</string>
-    <string name="flash_or_led">விளக்கு/LED</string>
+    <string name="torch_source">ஒளி மூலம்</string>
+    <string name="flash_or_led">LED விளக்கு</string>
     <string name="screen_light">திரை ஒளி</string>
     <string name="toggle_method">செயல்படுத்தும் முறை</string>
     <string name="both_vol_buttons">Volume + &amp; Volume -</string>
     <string name="volume_up">Volume +</string>
     <string name="volume_down">Volume -</string>
-    <string name="hold_delay">அழுத்த நேரம்</string>
+    <string name="hold_delay">அழுத்தும் நேரம்</string>
     <string name="immediate">உடனடியாக</string>
     <string name="not_work_screen_off">திரை அனைந்த பிறகு செயல்படாது!</string>
-    <string name="torch_time_out">Torch time-out</string>
+    <string name="torch_time_out">ஒளிரும் நேரம்</string>
     <string name="language_select">மொழியை தேர்ந்தெடுக்க</string>
+
+    <string name="proximity_sense">அருகாமையை உணர்ந்து செயல்படு</string>
+    <string name="proximity_note">பாக்கெட்டில் உள்ளபோது செயல்படாமல் இருக்க</string>
+    <string name="notify_title">டார்ச்சி சேவை அணைக்கப்பட்டுள்ளது</string>
+    <string name="notify_text">\'டார்ச்சி குயிக்\' சேவையை செயல்படுத்த தொடவும்</string>
+    <string name="camera_busy">கேமரா பயன்பாட்டில் உள்ளது</string>
+    <string name="torch_unsupported">LED விளக்கு கண்டறியப்படவில்லை</string>
+    <string name="camera_error">கேமரா பிழை!</string>
+    <string name="system_language">அமைப்பு மொழி</string>
+
+    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nடார்ச்சி மென்பொருளானது, எந்தவித உத்திரவாதமும் இல்லாமல் உங்களுக்கு வழங்கப்படுகின்றது. இது \'பொது மக்கள் உரிமம்\' (General Public License) v2.0 படி ஓர் \'சுதந்திர மென்பொருள்\' (Free Software) ஆகும். \n இம்மென்பொருளின் முழு மூலக்குறியீடு (Full source code) https://github.com/anselm94/torchie-android என்ற இணையத்தில் காணலாம். \n</string>
+
 </resources>

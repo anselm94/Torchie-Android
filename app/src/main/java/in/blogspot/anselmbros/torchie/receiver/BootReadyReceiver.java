@@ -22,35 +22,20 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
+import in.blogspot.anselmbros.torchie.R;
 import in.blogspot.anselmbros.torchie.service.TorchieQuick;
-import in.blogspot.anselmbros.torchie.utils.Notifier;
+import in.blogspot.anselmbros.torchie.utils.NotificationUtils;
 
 /**
  * Created by anselm94 on 21/4/16.
  */
 public class BootReadyReceiver extends BroadcastReceiver {
-    static final String ACTION = "android.intent.action.BOOT_COMPLETED";
-    private TorchieQuick torchieQuickService;
-
     @Override
     public void onReceive(Context context, Intent intent) {
-        if(intent.getAction().equals(ACTION)) {
-            if(!isTorchieQuickRunning()){
-                Notifier notifier = new Notifier(context);
-                notifier.show();
+        if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")) {
+            if (TorchieQuick.getInstance() != null) {
+                NotificationUtils.sendNotification(context, String.format(context.getResources().getString(R.string.notify_title)), String.format(context.getResources().getString(R.string.notify_text)));
             }
         }
     }
-
-    private boolean isTorchieQuickRunning() {
-        boolean running;
-        torchieQuickService = TorchieQuick.getSharedInstance();
-        if (torchieQuickService != null) {
-            running = true;
-        } else {
-            running = false;
-        }
-        return running;
-    }
-
 }

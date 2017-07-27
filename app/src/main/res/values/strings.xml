@@ -67,12 +67,12 @@
     <string name="facebook">Facebook</string>
     <string name="google_plus">Google+</string>
 
-    <string name="donation_note">We\'ve spent lot\'s of <b>hours</b> making Torchie, that you may not <b>loose a second</b> turning on torch!\nSupport the work of Torchie by donating us</string>
+    <string name="donation_note">We\'ve spent lot\'s of <b>hours</b> making Torchie, that you may not <b>lose a second</b> turning on torch!\nSupport the work of Torchie by donating us</string>
     <string name="thank_you_note">Your care motivates us!\n\nShare a word about Torchie with your family and friends!</string>
     <string name="donation_error">Oops! Error while sharing love with us!</string>
     <string name="proceed_paypal">Proceed to Paypal?</string>
 
-
+    <string name="off">Off</string>
     <string name="indefinite">Indefinite</string>
     <string name="minutes">Minutes</string>
     <string name="seconds">Seconds</string>
@@ -90,10 +90,15 @@
     <string name="not_work_screen_off">Will not work in Screen off!</string>
     <string name="torch_time_out">Torch time-out</string>
     <string name="language_select">Choose language</string>
+
     <string name="proximity_sense">Proximity sense</string>
-    <string name="proximity_note">Prevents response while in pocket etc.</string>
+    <string name="proximity_note">Prevents response while in pocket</string>
     <string name="notify_title">Torchie service is disabled</string>
     <string name="notify_text">Touch to enable \'Torchie Quick\'</string>
+    <string name="camera_busy">Camera is busy! Torch disabled</string>
+    <string name="torch_unsupported">Torch unsupported</string>
+    <string name="camera_error">Camera error!</string>
+    <string name="system_language">System Language</string>
 
     <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nTorchie comes with absolutely no warranty. This program is free software licensed under
     \nGNU General Public License v2.0\nFull source-code is available here https://github.com/anselm94/torchie-android\n</string>

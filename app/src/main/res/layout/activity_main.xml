@@ -42,7 +42,7 @@
             android:layout_height="180dp"
             android:elevation="4dp"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
-            app:theme="@style/ThemeOverlay.AppCompat"></android.support.v7.widget.Toolbar>
+            app:theme="@style/ThemeOverlay.AppCompat" />
 
         <FrameLayout
             android:layout_width="match_parent"
@@ -59,6 +59,7 @@
             android:background="?android:selectableItemBackground"
             android:clickable="true"
             android:elevation="2dp"
+            android:onClick="openAccessibilitySettings"
             android:orientation="horizontal">
 
             <Space
@@ -66,11 +67,11 @@
                 android:layout_height="match_parent" />
 
             <TextView
+                style="@style/TextAppearance.AppCompat.Menu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:text="@string/torchie_functionality"
-                style="@style/TextAppearance.AppCompat.Menu"/>
+                android:text="@string/torchie_functionality" />
 
             <Space
                 android:layout_width="0dp"
@@ -110,6 +111,7 @@
                 android:background="@drawable/sw_flash"
                 android:clickable="true"
                 android:elevation="2dp"
+                android:onClick="toggleTorch"
                 android:src="@drawable/but_ripple"
                 android:translationZ="6dp" />
 
@@ -127,6 +129,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         android:clickable="true"
+        android:onClick="showDialogDonate"
         android:src="@drawable/ic_donate"
         app:elevation="6dp"
         app:fabSize="normal"

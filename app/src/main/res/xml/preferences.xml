@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/torchie_functionality">
+        <CheckBoxPreference
+            android:defaultValue="@bool/pref_default_screen_on"
+            android:key="pref_screen_on"
+            android:title="@string/screen_on" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/pref_default_screen_lock"
+            android:key="pref_screen_lock"
+            android:title="@string/screen_lock" />
+        <in.blogspot.anselmbros.torchie.ui.widget.settings.CheckBoxDialogPreference
+            android:defaultValue="@string/pref_default_screen_off_timeout"
+            android:dialogTitle="@string/screen_off"
+            android:entries="@array/screen_off_timeout_values"
+            android:entryValues="@array/screen_off_timeout_values"
+            android:key="pref_screen_off_timeout"
+            android:summary="%s"
+            android:title="@string/screen_off"
+            android:widgetLayout="@layout/pref_widget_checkbox" />
+        <in.blogspot.anselmbros.torchie.ui.widget.settings.TimeoutListPreference
+            android:defaultValue="@string/pref_default_torch_timeout"
+            android:dialogTitle="@string/torch_time_out"
+            android:entries="@array/torch_timeout_values"
+            android:entryValues="@array/torch_timeout_values"
+            android:key="pref_torch_timeout"
+            android:summary="%s"
+            android:title="@string/torch_time_out" />
+        <ListPreference
+            android:defaultValue="@string/pref_default_torch_source"
+            android:dialogTitle="@string/torch_source"
+            android:entries="@array/torch_source_text"
+            android:entryValues="@array/torch_source_values"
+            android:key="pref_torch_source"
+            android:summary="%s"
+            android:title="@string/torch_source" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/miscellaneous">
+        <CheckBoxPreference
+            android:defaultValue="@bool/pref_default_proximity"
+            android:key="pref_proximity"
+            android:summary="@string/proximity_note"
+            android:title="@string/proximity_sense" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/pref_default_vibrate"
+            android:key="pref_vibrate"
+            android:title="@string/vibrate" />
+        <ListPreference
+            android:defaultValue="@string/pref_default_language"
+            android:dialogTitle="@string/language_select"
+            android:entries="@array/language_names"
+            android:entryValues="@array/language_codes"
+            android:key="pref_language"
+            android:summary="%s"
+            android:title="@string/language_select" />
+    </PreferenceCategory>
+</PreferenceScreen>

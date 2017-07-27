@@ -17,6 +17,7 @@
   -->
 
 <resources>
+
     <string name="app_name">Torchie</string>
     <string name="activity_settings">Torchie Nustatymai</string>
     <string name="service_torchiequick_name">Torchie Greitai</string>
@@ -68,5 +69,30 @@
     <string name="thank_you_note">Jūsų rūpestis mus motyvuoja kurto toliau!\n\nPasidalinkite Torchie su savo draugais ir šeima!</string>
     <string name="donation_error">Kažkas ivyko ne taip!</string>
     <string name="proceed_paypal">Atidaryti su Paypal?</string>
+
+    <string name="indefinite">Neribotą laiką</string>
+    <string name="minutes">Minutės</string>
+    <string name="seconds">Sekundės</string>
+    <string name="milliseconds">Milisekundės</string>
+    <string name="vibrate">Vibruoti</string>
+    <string name="torch_source">Šviesos šaltinis</string>
+    <string name="flash_or_led">Žibintuvėlis/LED</string>
+    <string name="screen_light">Ekrano šviesa</string>
+    <string name="toggle_method">Pasirinkimo metodas</string>
+    <string name="both_vol_buttons">Pagarsinti arba mažinti garsą</string>
+    <string name="volume_up">Garsinti</string>
+    <string name="volume_down">Mažinti garsą</string>
+    <string name="hold_delay">Užlaikymas</string>
+    <string name="immediate">Tuojau</string>
+    <string name="not_work_screen_off">Neveiks kai ekranas išjungtas</string>
+    <string name="torch_time_out">Žibintuvėlio automatinis išsijungimo laikas</string>
+    <string name="language_select">Pasirinkite kalbą</string>
+    <string name="proximity_sense">Artumo daviklis</string>
+    <string name="proximity_note">Apsaugo nuo įjungimo kišenėje ir t.t.</string>
+    <string name="notify_title">Torchie paslauga išjungta</string>
+    <string name="notify_text">Palieskite, kad įgalinti \"Torchie greitai"</string>
+
+    <string name="notice">Torchie neduoda jokios garantijos. Ši programa yra nemokama licenzijuota pagal\nGNU General Public License v2.0\nPilnas išeities kodas yra čia https://github.com/anselm94/torchie-android</string>
+
 
 </resources>

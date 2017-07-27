@@ -18,134 +18,88 @@
 
 package in.blogspot.anselmbros.torchie.ui.activity;
 
-import android.app.FragmentManager;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.pm.PackageManager;
-import android.content.res.Configuration;
 import android.graphics.drawable.TransitionDrawable;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
-
-import java.util.Locale;
+import android.widget.Toast;
 
 import in.blogspot.anselmbros.torchie.R;
-import in.blogspot.anselmbros.torchie.listeners.FlashListener;
-import in.blogspot.anselmbros.torchie.listeners.TorchieQuickListener;
-import in.blogspot.anselmbros.torchie.manager.FlashManager;
-import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
+import in.blogspot.anselmbros.torchie.main.TorchieManagerListener;
+import in.blogspot.anselmbros.torchie.main.manager.TorchManager;
+import in.blogspot.anselmbros.torchie.main.manager.device.output.OutputDeviceListener;
 import in.blogspot.anselmbros.torchie.service.TorchieQuick;
-import in.blogspot.anselmbros.torchie.ui.dialog.AboutDialog;
-import in.blogspot.anselmbros.torchie.ui.dialog.DonateDialog;
-import in.blogspot.anselmbros.torchie.ui.dialog.DonateFailDialog;
-import in.blogspot.anselmbros.torchie.ui.dialog.DonateSuccessDialog;
-import in.blogspot.anselmbros.torchie.ui.dialog.PermissionDialog;
-import in.blogspot.anselmbros.torchie.ui.dialog.WelcomeDialog;
-import in.blogspot.anselmbros.torchie.utils.Notifier;
+import in.blogspot.anselmbros.torchie.ui.fragment.dialog.AboutDialog;
+import in.blogspot.anselmbros.torchie.ui.fragment.dialog.DonateDialog;
+import in.blogspot.anselmbros.torchie.ui.fragment.dialog.DonateFailDialog;
+import in.blogspot.anselmbros.torchie.ui.fragment.dialog.DonateSuccessDialog;
+import in.blogspot.anselmbros.torchie.ui.fragment.dialog.PermissionDialog;
+import in.blogspot.anselmbros.torchie.ui.fragment.dialog.WelcomeDialog;
+import in.blogspot.anselmbros.torchie.ui.helper.DonateDialogListener;
+import in.blogspot.anselmbros.torchie.utils.Constants;
+import in.blogspot.anselmbros.torchie.utils.SettingsUtils;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener, View.OnTouchListener, FlashListener, TorchieQuickListener {
-
-    public String TAG = TorchieConstants.INFO;
-
-    SharedPreferences preferences;
-    SharedPreferences.Editor prefEditor;
-
-    Toolbar mToolbar;
-    FloatingActionButton mFAB;
+public class MainActivity extends AppCompatActivity implements TorchieManagerListener, DonateDialogListener {
     ImageButton but_flash;
     SwitchCompat sw_func_toggle;
 
-    LinearLayout ll_func_toggle;
-    FragmentManager mFragmentManager;
-
     TransitionDrawable transAnimButFlash;
-
-    TorchieQuick torchieQuickService;
-    FlashManager flashManager;
-
     DonateDialog donateDialog;
 
-    boolean isFlashOn = false;
     boolean flashButtonStatus = false;
     int flashButAnimTime = 200;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        TAG = this.getClass().getName();
         super.onCreate(savedInstanceState);
-        preferences = getSharedPreferences(TorchieConstants.PREF_KEY_APP, Context.MODE_PRIVATE);
-        prefEditor = preferences.edit();
-        setLocale(preferences.getString(TorchieConstants.PREF_LOCALE,TorchieConstants.DEFAULT_LANG));
         setContentView(R.layout.activity_main);
 
-        if (!isTorchieQuickRunning()) {
-            Notifier notifier = new Notifier(this);
-            notifier.show();
-            initFlashManager();
-        }
-        initUI();
+        Toolbar mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setTitle("");
 
-        if (preferences.getBoolean(TorchieConstants.PREF_FIRST_TIME, true)) {
-            showDialogWelcome();
-            if(isFlashAvailable(this)){
-                prefEditor.putInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA).apply();
-            }else{
-                prefEditor.putInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_SCREEN).apply();
-            }
+        but_flash = (ImageButton) findViewById(R.id.but_flash_pto);
+        sw_func_toggle = (SwitchCompat) findViewById(R.id.sw_func_toggle);
+
+        transAnimButFlash = (TransitionDrawable) but_flash.getBackground();
+        transAnimButFlash.resetTransition();
+
+        if (SettingsUtils.isFirstTime(this)) {
+            this.showDialogWelcome();
         }
-        findViewById(R.id.sw_func_toggle).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SettingsActivity.class));
-            }
-        });
+        Log.e("TAG", "TAG");
     }
 
     @Override
     protected void onResume() {
-        if (isTorchieQuickRunning()) {
-            sw_func_toggle.setChecked(true);
-            isFlashOn = torchieQuickService.isFlashOn();
-        } else {
-            sw_func_toggle.setChecked(false);
-            if (flashManager != null) {
-                isFlashOn = flashManager.isFlashOn();
-            } else {
-                isFlashOn = false;
-            }
-        }
-        transAnimButFlash.resetTransition();
-        if (isFlashOn) {
-            setFlashButtonStatus(isFlashOn);
-        }
         super.onResume();
-    }
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        if (flashManager != null) {
-            if (flashManager.isFlashOn())
-                flashManager.toggleFlash();
+        if (isAccSrvcRunning()) {
+            TorchieQuick.getInstance().registerTorchieManagerListener(this);
+            this.setFlashButtonStatus(this.isTorchOn());
+        } else {
+            transAnimButFlash.resetTransition();
         }
+        sw_func_toggle.setChecked(isAccSrvcRunning());
     }
 
     @Override
-    protected void onDestroy() {
-        super.onDestroy();
+    protected void onPause() {
+        if (this.isAccSrvcRunning()) {
+            TorchieQuick.getInstance().unregisterTorchieManagerListener();
+        }
+        if (this.isTorchOn()) {
+            this.toggleTorch(null);
+        }
+        super.onPause();
     }
 
     @Override
@@ -159,17 +113,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.menu_donate:
-                showDialogDonate();
+                showDialogDonate(null);
                 break;
             case R.id.menu_tell_friend:
                 Intent int_tell = new Intent(Intent.ACTION_SEND);
                 int_tell.setType("text/plain");
-                int_tell.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.share_info) + TorchieConstants.PLAY_URI);
+                int_tell.putExtra(Intent.EXTRA_TEXT, getResources().getString(R.string.share_info) + Constants.PLAY_URI);
                 startActivity(Intent.createChooser(int_tell, getResources().getString(R.string.share_via)));
                 break;
             case R.id.menu_rate:
                 Intent int_rate = new Intent(Intent.ACTION_VIEW);
-                int_rate.setData(Uri.parse(TorchieConstants.PLAY_URI));
+                int_rate.setData(Uri.parse(Constants.PLAY_URI));
                 startActivity(int_rate);
                 break;
             case R.id.menu_about:
@@ -181,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.menu_help_feedback:
                 Intent int_help = new Intent(Intent.ACTION_VIEW);
-                int_help.setData(Uri.parse(TorchieConstants.WEB_URI + "/contact"));
+                int_help.setData(Uri.parse(Constants.WEB_URI + "/contact"));
                 startActivity(int_help);
                 break;
         }
@@ -189,124 +143,76 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @Override
-    public boolean onTouch(View v, MotionEvent event) {
-        int action = event.getAction();
-        if (action == MotionEvent.ACTION_DOWN) {
-            if (v == sw_func_toggle) {
-                if (!isTorchieQuickRunning()) {
-                    showDialogPermission();
-                } else {
-                    openAccessibilitySettings();
-                }
-                return true;
-            }
-        }
-        return false;
+    public void onError(String error) {
+        Toast.makeText(this, error, Toast.LENGTH_SHORT).show();
     }
 
     @Override
-    public void onClick(View v) {
-        if (v == but_flash) {
-            toggleFlash();
-        } else if (v == mFAB) {
-            showDialogDonate();
-        } else if (v == ll_func_toggle) {
-            if (!isTorchieQuickRunning()) {
-                showDialogPermission();
-            } else {
-                openAccessibilitySettings();
+    public void onTorchStatusChanged(final boolean status) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                setFlashButtonStatus(status);
             }
-        }
+        });
     }
 
-    private void openAccessibilitySettings() {
-        Intent intent = new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS);
-        startActivity(intent);
-    }
-
-    private boolean isTorchieQuickRunning() {
-        boolean running;
-        torchieQuickService = TorchieQuick.getSharedInstance();
-        if (torchieQuickService != null) {
-            torchieQuickService.setTorchieQuickListener(this);
-            running = true;
+    @Override
+    public void onDonateDialogResult(boolean isSuccess) {
+        if (isSuccess) {
+            this.showDialogDonateSuccess();
         } else {
-            running = false;
-        }
-        return running;
-    }
-
-    private void toggleFlash() {
-        if (isTorchieQuickRunning()) {
-            torchieQuickService.toggleFlash();
-        } else {if(flashManager != null){
-            flashManager.toggleFlash();}else{
-            initFlashManager();
-            flashManager.toggleFlash();
-        }
-        }
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {//For animation to start early in Android version less than 6.0
-            setFlashButtonStatus(!isFlashOn);
+            this.showDialogDonateFailure();
         }
     }
 
-    private void initFlashManager(){
-        flashManager = new FlashManager(this);
-        flashManager.setFlashlightListener(this);
-        flashManager.setFlashSource(preferences.getInt(TorchieConstants.PREF_FLASH_SOURCE, TorchieConstants.SOURCE_FLASH_CAMERA));
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (!(donateDialog.getDialog().isShowing() && donateDialog.handleActivityResult(requestCode, resultCode, data))) {
+            super.onActivityResult(requestCode, resultCode, data);
+        }
     }
 
-    private boolean isFlashAvailable(Context context) {
-        return context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_CAMERA);
-    }
-
-    private void initUI() {
-
-        mFragmentManager = getFragmentManager();
-
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(mToolbar);
-        getSupportActionBar().setTitle("");
-
-        ll_func_toggle = (LinearLayout) findViewById(R.id.ll_func_toggle);
-        ll_func_toggle.setOnClickListener(this);
-
-        mFAB = (FloatingActionButton) findViewById(R.id.fab_donate);
-        mFAB.setOnClickListener(this);
-
-        but_flash = (ImageButton) findViewById(R.id.but_flash_pto);
-        but_flash.setOnClickListener(this);
-
-        sw_func_toggle = (SwitchCompat) findViewById(R.id.sw_func_toggle);
-        sw_func_toggle.setOnTouchListener(this);
-
-        transAnimButFlash = (TransitionDrawable) but_flash.getBackground();
-        transAnimButFlash.resetTransition();
+    public void openAccessibilitySettings(View v) {
+        if (sw_func_toggle.isChecked()) {
+            Intent intent = new Intent(android.provider.Settings.ACTION_ACCESSIBILITY_SETTINGS);
+            startActivity(intent);
+        } else {
+            this.showDialogPermission();
+        }
     }
 
     private void showDialogWelcome() {
         WelcomeDialog welcomeDialog = new WelcomeDialog();
-        welcomeDialog.show(mFragmentManager, "Welcome Dialog");
+        welcomeDialog.show(getFragmentManager(), "Welcome Dialog");
     }
 
     private void showDialogPermission() {
         PermissionDialog permissionDialog = new PermissionDialog();
-        permissionDialog.show(mFragmentManager, "Permission Dialog");
+        permissionDialog.show(getFragmentManager(), "Permission Dialog");
     }
 
-    private void showDialogDonate() {
-        donateDialog = new DonateDialog();
-        donateDialog.show(mFragmentManager, "Donate Dialog");
+    public void showDialogDonate(View v) {
+        if (donateDialog == null) {
+            donateDialog = new DonateDialog();
+            donateDialog.setListener(this);
+        }
+        donateDialog.show(getFragmentManager(), "Donate Dialog");
     }
 
     public void showDialogDonateSuccess() {
         DonateSuccessDialog donateSuccessDialog = new DonateSuccessDialog();
-        donateSuccessDialog.show(mFragmentManager, "Donate Success Dialog");
+        donateSuccessDialog.show(getFragmentManager(), "Donate Success Dialog");
     }
 
     public void showDialogDonateFailure() {
         DonateFailDialog donateFailDialog = new DonateFailDialog();
-        donateFailDialog.show(mFragmentManager, "Donate Fail Dialog");
+        donateFailDialog.show(getFragmentManager(), "Donate Fail Dialog");
+    }
+
+    private void showDialogAbout() {
+        AboutDialog aboutDialog = new AboutDialog();
+        aboutDialog.show(getFragmentManager(), "About Dialog");
     }
 
     private void setFlashButtonStatus(boolean enabled) {
@@ -318,66 +224,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-    private void showDialogAbout() {
-        AboutDialog aboutDialog = new AboutDialog();
-        aboutDialog.show(mFragmentManager, "About Dialog");
+    private boolean isAccSrvcRunning() {
+        return TorchieQuick.getInstance() != null;
     }
 
-    public void setLocale(String lang) {
-        if(!lang.equals(TorchieConstants.DEFAULT_LANG)) {
-            Locale mLocale = new Locale(lang);
-            Locale.setDefault(mLocale);
-            Configuration config = getBaseContext().getResources().getConfiguration();
-            if (!config.locale.equals(mLocale)) {
-                config.locale = mLocale;
-                getBaseContext().getResources().updateConfiguration(config, null);
-            }
-        }else{
-            Locale mLocale = Locale.getDefault();
-            Locale.setDefault(mLocale);
-            Configuration config = getBaseContext().getResources().getConfiguration();
-            if (!config.locale.equals(mLocale)) {
-                config.locale = mLocale;
-                getBaseContext().getResources().updateConfiguration(config, null);
-            }
-        }
-    }
-
-    @Override
-    public void onFlashStateChanged(final boolean enabled) {
-        isFlashOn = enabled;
-        if (isFlashOn != flashButtonStatus) {
-            runOnUiThread(new Runnable() {
+    public void toggleTorch(View v) {
+        if (isAccSrvcRunning()) {
+            TorchieQuick.getInstance().toggleTorch();
+        } else {
+            TorchManager.getInstance(SettingsUtils.getTorchSource(this), true).toggle(this);
+            TorchManager.getInstance(SettingsUtils.getTorchSource(this), true).setListener(new OutputDeviceListener() {
                 @Override
-                public void run() {
-                    setFlashButtonStatus(enabled);
+                public void onStatusChanged(String deviceType, final boolean status) {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            setFlashButtonStatus(status);
+                        }
+                    });
+                }
+
+                @Override
+                public void onError(String error) {
+                    Toast.makeText(MainActivity.this, error, Toast.LENGTH_SHORT).show();
                 }
             });
         }
     }
 
-    @Override
-    public void onFlashError(String error) {
-        isFlashOn = false;
-        if (flashButtonStatus) {
-            runOnUiThread(new Runnable() {
-                @Override
-                public void run() {
-                    setFlashButtonStatus(false);
-                }
-            });
+    private boolean isTorchOn() {
+        if (isAccSrvcRunning()) {
+            return TorchieQuick.getInstance().getTorchStatus();
+        } else {
+            return TorchManager.getInstance(SettingsUtils.getTorchSource(this), true).getStatus();
         }
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-        if (donateDialog == null) {
-            return;
-        }
-
-        donateDialog.handleActivityResult(requestCode, resultCode, data);
-
-        super.onActivityResult(requestCode, resultCode, data);
     }
 }

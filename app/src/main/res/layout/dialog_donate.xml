@@ -51,9 +51,9 @@
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_margin="8dp"
-        android:spinnerMode="dialog"
         android:background="@color/colorGrey700"
         android:elevation="-12dp"
+        android:spinnerMode="dialog"
         android:translationZ="8dp" />
 
     <TextView
@@ -112,6 +112,7 @@
             android:layout_height="36dp"
             android:background="?selectableItemBackground"
             android:clickable="true"
+            android:enabled="false"
             android:gravity="center"
             android:minWidth="64dp"
             android:paddingLeft="8dp"

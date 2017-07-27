@@ -1,0 +1,99 @@
+<!--
+  ~     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<resources>
+    <string name="app_name">Torchie</string>
+    <string name="activity_settings">Torchie 設定</string>
+    <string name="service_torchiequick_name">Torchie クイック</string>
+    <string name="accessibility_service_description">\'Torchie クイック\' を有効にすると、音量ボタンを長押しするだけでライトをオン/オフします</string>
+
+    <string name="torchie_functionality">Torchie 機能</string>
+    <string name="screen_on">画面オン</string>
+    <string name="screen_lock">画面ロック</string>
+    <string name="screen_off">画面オフ</string>
+    <string name="miscellaneous">その他</string>
+    <string name="optimize_led_screen">AMOLED ディスプレイ最適化</string>
+    <string name="battery_drain_warn">バッテリー消耗の原因になります</string>
+
+    <string name="donate">寄付する</string>
+    <string name="tellfriend">共有</string>
+    <string name="rate">評価する</string>
+    <string name="about">アプリについて</string>
+    <string name="settings">設定</string>
+    <string name="help_feedback">お問い合せ</string>
+    <string name="enable">有効にする</string>
+    <string name="later">後で</string>
+    <string name="loading">読み込み中</string>
+    <string name="select_donation_amount"><b>寄付</b> 金額を選択してください</string>
+    <string name="thank_you">ありがとうございます!</string>
+    <string name="donate_via_paypal">Paypal で寄付する</string>
+    <string name="ok">OK</string>
+    <string name="proceed">続行</string>
+    <string name="dismiss">取下</string>
+    <string name="share">共有</string>
+
+    <string name="share_info">Torchie を使うと音量ボタンを長押しするだけでライトをオンにします。Torchie をダウンロードしてみてください! </string>
+    <string name="share_via">Torchie を共有...</string>
+
+    <string name="welcome"><b>ようこそ</b></string>
+    <string name="welcome_note"><b>Torchie</b> で人生を楽しくしましょう! \n\n<b>\'Torchie 機能\'</b> を有効にすると、<b>音量ボタンを長押し</b> するだけでライトをオン/オフします!\n\nTorchie <b>設定</b> でさらに調整してください!</string>
+    <string name="got_it">了解</string>
+    <string name="permission_note">ユーザー補助 <b>サービス</b> から <b>\'Torchie クイック\'</b> を有効にして Torchie を体験してください。</string>
+    <string name="permission_warn"><b>アクセス許可について - </b> \"<i>...あなたが入力した文字の観察 &amp; あなたの操作を観察...</i>\"\nああ! それは脅しです! Android はハードウェアキーが押されたときのみ \'キーイベント\' を投げます。 この方法によって Torchie は音量キーが押されたのをキャプチャします。 しかしそれは Android の <i>弱点</i> で、非ハードウェアキーボードを有効にした電話に対しても同じ警告を表示します (非常に古い Android デバイスと、入力用のハードウェアキーボードを持つ Blackberry Priv を除き)。 このアクセス許可なしに Torchie 機能をデザインすることは不可能です
+        \nまた、Torchie は <b>インターネットアクセス許可がない</b> ので、誰かに何かを <i>送信</i> することは不可能です\n\n Torchie は、誰かから何かを <i>収集</i> することはできません。 お気軽に Torchie 機能を有効にしてください! <a href="https://torchieapp.wordpress.com/help/">さらに詳細</a> </string>
+    <string name="permission">Torchie 機能を有効にしますか?</string>
+
+    <string name="about_note"><b>Torchie</b> は二人の兄弟によって作成されました\nMerbin J Anselm と Rebin J Anselm\nanselmbros@gmail.com\n\nTorchie の翻訳を手伝ってくれた偉大な心の方に大変感謝します</string>
+    <string name="about_anselm">Anselm &amp; Anselm について</string>
+    <string name="official_website">公式サイトを訪問</string>
+    <string name="join_community">ベータ コミュニティに参加</string>
+    <string name="facebook">Facebook</string>
+    <string name="google_plus">Google+</string>
+
+    <string name="donation_note">あなたがライトをオンにする <b>時間を失う</b> ことがないように、私たちは Torchie を作成するために多くの <b>時間</b> を費やしました!\nご寄付により Torchie の作業をご支援ください</string>
+    <string name="thank_you_note">あなたのお心遣いが私たちのモチベーションになります!\n\nTorchie についての話を家族や友達と共有してください!</string>
+    <string name="donation_error">私たちへの愛を共有中にエラーが発生しました!</string>
+    <string name="proceed_paypal">Paypal に続行しますか?</string>
+
+
+    <string name="indefinite">不定</string>
+    <string name="minutes">分</string>
+    <string name="seconds">秒</string>
+    <string name="milliseconds">ミリ秒</string>
+    <string name="vibrate">バイブレート</string>
+    <string name="torch_source">光源</string>
+    <string name="flash_or_led">フラッシュ/LED</string>
+    <string name="screen_light">画面ライト</string>
+    <string name="toggle_method">方法を切り替え</string>
+    <string name="both_vol_buttons">音量 + &amp; 音量 -</string>
+    <string name="volume_up">音量 +</string>
+    <string name="volume_down">音量 -</string>
+    <string name="hold_delay">長押し遅延</string>
+    <string name="immediate">即時</string>
+    <string name="not_work_screen_off">画面オフでは動作しません!</string>
+    <string name="torch_time_out">ライト タイムアウト</string>
+    <string name="language_select">言語の選択</string>
+    <string name="proximity_sense">近接センサー</string>
+    <string name="proximity_note">ポケットの中などで反応を防止します。</string>
+    <string name="notify_title">Torchie サービスは無効です</string>
+    <string name="notify_text">タッチすると \'Torchie クイック\' を有効にします</string>
+
+    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nTorchie は全くの無保証です。 このプログラムは\nGNU 一般公衆利用許諾契約書 v2.0
+    \nの下にライセンスされるフリーソフトウェアです\n完全なソースコードはここ https://github.com/anselm94/torchie-android\nで利用することができます</string>
+
+</resources>

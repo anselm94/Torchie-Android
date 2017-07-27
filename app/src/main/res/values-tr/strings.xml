@@ -28,7 +28,7 @@
     <string name="screen_off">Ekran Kapalıyken</string>
     <string name="miscellaneous">Çeşitli</string>
     <string name="optimize_led_screen">AMOLED ekran optimizasyonu</string>
-    <string name="battery_drain_warn">Pil tüketimine yol açabili</string>
+    <string name="battery_drain_warn">Pil tüketimine yol açabilir</string>
 
     <string name="donate">Bağış Yapın</string>
     <string name="tellfriend">Arkadaşınıza söyleyin</string>
@@ -54,7 +54,7 @@
     <string name="welcome_note"><b>Torchie</b> ile hayatınızı kolaylaştırın! \n\n<b>Ses tuşlarına birlikte basarak</b> flaşı açmak ve kapatmak için <b>\'Torchie\'nin yeteneklerini\'</b> etkinleştirin!\n\nTorchie <b>Ayarlar</b>\'ına bakmayı unutmayın!</string>
     <string name="got_it">Anladım</string>
     <string name="permission_note">Torchie ile bir deneyim yaşamak için <b>Erişilebilirlik</b>\'ten <b>\'Hızlı Torchie\'</b> etkinleştirin.</string>
-    <string name="permission_warn"><b>İZİN hakkında - </b> \"<i>...girdiğiniz yazıları gözlemleyin &amp; eylemlerinizi gözlemleyin...</i>\"\nHey! Bu bir tehdit! Android sadece bir DONANIM TUŞUNA basıldığında \'Tuş Etkinliğini\' çalıştırır. Buna rağmen Torchie iki ses tuşuna birden basılmasını algılar. Ancak üzerinde klavye bulunmayan cihazlarda (üzerinde klavyesi olan eski Android cihazlar ve Blackberry Priv dışında) bir uyarının gösterilmesi Android\'in <i>kusurudur</i>. Bu izin olmadan Torchie yeteneğini tasarlamak imkansızdır.
+    <string name="permission_warn"><b>İZİN hakkında - </b> \"<i>...girdiğiniz yazıları gözlemleyin &amp; eylemlerinizi gözlemleyin...</i>\"\nHey! Bu bir tehdit! Android sadece bir DONANIM TUŞUNA basıldığında \'Tuş Etkinliğini\' çalıştırır. Torchie bu yol ile ses tuşlarına basılmasını algılar. Ancak üzerinde klavye bulunmayan cihazlarda (üzerinde klavyesi olan eski Android cihazlar ve Blackberry Priv dışında) bir uyarının gösterilmesi Android\'in <i>kusurudur</i>. Bu izin olmadan Torchie yeteneğini tasarlamak imkansızdır.
         \nAyrıca, Torchie <b>İNTERNET İZNİ GEREKTİRMEZ</b>. Bu yüzden bir başkasına herhangi bir şey <i>göndermek</i> imkansızdır.\n\n Torchie herhangi bir bilgi <i>TOPLAYAMAZ</i>. Torchie yeteneğini etkinleştirmekten çekinmeyin! <a href="https://torchieapp.wordpress.com/help/">Daha fazla bilgi edinin</a> </string>
     <string name="permission">Torchie yetenekleri etkinleştirilsin mi?</string>
 
@@ -87,4 +87,12 @@
     <string name="not_work_screen_off">Ekran kapalıyken çalışmayacaktır!</string>
     <string name="torch_time_out">Torch zaman aşımı</string>>
     <string name="language_select">Dil seç</string>
+
+    <string name="proximity_sense">Yakınlık Sensörü</string>
+    <string name="proximity_note">Telefon cebinizdeyken tepki vermeyi engeller.</string>
+    <string name="notify_title">Torchie servisleri devre dışı</string>
+    <string name="notify_text">\'Hızlı Torchie\'yi etkinleştirmek için dokunun</string>
+    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nTorchie için HİÇ BİR GARANTİ verilmemektedir. Bu program \nGNU Genel Kamu Lisansı v2.0\n ile lisanslanmış ücretsiz bir programdır.
+     \nTam kaynak kodu burada bulunabilir https://github.com/anselm94/torchie-android\n</string>
+
 </resources>

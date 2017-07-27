@@ -44,37 +44,69 @@
         24. Afrikaans (Afrikaans) - <a href="http://forum.xda-developers.com/member.php?u=5982344">SniperShotgun@XDA</a>\n
         25. български (Bulgarian) - <a href="http://forum.xda-developers.com/member.php?u=6335534">S.Y.@XDA</a>\n
         26. 中国的 (Chinese) - <a href="https://github.com/efni">efni@GitHub</a>\n
+        27. 日本語 (Japanese) - <a href="https://github.com/naofum">naofum@GitHub</a>\n
     </string>
 
 
+    <string-array name="language_names">
+        <item>Afrikaans</item>
+        <item>български</item>
+        <item>čeština</item>
+        <item>Deutsche</item>
+        <item>English</item>
+        <item>Español</item>
+        <item>eesti</item>
+        <item>فارسی </item>
+        <item>français</item>
+        <item>hrvatski</item>
+        <item>Magyar</item>
+        <item>bahasa Indonesia</item>
+        <item>italiano</item>
+        <item>ქართული</item>
+        <item>한국의</item>
+        <item>Lietuvos</item>
+        <item>Монгол</item>
+        <item>Polski</item>
+        <item>português</item>
+        <item>român</item>
+        <item>русский</item>
+        <item>shqip</item>
+        <item>српски</item>
+        <item>svenska</item>
+        <item>தமிழ்</item>
+        <item>Türk</item>
+        <item>中国的</item>
+        <item>日本語</item>
+    </string-array>
+
     <string-array name="language_codes">
-        <item>Afrikaans,af</item>
-        <item>български,bg</item>
-        <item>čeština,cs</item>
-        <item>Deutsche,de</item>
-        <item>English,en</item>
-        <item>Español,es</item>
-        <item>eesti,et</item>
-        <item>فارسی ,fa</item>
-        <item>français,fr</item>
-        <item>hrvatski,hr</item>
-        <item>Magyar,hu</item>
-        <item>bahasa Indonesia,in</item>
-        <item>italiano,it</item>
-        <item>ქართული,ka</item>
-        <item>한국의
-,ko</item>
-        <item>Lietuvos,lt</item>
-        <item>Монгол,mn</item>
-        <item>Polski,pl</item>
-        <item>português,pt</item>
-        <item>român,ro</item>
-        <item>русский,ru</item>
-        <item>shqip,sq</item>
-        <item>српски,sr</item>
-        <item>svenska,sv</item>
-        <item>தமிழ்,ta</item>
-        <item>Türk,tr</item>
-        <item>中国的,zh</item>
+        <item>af</item>
+        <item>bg</item>
+        <item>cs</item>
+        <item>de</item>
+        <item>en</item>
+        <item>es</item>
+        <item>et</item>
+        <item>fa</item>
+        <item>fr</item>
+        <item>hr</item>
+        <item>hu</item>
+        <item>in</item>
+        <item>it</item>
+        <item>ka</item>
+        <item>ko</item>
+        <item>lt</item>
+        <item>mn</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sq</item>
+        <item>sr</item>
+        <item>sv</item>
+        <item>ta</item>
+        <item>tr</item>
+        <item>zh</item>
+        <item>ja</item>
     </string-array>
 </resources>

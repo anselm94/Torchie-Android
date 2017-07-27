@@ -18,3 +18,9 @@
 
 -keep class com.android.vending.billing.**
 #-keep public class * extends android.support.v7.preference.Preference
+
+-keepattributes *Annotation*
+-keepclassmembers class ** {
+    @org.greenrobot.eventbus.Subscribe <methods>;
+}
+-keep enum org.greenrobot.eventbus.ThreadMode { *; }

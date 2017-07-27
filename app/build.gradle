@@ -18,16 +18,20 @@
 
 apply plugin: 'com.android.application'
 
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
 android {
-    compileSdkVersion 24
-    buildToolsVersion '24.0.3'
+    compileSdkVersion 25
+    buildToolsVersion '25.0.3'
 
     defaultConfig {
         applicationId "in.blogspot.anselmbros.torchie"
         minSdkVersion 15
-        targetSdkVersion 24
-        versionCode 27
-        versionName "2.0"
+        targetSdkVersion 25
+        versionCode 28
+        versionName "3.0"
     }
     buildTypes {
         release {
@@ -38,12 +42,17 @@ android {
     lintOptions {
         disable 'MissingTranslation'
     }
+
+    buildTypes.each {
+        it.buildConfigField 'String', 'GOOGLE_PLAY_API_KEY', keystoreProperties['GooglePlayApiKey']
+    }
 }
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
+
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.android.support:design:24.2.1'
-    compile 'com.android.support:support-v4:24.2.1'
 }

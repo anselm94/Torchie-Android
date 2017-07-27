@@ -24,18 +24,16 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.Window;
 import android.view.WindowManager;
 
 import in.blogspot.anselmbros.torchie.R;
-import in.blogspot.anselmbros.torchie.misc.TorchieConstants;
-import in.blogspot.anselmbros.torchie.service.TorchieQuick;
+
+import static in.blogspot.anselmbros.torchie.main.manager.device.output.torch.screenlight.Screenlight.CLOSE_ACTIVITY_IDENTIFIER;
 
 public class ScreenflashActivity extends Activity {
 
     CloseActivityReceiver closeActivityReceiver;
-    TorchieQuick torchieQuickService;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,11 +50,11 @@ public class ScreenflashActivity extends Activity {
         setScreenBrightness(1f);
 
         closeActivityReceiver = new CloseActivityReceiver();
-        registerReceiver(closeActivityReceiver,new IntentFilter(TorchieConstants.BROADCAST_CLOSE_ACTIVITY));
+        registerReceiver(closeActivityReceiver, new IntentFilter(CLOSE_ACTIVITY_IDENTIFIER));
     }
 
     @Override
-    protected void onPause(){
+    protected void onPause() {
         overridePendingTransition(0, 0); //Disable exit animation
         super.onPause();
     }
@@ -64,13 +62,10 @@ public class ScreenflashActivity extends Activity {
     @Override
     protected void onDestroy() {
         unregisterReceiver(closeActivityReceiver);
-        torchieQuickService = TorchieQuick.getSharedInstance();
-        if(torchieQuickService!= null)
-            torchieQuickService.notifyScreenlightStatus(false);
         super.onDestroy();
     }
 
-    private void setScreenBrightness(float value){
+    private void setScreenBrightness(float value) {
         WindowManager.LayoutParams lp = getWindow().getAttributes();
         lp.screenBrightness = value; // 0f - no backlight ... 1f - full backlight
         getWindow().setAttributes(lp);
@@ -79,7 +74,7 @@ public class ScreenflashActivity extends Activity {
     public class CloseActivityReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            if (intent.getAction().equals("in.blogspot.anselmbros.torchie.CLOSE_ACTIVITY")) {
+            if (intent.getAction().equals(CLOSE_ACTIVITY_IDENTIFIER)) {
                 finish();
             }
         }

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
+  ~
+  ~     This program is free software; you can redistribute it and/or modify
+  ~     it under the terms of the GNU General Public License as published by
+  ~     the Free Software Foundation; either version 2 of the License, or
+  ~     (at your option) any later version.
+  ~
+  ~     This program is distributed in the hope that it will be useful,
+  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  ~     GNU General Public License for more details.
+  ~
+  ~     You should have received a copy of the GNU General Public License along
+  ~     with this program; if not, write to the Free Software Foundation, Inc.,
+  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+  -->
+
+<resources>
+    <bool name="pref_default_screen_on">true</bool>
+    <bool name="pref_default_screen_lock">true</bool>
+    <bool name="pref_default_screen_off">false</bool>
+
+    <string name="pref_default_screen_off_timeout">0</string>
+    <string name="pref_default_torch_timeout">-1</string>
+    <string name="pref_default_torch_source">@string/device_output_torch_flash</string>
+
+    <bool name="pref_default_proximity">false</bool>
+    <bool name="pref_default_vibrate">false</bool>
+
+    <string name="pref_default_language">en</string>
+
+    <integer name="pref_default_vibration_duration">100</integer>
+
+    <!--Do not modify-->
+    <!--constants-->
+    <string name="device">0</string>
+
+    <string name="device_output">1</string>
+    <string name="device_output_torch">10</string>
+    <string name="device_output_torch_flash">11</string>
+    <string name="device_output_torch_flash_legacy">12</string>
+    <string name="device_output_torch_flash_new">13</string>
+    <string name="device_output_torch_screen">14</string>
+    <string name="device_output_vibrator">15</string>
+
+    <string name="device_input">2</string>
+    <string name="device_input_volumekey">20</string>
+    <string name="device_input_volumekey_native">21</string>
+    <string name="device_input_volumekey_rocker">22</string>
+    <string name="device_input_proximity">23</string>
+</resources>

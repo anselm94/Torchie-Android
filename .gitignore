@@ -38,3 +38,6 @@ androidTest/
 # Android Studio specific
 .idea/workspaces.xml
 .idea/tasks.xml
+
+#Torchie Specific 
+keystore.properties
