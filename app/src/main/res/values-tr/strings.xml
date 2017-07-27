@@ -87,12 +87,12 @@
     <string name="not_work_screen_off">Ekran kapalıyken çalışmayacaktır!</string>
     <string name="torch_time_out">Torch zaman aşımı</string>>
     <string name="language_select">Dil seç</string>
-
     <string name="proximity_sense">Yakınlık Sensörü</string>
     <string name="proximity_note">Telefon cebinizdeyken tepki vermeyi engeller.</string>
     <string name="notify_title">Torchie servisleri devre dışı</string>
     <string name="notify_text">\'Hızlı Torchie\'yi etkinleştirmek için dokunun</string>
+
     <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nTorchie için HİÇ BİR GARANTİ verilmemektedir. Bu program \nGNU Genel Kamu Lisansı v2.0\n ile lisanslanmış ücretsiz bir programdır.
-     \nTam kaynak kodu burada bulunabilir https://github.com/anselm94/torchie-android\n</string>
+    \nTam kaynak kodu burada bulunabilir https://github.com/anselm94/torchie-android\n</string>
 
 </resources>

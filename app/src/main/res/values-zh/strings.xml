@@ -21,6 +21,7 @@
     <string name="activity_settings">Torchie设置</string>
     <string name="service_torchiequick_name">Torchie Quick</string>
     <string name="accessibility_service_description">启用\'Torchie Quick\'，仅需按住音量键即可开/关手电</string>
+    <string name="accessibility_service_description_2" translatable="false">@string/permission_warn</string>
 
     <string name="torchie_functionality">Torchie功能</string>
     <string name="screen_on">亮屏</string>
@@ -28,6 +29,7 @@
     <string name="screen_off">关屏</string>
     <string name="miscellaneous">杂项</string>
     <string name="optimize_led_screen">AMOLED显示优化</string>
+    <string name="cause_battery_drain_off" translatable="false">@string/battery_drain_warn</string>
     <string name="battery_drain_warn">会很耗电</string>
 
     <string name="donate">捐助</string>
@@ -88,6 +90,10 @@
     <string name="not_work_screen_off">关屏将无法工作！</string>
     <string name="torch_time_out">自动关手电</string>
     <string name="language_select">选择语言</string>
+    <string name="proximity_sense">距离感应</string>
+    <string name="proximity_note">避免在口袋里误触</string>
+    <string name="notify_title">Torchie服务未启用</string>
+    <string name="notify_text">点击启用\'Torchie Quick\'服务</string>
 
     <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nTorchie不为使用导致的任何损失承担责任。本程序使用自由软件许可证
     \nGNU General Public License v2.0\n开放源代码项目 https://github.com/anselm94/torchie-android\n</string>
