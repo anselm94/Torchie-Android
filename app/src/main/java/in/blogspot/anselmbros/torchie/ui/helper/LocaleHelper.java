@@ -40,11 +40,21 @@ public class LocaleHelper {
         return setLocale(context, lang);
     }
 
-    private static Context setLocale(Context context, String language) {
+    private static Context setLocale(Context context, String languageCode) {
+        String[] languageCodes = languageCode.split("-");
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
-            return updateResources(context, language);
+            if (languageCodes.length == 1) {
+                return updateResources(context, languageCodes[0], "");
+            } else {
+                return updateResources(context, languageCodes[0], languageCodes[1]);
+            }
+        } else {
+            if (languageCodes.length == 1) {
+                return updateResourcesLegacy(context, languageCodes[0], "");
+            } else {
+                return updateResourcesLegacy(context, languageCodes[0], languageCodes[1]);
+            }
         }
-        return updateResourcesLegacy(context, language);
     }
 
     private static String getPersistedData(Context context, String defaultLanguage) {
@@ -52,8 +62,13 @@ public class LocaleHelper {
     }
 
     @TargetApi(Build.VERSION_CODES.N)
-    private static Context updateResources(Context context, String language) {
-        Locale locale = new Locale(language);
+    private static Context updateResources(Context context, String language, String country) {
+        Locale locale;
+        if (country.equals("")) {
+            locale = new Locale(language);
+        } else {
+            locale = new Locale(language, country);
+        }
         Locale.setDefault(locale);
 
         Configuration configuration = context.getResources().getConfiguration();
@@ -63,8 +78,13 @@ public class LocaleHelper {
     }
 
     @SuppressWarnings("deprecation")
-    private static Context updateResourcesLegacy(Context context, String language) {
-        Locale locale = new Locale(language);
+    private static Context updateResourcesLegacy(Context context, String language, String country) {
+        Locale locale;
+        if (country.equals("")) {
+            locale = new Locale(language);
+        } else {
+            locale = new Locale(language, country);
+        }
         Locale.setDefault(locale);
 
         Resources resources = context.getResources();

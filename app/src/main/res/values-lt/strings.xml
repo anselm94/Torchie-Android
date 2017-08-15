@@ -17,59 +17,6 @@
   -->
 
 <resources>
-
-
-    <string-array name="language_codes">
-        <item>afrikiečių,af</item>
-        <item>bulgarų,bg</item>
-        <item>čekų,cs</item>
-        <item>vokiečių,de</item>
-        <item>anglų,en</item>
-        <item>ispanų,es</item>
-        <item>estų,et</item>
-        <item>persų,fa</item>
-        <item>prancūzų,fr</item>
-        <item>kroatų,hr</item>
-        <item>vengrų,hu</item>
-        <item>indoneziečių,in</item>
-        <item>italų,it</item>
-        <item>gruzinų,ka</item>
-        <item>Korėjiečių ,ko</item>
-        <item>lietuvių,lt</item>
-        <item>mongolų,mn</item>
-        <item>lenkų,pl</item>
-        <item>portugalų,pt</item>
-        <item>rumunų,ro</item>
-        <item>rusų,ru</item>
-        <item>albanų,sq</item>
-        <item>serbų,sr</item>
-        <item>švedų,sv</item>
-        <item>tamilų,ta</item>
-        <item>Turkų,tr</item>
-        <item>kiniečių,zh</item>
-    </string-array>
-</resources>
-
-<!-- File "strings.xml" -->
-<!--
-  ~     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
-  ~
-  ~     This program is free software; you can redistribute it and/or modify
-  ~     it under the terms of the GNU General Public License as published by
-  ~     the Free Software Foundation; either version 2 of the License, or
-  ~     (at your option) any later version.
-  ~
-  ~     This program is distributed in the hope that it will be useful,
-  ~     but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~     GNU General Public License for more details.
-  ~
-  ~     You should have received a copy of the GNU General Public License along
-  ~     with this program; if not, write to the Free Software Foundation, Inc.,
-  ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
-  -->
-
-<resources>
     <string name="app_name">Torchie</string>
     <string name="activity_settings">Torchie Nustatymai</string>
     <string name="service_torchiequick_name">Torchie Greitai</string>

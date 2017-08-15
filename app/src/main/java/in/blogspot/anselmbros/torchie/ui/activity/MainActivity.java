@@ -25,7 +25,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.SwitchCompat;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -76,27 +75,26 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
         if (SettingsUtils.isFirstTime(this)) {
             this.showDialogWelcome();
         }
-        Log.e("TAG", "TAG");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        if (isAccSrvcRunning()) {
+        transAnimButFlash.resetTransition();
+        if (isTorchieQuickServiceRunning()) {
             TorchieQuick.getInstance().registerTorchieManagerListener(this);
-            this.setFlashButtonStatus(this.isTorchOn());
-        } else {
-            transAnimButFlash.resetTransition();
+            if (this.isTorchOn()) {
+                this.setFlashButtonStatus(this.isTorchOn());
+            }
         }
-        sw_func_toggle.setChecked(isAccSrvcRunning());
+        sw_func_toggle.setChecked(isTorchieQuickServiceRunning());
     }
 
     @Override
     protected void onPause() {
-        if (this.isAccSrvcRunning()) {
+        if (this.isTorchieQuickServiceRunning()) {
             TorchieQuick.getInstance().unregisterTorchieManagerListener();
-        }
-        if (this.isTorchOn()) {
+        } else if (this.isTorchOn()) {
             this.toggleTorch(null);
         }
         super.onPause();
@@ -224,15 +222,14 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
         }
     }
 
-    private boolean isAccSrvcRunning() {
+    private boolean isTorchieQuickServiceRunning() {
         return TorchieQuick.getInstance() != null;
     }
 
     public void toggleTorch(View v) {
-        if (isAccSrvcRunning()) {
+        if (isTorchieQuickServiceRunning()) {
             TorchieQuick.getInstance().toggleTorch();
         } else {
-            TorchManager.getInstance(SettingsUtils.getTorchSource(this), true).toggle(this);
             TorchManager.getInstance(SettingsUtils.getTorchSource(this), true).setListener(new OutputDeviceListener() {
                 @Override
                 public void onStatusChanged(String deviceType, final boolean status) {
@@ -249,11 +246,12 @@ public class MainActivity extends AppCompatActivity implements TorchieManagerLis
                     Toast.makeText(MainActivity.this, error, Toast.LENGTH_SHORT).show();
                 }
             });
+            TorchManager.getInstance(SettingsUtils.getTorchSource(this), true).toggle(this);
         }
     }
 
     private boolean isTorchOn() {
-        if (isAccSrvcRunning()) {
+        if (isTorchieQuickServiceRunning()) {
             return TorchieQuick.getInstance().getTorchStatus();
         } else {
             return TorchManager.getInstance(SettingsUtils.getTorchSource(this), true).getStatus();
