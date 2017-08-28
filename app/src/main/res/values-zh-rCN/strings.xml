@@ -21,7 +21,6 @@
     <string name="activity_settings">Torchie设置</string>
     <string name="service_torchiequick_name">Torchie Quick</string>
     <string name="accessibility_service_description">启用\'Torchie Quick\'，仅需按住音量键即可开/关手电</string>
-    <string name="accessibility_service_description_2" translatable="false">@string/permission_warn</string>
 
     <string name="torchie_functionality">Torchie功能</string>
     <string name="screen_on">亮屏</string>
@@ -29,7 +28,6 @@
     <string name="screen_off">关屏</string>
     <string name="miscellaneous">杂项</string>
     <string name="optimize_led_screen">AMOLED显示优化</string>
-    <string name="cause_battery_drain_off" translatable="false">@string/battery_drain_warn</string>
     <string name="battery_drain_warn">会很耗电</string>
 
     <string name="donate">捐助</string>

@@ -99,6 +99,7 @@
     <string name="torch_unsupported">Torch unsupported</string>
     <string name="camera_error">Camera error!</string>
     <string name="system_language">System Language</string>
+    <string name="proximity_error">Move phone away from proximity sensor and try again</string>
 
     <string name="notice"><b>Torchie</b> v%1$s  &#169; 2017\n\nTorchie comes with absolutely no warranty. This program is free software licensed under
     \nGNU General Public License v2.0\nFull source-code is available here https://github.com/anselm94/torchie-android\n</string>
