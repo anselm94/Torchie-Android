@@ -23,6 +23,7 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.preference.PreferenceManager;
 
+import in.blogspot.anselmbros.torchie.R;
 import in.blogspot.anselmbros.torchie.main.manager.DeviceManager;
 import in.blogspot.anselmbros.torchie.main.manager.DeviceManagerListener;
 import in.blogspot.anselmbros.torchie.main.manager.WakeLockManager;
@@ -169,6 +170,8 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
         if (this.toggleTorchIssued) {
             if (status) {
                 DeviceManager.getInstance(this.mContext).toggleTorch();
+            } else {
+                this.mListener.onError(this.mContext.getResources().getString(R.string.proximity_error));
             }
             this.toggleTorchIssued = false;
         }
