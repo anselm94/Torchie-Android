@@ -21,4 +21,5 @@
     android:accessibilityFlags="flagRequestFilterKeyEvents"
     android:canRequestFilterKeyEvents="true"
     android:description="@string/accessibility_service_description_2"
-    android:settingsActivity="in.blogspot.anselmbros.torchie.SettingsActivity" />
+    android:settingsActivity="in.blogspot.anselmbros.torchie.SettingsActivity"
+    android:summary="@string/permission_summary" />

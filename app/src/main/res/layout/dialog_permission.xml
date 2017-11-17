@@ -55,6 +55,21 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorGrey600" />
 
+        <TextView
+            android:id="@+id/tv_permission_summary"
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/permission_summary" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorGrey600" />
+
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"

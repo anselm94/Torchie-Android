@@ -33,7 +33,7 @@ public class BootReadyReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
         if (intent.getAction().equals("android.intent.action.BOOT_COMPLETED")) {
-            if (TorchieQuick.getInstance() != null) {
+            if (TorchieQuick.getInstance() == null) {
                 NotificationUtils.sendNotification(context, String.format(context.getResources().getString(R.string.notify_title)), String.format(context.getResources().getString(R.string.notify_text)));
             }
         }
