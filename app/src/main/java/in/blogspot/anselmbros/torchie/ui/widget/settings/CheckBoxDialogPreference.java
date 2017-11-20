@@ -51,7 +51,7 @@ public class CheckBoxDialogPreference extends TimeoutListPreference {
     protected void onBindView(View view) {
         super.onBindView(view);
         int value = Integer.parseInt(this.getValue());
-        CheckBox checkBox = (CheckBox) view.findViewById(R.id.chkbx_pref);
-        checkBox.setChecked(value == -1 || value > 0);
+        CheckBox checkBox = view.findViewById(R.id.chkbx_pref);
+        checkBox.setChecked((value == -1 || value > 0) && isEnabled());
     }
 }
