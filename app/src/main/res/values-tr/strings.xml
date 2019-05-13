@@ -92,7 +92,7 @@
     <string name="notify_title">Torchie servisleri devre dışı</string>
     <string name="notify_text">\'Hızlı Torchie\'yi etkinleştirmek için dokunun</string>
 
-    <string name="bulgarian in bulgariannotice"><b>Torchie</b> v%1$s  &#169; 2019\n\nTorchie için HİÇ BİR GARANTİ verilmemektedir. Bu program \nGNU Genel Kamu Lisansı v2.0\n ile lisanslanmış ücretsiz bir programdır.
+    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2019\n\nTorchie için HİÇ BİR GARANTİ verilmemektedir. Bu program \nGNU Genel Kamu Lisansı v2.0\n ile lisanslanmış ücretsiz bir programdır.
     \nTam kaynak kodu burada bulunabilir https://github.com/anselm94/torchie-android\n</string>
 
 </resources>
