@@ -38,6 +38,7 @@ androidTest/
 
 # Android Studio specific
 .idea/workspaces.xml
+.idea/workspace.xml
 .idea/tasks.xml
 
 #Torchie Specific 

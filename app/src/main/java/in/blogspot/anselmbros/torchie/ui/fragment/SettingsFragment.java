@@ -72,8 +72,6 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
                 Vibrator vibrator = new Vibrator(this.getActivity());
                 vibrator.vibrate();
             }
-        } else if (key.equals(SettingsUtils.PREF_LANGUAGE)) {
-            this.restartApp(this.getActivity());
         }
     }
 

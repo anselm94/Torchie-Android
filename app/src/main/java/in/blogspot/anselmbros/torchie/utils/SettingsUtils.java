@@ -33,7 +33,6 @@ public class SettingsUtils {
     public static final String PREF_TORCH_TIMEOUT = "pref_torch_timeout";
     public static final String PREF_TORCH_SOURCE = "pref_torch_source";
     public static final String PREF_VIBRATE = "pref_vibrate";
-    public static final String PREF_LANGUAGE = "pref_language";
     private static final String PREF_FIRST_TIME = "pref_first_time";
     private static final String PREF_SCREEN_ON = "pref_screen_on";
     private static final String PREF_SCREEN_LOCK = "pref_screen_lock";
@@ -98,10 +97,5 @@ public class SettingsUtils {
     public static boolean isVibrateEnabled(final Context context) {
         SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
         return sp.getBoolean(SettingsUtils.PREF_VIBRATE, context.getResources().getBoolean(R.bool.pref_default_vibrate));
-    }
-
-    public static String getLanguage(final Context context) {
-        SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
-        return sp.getString(SettingsUtils.PREF_LANGUAGE, context.getResources().getString(R.string.pref_default_language));
     }
 }

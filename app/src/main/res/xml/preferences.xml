@@ -62,13 +62,5 @@
             android:defaultValue="@bool/pref_default_vibrate"
             android:key="pref_vibrate"
             android:title="@string/vibrate" />
-        <ListPreference
-            android:defaultValue="@string/pref_default_language"
-            android:dialogTitle="@string/language_select"
-            android:entries="@array/language_names"
-            android:entryValues="@array/language_codes"
-            android:key="pref_language"
-            android:summary="%s"
-            android:title="@string/language_select" />
     </PreferenceCategory>
 </PreferenceScreen>

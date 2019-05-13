@@ -19,21 +19,12 @@
 package in.blogspot.anselmbros.torchie;
 
 import android.app.Application;
-import android.content.Context;
-
-import in.blogspot.anselmbros.torchie.ui.helper.LocaleHelper;
 
 /**
  * Created by Merbin J Anselm on 02-Feb-17.
  */
 
 public class TorchieApp extends Application {
-
-    @Override
-    protected void attachBaseContext(Context base) {
-        super.attachBaseContext(LocaleHelper.onAttach(base, "en"));
-    }
-
     @Override
     public void onCreate() {
         super.onCreate();
