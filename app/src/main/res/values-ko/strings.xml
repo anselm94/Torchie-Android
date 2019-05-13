@@ -58,7 +58,7 @@
         \n그리고, Torchie는 <b>인터넷 권한이 없어서</b>, 아무것도 누구한테나 <i>보낼 수</i> 없습니다.\n\n Torchie는 아무한테서도 데이타를 <i>수집</i>할 수 없습니다. Torchie 기능을 활성화해도 안전합니다! <a href="https://torchieapp.wordpress.com/help/">더 알아보기</a> </string>
     <string name="permission">Torchie 기능을 활성화시킬까요?</string>
 
-    <string name="about_note"><i>Torchie - 눌러서 전등키기 &#169; 2016</i> \n\n<b>Torchie</b>는 두 형제가 만들었습니다\nMerbin J Anselm 과 Rebin J Anselm\nanselmbros@gmail.com\n\Torchie를 번역해주신 분들께 감사의 말씀 드립니다</string>
+    <string name="about_note"><i>Torchie - 눌러서 전등키기 &#169; 2019</i> \n\n<b>Torchie</b>는 두 형제가 만들었습니다\nMerbin J Anselm 과 Rebin J Anselm\nhello@anselm.in\n\Torchie를 번역해주신 분들께 감사의 말씀 드립니다</string>
     <string name="about_anselm">Anselm &amp; Anselm에 대하여</string>
     <string name="official_website">공식 사이트 방문</string>
     <string name="join_community">베타 그룹 가입</string>

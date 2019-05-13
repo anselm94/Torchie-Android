@@ -57,7 +57,7 @@
     <string name="permission_warn"><b>Loa kohta - </b> Tõrvikukesel pole luba saata ega võtta vastu infot. Tõrvikuke ei saa lugeda, mida kirjutad klaviatuuri peal(vanemate riistvaraliste klaviatuuride kui ka BlackBerry Privi puhul), see kasutab ainult riistvaraliste nuppude(helinupustik) lube. Tõrvikuke on ülimalt turvaline. Lülita julgelt sisse Tõrvikukese funktsionaalsus! <a href="https://torchieapp.wordpress.com/help/">Loe rohkem:</a> </string>
     <string name="permission">Lülita sisse Tõrvikukese funktsionaalsus?</string>
 
-    <string name="about_note"><i>Tõrvikuke - saagu puudutusega valgus &#169; 2016</i> \n<b>Tõrvikuke</b> on loodud kahe arendajast \nvenna Merbin J. Anselmi ja \nRebin J. Anselmi poolt. \nKontakt - anselmbros@gmail.com\n\nSuured tänud südamlikele inimestele, kes aitavad tõlkida Tõrvikukest.</string>
+    <string name="about_note"><i>Tõrvikuke - saagu puudutusega valgus &#169; 2019</i> \n<b>Tõrvikuke</b> on loodud kahe arendajast \nvenna Merbin J. Anselmi ja \nRebin J. Anselmi poolt. \nKontakt - hello@anselm.in\n\nSuured tänud südamlikele inimestele, kes aitavad tõlkida Tõrvikukest.</string>
     <string name="about_anselm">Arendaja kohta</string>
     <string name="official_website">Külasta ametlikku lehte</string>
     <string name="join_community">Liitu Beta kogukonnaga</string>

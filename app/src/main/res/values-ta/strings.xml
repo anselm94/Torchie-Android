@@ -59,7 +59,7 @@
         \n\nமேலும் டார்ச்சிக்கு <b>\'இணைய அணுகல்\' (Internet Permission) அனுமதி கிடையாது</b>. அதனால், எதையும் எவரிடமும் அனுப்ப முடியாது!\n\n<b>தயங்கவேண்டாம்! டார்ச்சியால் எதையும் சேகரிக்க முடியாது.</b> எனவே டார்ச்சி பயன்பாட்டை செயல்படுத்தி வாழ்க்கையை எளிமையாக்குங்கள்! <a href="https://torchieapp.wordpress.com/help/">மேலும் அறிய</a> </string>
     <string name="permission">டார்ச்சி பயன்பாட்டை செயல்படுத்தலாமா?</string>
 
-    <string name="about_note"><i>Torchie © 2016</i> \n\n<b>டார்ச்சி</b>யானது \nமெர்பின் ஜே. ஆன்செலம் மற்றும் ரெபின் ஜே. ஆன்செலம்\n - இரு தமிழ் சகோதரர்களால் உருவாக்கப்பட்டுள்ளது\nanselmbros@gmail.com\n\nடார்ச்சியை மொழிமாற்றம் செய்ய உதவிய பின்வரும் பாராட்டிற்குரிய உள்ளங்களுக்கு நன்றி</string>
+    <string name="about_note"><i>Torchie © 2019</i> \n\n<b>டார்ச்சி</b>யானது \nமெர்பின் ஜே. ஆன்செலம் மற்றும் ரெபின் ஜே. ஆன்செலம்\n - இரு தமிழ் சகோதரர்களால் உருவாக்கப்பட்டுள்ளது\nhello@anselm.in\n\nடார்ச்சியை மொழிமாற்றம் செய்ய உதவிய பின்வரும் பாராட்டிற்குரிய உள்ளங்களுக்கு நன்றி</string>
     <string name="about_anselm">ஆன்செலம் மற்றும் ஆன்செலம் பற்றி</string>
     <string name="official_website">இணையதளம்</string>
     <string name="join_community">பீட்டா சமூகத்தில் இணைக</string>
@@ -98,6 +98,6 @@
     <string name="camera_error">கேமரா பிழை!</string>
     <string name="system_language">அமைப்பு மொழி</string>
 
-    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nடார்ச்சி மென்பொருளானது, எந்தவித உத்திரவாதமும் இல்லாமல் உங்களுக்கு வழங்கப்படுகின்றது. இது \'பொது மக்கள் உரிமம்\' (General Public License) v2.0 படி ஓர் \'சுதந்திர மென்பொருள்\' (Free Software) ஆகும். \n இம்மென்பொருளின் முழு மூலக்குறியீடு (Full source code) https://github.com/anselm94/torchie-android என்ற இணையத்தில் காணலாம். \n</string>
+    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2019\n\nடார்ச்சி மென்பொருளானது, எந்தவித உத்திரவாதமும் இல்லாமல் உங்களுக்கு வழங்கப்படுகின்றது. இது \'பொது மக்கள் உரிமம்\' (General Public License) v2.0 படி ஓர் \'சுதந்திர மென்பொருள்\' (Free Software) ஆகும். \n இம்மென்பொருளின் முழு மூலக்குறியீடு (Full source code) https://github.com/anselm94/torchie-android என்ற இணையத்தில் காணலாம். \n</string>
 
 </resources>

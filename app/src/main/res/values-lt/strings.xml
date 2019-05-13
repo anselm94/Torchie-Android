@@ -57,7 +57,7 @@
     <string name="permission_warn"><b >Apie Saugumą</b>Torchie prašo tik vieno leidimo, jis suteikia galimybe stebėti mygtukų paspaudimus.<i >Taigi jūsų rašomas tekstas ir veiksmai nėra sekami.</i></string>
     <string name="permission">Įjungti Torchie?</string>
 
-    <string name="about_note"><i >Torchie - Touch to Torch © 2016</i> \n\n<b >Torchie</b> Buvo sukurtas dviejų brolių\nMerbin J Anselm air Rebin J Anselm\nanselmbros@gmail.com\n\nEsame labai dėkingi žmonėms kurie išvertė mūsų programeles</string>
+    <string name="about_note"><i >Torchie - Touch to Torch © 2019</i> \n\n<b >Torchie</b> Buvo sukurtas dviejų brolių\nMerbin J Anselm air Rebin J Anselm\nhello@anselm.in\n\nEsame labai dėkingi žmonėms kurie išvertė mūsų programeles</string>
     <string name="about_anselm">Apie Anselm &amp; Anselm</string>
     <string name="official_website">Apsilankyti oficialiame tinklapyje</string>
     <string name="join_community">Prisijunkti į Beta grupę</string>
@@ -92,6 +92,6 @@
     <string name="notify_title">Torchie paslauga išjungta</string>
     <string name="notify_text">Palieskite, kad įgalinti \"Torchie greitai"</string>
 
-    <string name="notice">Torchie neduoda jokios garantijos. Ši programa yra nemokama licenzijuota pagal\nGNU General Public License v2.0\nPilnas išeities kodas yra čia https://github.com/anselm94/torchie-android</string>
+    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2019\n\nTorchie neduoda jokios garantijos. Ši programa yra nemokama licenzijuota pagal\nGNU General Public License v2.0\nPilnas išeities kodas yra čia https://github.com/anselm94/torchie-android</string>
 
 </resources>

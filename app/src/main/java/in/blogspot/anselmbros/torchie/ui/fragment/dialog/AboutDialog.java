@@ -38,7 +38,7 @@ import in.blogspot.anselmbros.torchie.utils.Constants;
 public class AboutDialog extends DialogFragment implements View.OnClickListener {
 
     View rootView;
-    TextView tvAboutNote, tvAboutAnselm, tvVisitSite, tvJoinCommunity, tvFacebook, tvGoogle, tvTranslatorNote, tvNotice;
+    TextView tvAboutNote, tvAboutAnselm, tvVisitSite, tvFacebook, tvTranslatorNote, tvNotice;
 
     String notice;
 
@@ -54,9 +54,7 @@ public class AboutDialog extends DialogFragment implements View.OnClickListener 
         tvAboutNote = (TextView) rootView.findViewById(R.id.tv_about_note);
         tvAboutAnselm = (TextView) rootView.findViewById(R.id.tv_about_anselm);
         tvVisitSite = (TextView) rootView.findViewById(R.id.tv_visit_site);
-        tvJoinCommunity = (TextView) rootView.findViewById(R.id.tv_join_community);
         tvFacebook = (TextView) rootView.findViewById(R.id.tv_facebook);
-        tvGoogle = (TextView) rootView.findViewById(R.id.tv_googleplus);
         tvTranslatorNote = (TextView) rootView.findViewById(R.id.tv_translator_note);
         tvNotice = (TextView) rootView.findViewById(R.id.tv_notice);
 
@@ -64,16 +62,15 @@ public class AboutDialog extends DialogFragment implements View.OnClickListener 
         tvTranslatorNote.setMovementMethod(LinkMovementMethod.getInstance());
         tvAboutAnselm.setOnClickListener(this);
         tvVisitSite.setOnClickListener(this);
-        tvJoinCommunity.setOnClickListener(this);
         tvFacebook.setOnClickListener(this);
-        tvGoogle.setOnClickListener(this);
         tvNotice.setMovementMethod(LinkMovementMethod.getInstance());
 
         try {
             notice = String.format(getActivity().getResources().getString(R.string.notice), getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0).versionName);
             tvNotice.setText(notice);
         } catch (Exception e) {
-
+            notice = getActivity().getResources().getString(R.string.notice);
+            tvNotice.setText(notice);
         }
 
         return rootView;
@@ -86,12 +83,8 @@ public class AboutDialog extends DialogFragment implements View.OnClickListener 
             intent.setData(Uri.parse(Constants.ABOUTANSELM_URI));
         } else if (v == tvVisitSite) {
             intent.setData(Uri.parse(Constants.WEB_URI));
-        } else if (v == tvJoinCommunity) {
-            intent.setData(Uri.parse(Constants.COMMUNITY_URI));
         } else if (v == tvFacebook) {
             intent.setData(Uri.parse(Constants.FACEBOOK_URI));
-        } else if (v == tvGoogle) {
-            intent.setData(Uri.parse(Constants.GOOGLEPLUS_URI));
         }
         startActivity(intent);
 

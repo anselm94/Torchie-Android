@@ -61,7 +61,7 @@
         \nAlso, Torchie <b>DOES NOT HAVE INTERNET PERMISSION</b>, so it is impossible to <i>send</i> anything to anyone\n\nTorchie CANNOT <i>COLLECT</i> anything from anyone. Feel free to enable Torchie functionality! <a href="https://torchieapp.wordpress.com/help/">Learn more</a> </string>
     <string name="permission">Enable Torchie Functionality?</string>
 
-    <string name="about_note"><b>Torchie</b> is made by two brothers\nMerbin J Anselm and Rebin J Anselm\nanselmbros@gmail.com\n\nMany thanks to following great hearts, who helped to translate Torchie</string>
+    <string name="about_note"><b>Torchie</b> is made by two brothers\nMerbin J Anselm and Rebin J Anselm\nhello@anselm.in\n\nMany thanks to following great hearts, who helped to translate Torchie</string>
     <string name="about_anselm">About Anselm &amp; Anselm</string>
     <string name="official_website">Visit official site</string>
     <string name="join_community">Join Beta Community</string>
@@ -102,7 +102,7 @@
     <string name="system_language">System Language</string>
     <string name="proximity_error">Move phone away from proximity sensor and try again</string>
 
-    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2017\n\nTorchie comes with absolutely no warranty. This program is free software licensed under
+    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2019\n\nTorchie comes with absolutely no warranty. This program is free software licensed under
     \nGNU General Public License v2.0\nFull source-code is available here https://github.com/anselm94/torchie-android\n</string>
 
 </resources>

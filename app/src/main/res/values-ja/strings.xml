@@ -58,7 +58,7 @@
         \nまた、Torchie は <b>インターネットアクセス許可がない</b> ので、誰かに何かを <i>送信</i> することは不可能です\n\n Torchie は、誰かから何かを <i>収集</i> することはできません。 お気軽に Torchie 機能を有効にしてください! <a href="https://torchieapp.wordpress.com/help/">さらに詳細</a> </string>
     <string name="permission">Torchie 機能を有効にしますか?</string>
 
-    <string name="about_note"><b>Torchie</b> は二人の兄弟によって作成されました\nMerbin J Anselm と Rebin J Anselm\nanselmbros@gmail.com\n\nTorchie の翻訳を手伝ってくれた偉大な心の方に大変感謝します</string>
+    <string name="about_note"><b>Torchie</b> は二人の兄弟によって作成されました\nMerbin J Anselm と Rebin J Anselm\nhello@anselm.in\n\nTorchie の翻訳を手伝ってくれた偉大な心の方に大変感謝します</string>
     <string name="about_anselm">Anselm &amp; Anselm について</string>
     <string name="official_website">公式サイトを訪問</string>
     <string name="join_community">ベータ コミュニティに参加</string>
@@ -93,7 +93,7 @@
     <string name="notify_title">Torchie サービスは無効です</string>
     <string name="notify_text">タッチすると \'Torchie クイック\' を有効にします</string>
 
-    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nTorchie は全くの無保証です。 このプログラムは\nGNU 一般公衆利用許諾契約書 v2.0
+    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2019\n\nTorchie は全くの無保証です。 このプログラムは\nGNU 一般公衆利用許諾契約書 v2.0
     \nの下にライセンスされるフリーソフトウェアです\n完全なソースコードはここ https://github.com/anselm94/torchie-android\nで利用することができます</string>
 
 </resources>

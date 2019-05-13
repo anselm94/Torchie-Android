@@ -58,7 +58,7 @@
         \n而且，Torchie<b>没有连网权限</b>，不可能<i>发出</i>任何信息\n\n Torchie<b>不会</b><i>收集</i>任何信息。乖乖启用Torchie功能吧！ <a href="https://torchieapp.wordpress.com/help/">了解更多</a> </string>
     <string name="permission">启用Torchie功能？</string>
 
-    <string name="about_note"><b>Torchie</b>由两兄弟开发\nMerbin J Anselm 和 Rebin J Anselm\nanselmbros@gmail.com\n\n感谢热心的翻译者</string>
+    <string name="about_note"><b>Torchie</b>由两兄弟开发\nMerbin J Anselm 和 Rebin J Anselm\nhello@anselm.in\n\n感谢热心的翻译者</string>
     <string name="about_anselm">了解 Anselm 和 Anselm</string>
     <string name="official_website">访问官方网站</string>
     <string name="join_community">加入测试社区</string>
@@ -93,7 +93,7 @@
     <string name="notify_title">Torchie服务未启用</string>
     <string name="notify_text">点击启用\'Torchie Quick\'服务</string>
 
-    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nTorchie不为使用导致的任何损失承担责任。本程序使用自由软件许可证
+    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2019\n\nTorchie不为使用导致的任何损失承担责任。本程序使用自由软件许可证
     \nGNU General Public License v2.0\n开放源代码项目 https://github.com/anselm94/torchie-android\n</string>
 
 </resources>

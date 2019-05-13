@@ -58,7 +58,7 @@
     <string name="permission_warn"><b>O DOZVOLAMA - </b> \"<i>...promatra tekst koji upisujete i promatra vaše akcije...</i>\"\nJao! Prijetnja! Android samo šalje \'Key Event\' kada je pritisnuta HARDWARE TIPKA. Na ovaj način Torchie hvata kada je pritisnuta tipka za glasnoću. To je <i>mana</i> Androida, koji pokazuje UPOZORENJE čak i za UREĐAJE BEZ VIZIČKIH TIPKI (osim za jako stare Android uređaje i Blackberry Priv koji ima fizičku tipkovnicu). Nije moguće dizajnirati Torcie funkcionalnosti bez ovih dozvola \nTakođer, Torchie <b>NEMA DOZVOLU ZA PRISTUP INTERNETU</b>, stoga nije moguće <i>slati</i> ništa nikome.\n\n Torchie NE MOŽE <i>PRIKUPLJATI</i> nikakve podatke ni od koga. Osjećajte se slobodnim omogućiti Torchie funkcionalnosti! <a href="https://torchieapp.wordpress.com/help/">Nauči više</a> </string>
     <string name="permission">Omogući Torchie funkcionalnosti?</string>
 
-    <string name="about_note"><i>Torchie - Dodirni za Svjetiljku &#169; 2016</i> \n\n<b>Torchie</b> su napravila braća\nMerbin J Anselm i Rebin J Anselm\nanselmbros@gmail.com\n\nMnogo hvala sljedećima velikog srca, koji su pomogli prevesti Torchie</string>
+    <string name="about_note"><i>Torchie - Dodirni za Svjetiljku &#169; 2019</i> \n\n<b>Torchie</b> su napravila braća\nMerbin J Anselm i Rebin J Anselm\nhello@anselm.in\n\nMnogo hvala sljedećima velikog srca, koji su pomogli prevesti Torchie</string>
     <string name="about_anselm">O Anselm &amp; Anselm</string>
     <string name="official_website">Posjeti službene stranice</string>
     <string name="join_community">Pristupi Beta Zajednici</string>

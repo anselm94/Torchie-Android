@@ -58,7 +58,7 @@
         \nასევე, Torchie-ს <b>არ აქვს ინტერნეტთან წვდომა</b>, ასე რომ ინფორმაციის სადმე <i>გაგზავნა</i> პრაქტიკულად შეუძლებელია\n\n Torchie-ს არ შეუძლია <i>შეაგროვოს</i> რაიმე ვინმესგან. არ შეგეშინდეთ Torchie-ს ფუნქციონალის გააქტიურების! <a href="https://torchieapp.wordpress.com/help/">გაიგეთ მეტი</a> </string>
     <string name="permission">გავააქტიურო Torchie-ს ფუნქციონალი?</string>
 
-    <string name="about_note"><i>Torchie - Touch to Torch &#169; 2016</i> \n\n<b>Torchie</b> შექმნილია ძმები \nMerbin J Anselm-ისა და Rebin J Anselm-ის მიერ\nanselmbros@gmail.com\n\nდიდი მადლობა მათ, ვინც დაგვეხმარა Torchie-ს გადათარგმნაში</string>
+    <string name="about_note"><i>Torchie - Touch to Torch &#169; 2019</i> \n\n<b>Torchie</b> შექმნილია ძმები \nMerbin J Anselm-ისა და Rebin J Anselm-ის მიერ\nhello@anselm.in\n\nდიდი მადლობა მათ, ვინც დაგვეხმარა Torchie-ს გადათარგმნაში</string>
     <string name="about_anselm">Anselm &amp; Anselm-ის შესახებ</string>
     <string name="official_website">ეწვიეთ ოფიციალურ საიტს</string>
     <string name="join_community">გაწევრიანდით ბეტა საზოგადოებაში</string>

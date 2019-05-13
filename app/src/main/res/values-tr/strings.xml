@@ -58,7 +58,7 @@
         \nAyrıca, Torchie <b>İNTERNET İZNİ GEREKTİRMEZ</b>. Bu yüzden bir başkasına herhangi bir şey <i>göndermek</i> imkansızdır.\n\n Torchie herhangi bir bilgi <i>TOPLAYAMAZ</i>. Torchie yeteneğini etkinleştirmekten çekinmeyin! <a href="https://torchieapp.wordpress.com/help/">Daha fazla bilgi edinin</a> </string>
     <string name="permission">Torchie yetenekleri etkinleştirilsin mi?</string>
 
-    <string name="about_note"><i>Torchie - Flaş ışığı için dokunun &#169; 2016</i> \n\n<b>Torchie</b> iki kardeş\nMerbin J Anselm ve Rebin J Anselm\ntarafından geliştirilmiştir.\nanselmbros@gmail.com\n\nTorchie\'nin farklı dillere çevrilmesine yardımcı olan mükemmel kalplere sahip insanlara çok teşekkürler</string>
+    <string name="about_note"><i>Torchie - Flaş ışığı için dokunun &#169; 2019</i> \n\n<b>Torchie</b> iki kardeş\nMerbin J Anselm ve Rebin J Anselm\ntarafından geliştirilmiştir.\nhello@anselm.in\n\nTorchie\'nin farklı dillere çevrilmesine yardımcı olan mükemmel kalplere sahip insanlara çok teşekkürler</string>
     <string name="about_anselm">Anselm &amp; Anselm Hakkında</string>
     <string name="official_website">Resmi siteyi ziyaret edin</string>
     <string name="join_community">Beta topluluğuna katılın</string>
@@ -92,7 +92,7 @@
     <string name="notify_title">Torchie servisleri devre dışı</string>
     <string name="notify_text">\'Hızlı Torchie\'yi etkinleştirmek için dokunun</string>
 
-    <string name="notice"><b>Torchie</b> v%1$s  &#169; 2016\n\nTorchie için HİÇ BİR GARANTİ verilmemektedir. Bu program \nGNU Genel Kamu Lisansı v2.0\n ile lisanslanmış ücretsiz bir programdır.
+    <string name="bulgarian in bulgariannotice"><b>Torchie</b> v%1$s  &#169; 2019\n\nTorchie için HİÇ BİR GARANTİ verilmemektedir. Bu program \nGNU Genel Kamu Lisansı v2.0\n ile lisanslanmış ücretsiz bir programdır.
     \nTam kaynak kodu burada bulunabilir https://github.com/anselm94/torchie-android\n</string>
 
 </resources>
