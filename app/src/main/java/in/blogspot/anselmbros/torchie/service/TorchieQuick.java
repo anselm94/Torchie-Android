@@ -23,7 +23,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.KeyEvent;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.Toast;
@@ -34,7 +34,7 @@ import in.blogspot.anselmbros.torchie.main.TorchieManagerListener;
 import in.blogspot.anselmbros.torchie.main.manager.device.input.event.VolumeKeyEvent;
 
 /**
- * Created by I327891 on 19-Feb-17.
+ * Created by Merbin J Anselm on 19-Feb-17.
  */
 
 public class TorchieQuick extends AccessibilityService implements TorchieManagerListener {

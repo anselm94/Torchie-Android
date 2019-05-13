@@ -30,7 +30,7 @@ import java.util.Locale;
 import in.blogspot.anselmbros.torchie.utils.SettingsUtils;
 
 /**
- * Created by I327891 on 19-Feb-17.
+ * Created by Merbin J Anselm on 19-Feb-17.
  */
 
 public class LocaleHelper {

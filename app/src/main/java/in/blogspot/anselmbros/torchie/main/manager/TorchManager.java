@@ -31,7 +31,7 @@ import in.blogspot.anselmbros.torchie.main.manager.timer.CountTimer;
 import in.blogspot.anselmbros.torchie.main.manager.timer.CountTimerListener;
 
 /**
- * Created by I327891 on 06-Feb-17.
+ * Created by Merbin J Anselm on 06-Feb-17.
  */
 
 public class TorchManager implements CountTimerListener {

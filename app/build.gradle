@@ -23,13 +23,13 @@ def keystoreProperties = new Properties()
 keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
 
 android {
-    compileSdkVersion 26
-    buildToolsVersion '26.0.2'
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "in.blogspot.anselmbros.torchie"
         minSdkVersion 15
-        targetSdkVersion 26
+        targetSdkVersion 28
         versionCode 29
         versionName "3.1"
     }
@@ -49,10 +49,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:appcompat-v7:26.1.0'
-    compile 'com.android.support:design:26.1.0'
-    compile 'com.android.support:support-v4:26.1.0'
-
-    testCompile 'junit:junit:4.12'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.google.android.material:material:1.0.0'
+    testImplementation 'junit:junit:4.12'
 }

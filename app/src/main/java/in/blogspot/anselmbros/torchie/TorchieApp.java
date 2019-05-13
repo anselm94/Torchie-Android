@@ -24,7 +24,7 @@ import android.content.Context;
 import in.blogspot.anselmbros.torchie.ui.helper.LocaleHelper;
 
 /**
- * Created by I327891 on 02-Feb-17.
+ * Created by Merbin J Anselm on 02-Feb-17.
  */
 
 public class TorchieApp extends Application {

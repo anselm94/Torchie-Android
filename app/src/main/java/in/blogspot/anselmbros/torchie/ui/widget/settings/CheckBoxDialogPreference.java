@@ -26,7 +26,7 @@ import android.widget.CheckBox;
 import in.blogspot.anselmbros.torchie.R;
 
 /**
- * Created by I327891 on 27-Jan-17.
+ * Created by Merbin J Anselm on 27-Jan-17.
  */
 
 public class CheckBoxDialogPreference extends TimeoutListPreference {

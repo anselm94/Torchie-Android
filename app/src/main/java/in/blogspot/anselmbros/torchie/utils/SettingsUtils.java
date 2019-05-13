@@ -25,7 +25,7 @@ import android.preference.PreferenceManager;
 import in.blogspot.anselmbros.torchie.R;
 
 /**
- * Created by I327891 on 02-Feb-17.
+ * Created by Merbin J Anselm on 02-Feb-17.
  */
 
 public class SettingsUtils {

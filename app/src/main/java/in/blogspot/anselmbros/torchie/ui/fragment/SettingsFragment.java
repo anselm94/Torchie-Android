@@ -40,7 +40,7 @@ import static android.content.Context.SENSOR_SERVICE;
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
 /**
- * Created by I327891 on 27-Jan-17.
+ * Created by Merbin J Anselm on 27-Jan-17.
  */
 
 public class SettingsFragment extends PreferenceFragment implements SharedPreferences.OnSharedPreferenceChangeListener {

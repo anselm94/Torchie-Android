@@ -61,7 +61,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
 
-            <android.support.v7.widget.SwitchCompat
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/sw_settings_screen_on"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -92,7 +92,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
 
-            <android.support.v7.widget.SwitchCompat
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/sw_settings_screen_lock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -123,7 +123,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
 
-            <android.support.v7.widget.SwitchCompat
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/sw_settings_screen_off"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -494,7 +494,7 @@
 
             </LinearLayout>
 
-            <android.support.v7.widget.AppCompatCheckBox
+            <androidx.appcompat.widget.AppCompatCheckBox
                 android:id="@+id/cb_proximity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -524,7 +524,7 @@
                     android:text="@string/vibrate"
                     android:textColor="@color/colorWhite" />
 
-                <android.support.v7.widget.AppCompatCheckBox
+                <androidx.appcompat.widget.AppCompatCheckBox
                     android:id="@+id/cb_vibrate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />

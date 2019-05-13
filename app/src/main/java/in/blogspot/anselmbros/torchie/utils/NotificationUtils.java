@@ -24,12 +24,12 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
-import android.support.v7.app.NotificationCompat;
+import androidx.core.app.NotificationCompat;
 
 import in.blogspot.anselmbros.torchie.R;
 
 /**
- * Created by I327891 on 22-Mar-17.
+ * Created by Merbin J Anselm on 22-Mar-17.
  */
 
 public class NotificationUtils {

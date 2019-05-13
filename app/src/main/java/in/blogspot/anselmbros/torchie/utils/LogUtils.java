@@ -23,7 +23,7 @@ import android.util.Log;
 import in.blogspot.anselmbros.torchie.BuildConfig;
 
 /**
- * Created by I327891 on 02-Feb-17.
+ * Created by Merbin J Anselm on 02-Feb-17.
  */
 
 public class LogUtils {

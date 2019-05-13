@@ -25,7 +25,7 @@ import in.blogspot.anselmbros.torchie.main.manager.device.Device;
 import in.blogspot.anselmbros.torchie.utils.Constants;
 
 /**
- * Created by I327891 on 04-Feb-17.
+ * Created by Merbin J Anselm on 04-Feb-17.
  */
 
 public abstract class InputDevice extends Device {

@@ -19,7 +19,7 @@
 package in.blogspot.anselmbros.torchie.main.manager;
 
 /**
- * Created by I327891 on 14-Feb-17.
+ * Created by Merbin J Anselm on 14-Feb-17.
  */
 
 public interface DeviceManagerListener {

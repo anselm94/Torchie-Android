@@ -26,7 +26,7 @@ import in.blogspot.anselmbros.torchie.main.manager.timer.CountTimerListener;
 import in.blogspot.anselmbros.torchie.main.manager.wakelock.WakeLock;
 
 /**
- * Created by I327891 on 05-Feb-17.
+ * Created by Merbin J Anselm on 05-Feb-17.
  */
 
 public class WakeLockManager {

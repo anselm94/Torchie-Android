@@ -17,7 +17,7 @@
   ~     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
   -->
 
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -36,7 +36,7 @@
             android:elevation="4dp"
             android:src="@drawable/torchie_head_norm" />
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="180dp"
@@ -78,7 +78,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1" />
 
-            <android.support.v7.widget.SwitchCompat
+            <androidx.appcompat.widget.SwitchCompat
                 android:id="@+id/sw_func_toggle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -123,7 +123,7 @@
 
     </RelativeLayout>
 
-    <android.support.design.widget.FloatingActionButton
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_donate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -137,4 +137,4 @@
         app:layout_anchorGravity="bottom|left|end"
         app:pressedTranslationZ="6dp"
         app:rippleColor="@color/colorRippleWhite" />
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

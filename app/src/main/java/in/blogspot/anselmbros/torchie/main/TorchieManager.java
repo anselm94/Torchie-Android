@@ -35,7 +35,7 @@ import in.blogspot.anselmbros.torchie.main.manager.wakelock.WakeLock;
 import in.blogspot.anselmbros.torchie.utils.SettingsUtils;
 
 /**
- * Created by I327891 on 14-Feb-17.
+ * Created by Merbin J Anselm on 14-Feb-17.
  */
 
 public class TorchieManager implements DeviceManagerListener, CountTimerListener, SharedPreferences.OnSharedPreferenceChangeListener {

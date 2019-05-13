@@ -32,7 +32,7 @@ import in.blogspot.anselmbros.torchie.main.manager.device.output.torch.flashligh
 import in.blogspot.anselmbros.torchie.main.manager.device.output.vibrator.Vibrator;
 
 /**
- * Created by I327891 on 05-Feb-17.
+ * Created by Merbin J Anselm on 05-Feb-17.
  */
 
 public class DeviceManager implements OutputDeviceListener, InputDeviceListener {

@@ -24,7 +24,7 @@ import in.blogspot.anselmbros.torchie.main.manager.device.output.torch.Torch;
 import in.blogspot.anselmbros.torchie.utils.Constants;
 
 /**
- * Created by I327891 on 06-Feb-17.
+ * Created by Merbin J Anselm on 06-Feb-17.
  */
 
 public abstract class Flashlight extends Torch {
