@@ -1,4 +1,22 @@
 /*
+ *     Copyright (C) 2017 Merbin J Anselm <merbinjanselm@gmail.com>
+ *
+ *     This program is free software; you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation; either version 2 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License along
+ *     with this program; if not, write to the Free Software Foundation, Inc.,
+ *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+/*
  *     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
  *
  *     This program is free software; you can redistribute it and/or modify
@@ -30,6 +48,7 @@ import in.blogspot.anselmbros.torchie.main.manager.WakeLockManager;
 import in.blogspot.anselmbros.torchie.main.manager.device.input.event.VolumeKeyEvent;
 import in.blogspot.anselmbros.torchie.main.manager.device.input.key.volume.nativve.VolumeKeyNative;
 import in.blogspot.anselmbros.torchie.main.manager.device.input.key.volume.rocker.VolumeKeyRocker;
+import in.blogspot.anselmbros.torchie.main.manager.timer.CountTimer;
 import in.blogspot.anselmbros.torchie.main.manager.timer.CountTimerListener;
 import in.blogspot.anselmbros.torchie.main.manager.wakelock.WakeLock;
 import in.blogspot.anselmbros.torchie.utils.SettingsUtils;
@@ -45,10 +64,12 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
     private TorchieManagerListener mListener;
     private boolean toggleTorchIssued = false;
     private ScreenState currentScreenState = ScreenState.SCREEN_ON;
+    private CountTimer wakeLockTimer;
 
     private TorchieManager(Context context) {
         super();
         this.mContext = context;
+        wakeLockTimer = null;
 
         DeviceManager.getInstance(this.mContext).setListener(this);
 
@@ -87,6 +108,24 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
         DeviceManager.getInstance(this.mContext).setVolumeKeyEvent(new VolumeKeyEvent(volumeArr));
     }
 
+    private void setTimeout(int timeoutSec) {
+        if (timeoutSec > 0) {
+            if (this.wakeLockTimer == null) {
+                this.wakeLockTimer = new CountTimer(WakeLock.TYPE, timeoutSec, this);
+            } else {
+                this.wakeLockTimer.cancel();
+            }
+            this.wakeLockTimer.start();
+        }
+    }
+
+    private void releaseCounter() {
+        if (this.wakeLockTimer != null) {
+            this.wakeLockTimer.cancel();
+            this.wakeLockTimer = null;
+        }
+    }
+
     public void toggleTorch() {
         if (SettingsUtils.isProximityEnabled(this.mContext)) {
             DeviceManager.getInstance(this.mContext).getProximityValue();
@@ -119,7 +158,7 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
         DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceType(VolumeKeyRocker.TYPE);
         if (SettingsUtils.isScreenOffEnabled(this.mContext)) {
             WakeLockManager.getInstance().acquire(this.mContext);
-            WakeLockManager.getInstance().setTimeout(SettingsUtils.getScreenOffTimeoutSec(this.mContext), this);
+            this.setTimeout(SettingsUtils.getScreenOffTimeoutSec(this.mContext));
             DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceEnabled(true);
         } else {
             if (this.getTorchStatus()) {
@@ -128,6 +167,7 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
                 DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceEnabled(true);
             } else {
                 WakeLockManager.getInstance().release();
+                this.releaseCounter();
                 DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceEnabled(false);
             }
         }
@@ -148,6 +188,7 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
     private void onScreenOn() {
         DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceEnabled(SettingsUtils.isScreenOnEnabled(this.mContext));
         WakeLockManager.getInstance().release();
+        this.releaseCounter();
         if (isLegacyDevice()) {
             DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceType(VolumeKeyRocker.TYPE);
         } else {
@@ -184,6 +225,7 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
         }
         if (WakeLockManager.getInstance().isHeldOnDemand() && !status) {
             WakeLockManager.getInstance().release();
+            this.releaseCounter();
             DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceEnabled(false);
         }
         if (this.mListener != null) {
@@ -206,6 +248,7 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
                 DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceEnabled(true);
             } else {
                 WakeLockManager.getInstance().release();
+                this.releaseCounter();
                 DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceEnabled(false);
             }
         }
