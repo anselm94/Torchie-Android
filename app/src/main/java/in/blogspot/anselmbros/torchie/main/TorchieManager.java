@@ -17,6 +17,24 @@
  */
 
 /*
+ *     Copyright (C) 2017 Merbin J Anselm <merbinjanselm@gmail.com>
+ *
+ *     This program is free software; you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation; either version 2 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License along
+ *     with this program; if not, write to the Free Software Foundation, Inc.,
+ *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+/*
  *     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
  *
  *     This program is free software; you can redistribute it and/or modify
@@ -40,6 +58,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.preference.PreferenceManager;
+
+import androidx.media.VolumeProviderCompat;
 
 import in.blogspot.anselmbros.torchie.R;
 import in.blogspot.anselmbros.torchie.main.manager.DeviceManager;
@@ -65,6 +85,7 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
     private boolean toggleTorchIssued = false;
     private ScreenState currentScreenState = ScreenState.SCREEN_ON;
     private CountTimer wakeLockTimer;
+    private VolumeProviderCompat mVolumeChangeProvider;
 
     private TorchieManager(Context context) {
         super();
@@ -99,13 +120,12 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
         this.mListener = listener;
     }
 
-    public void setVolumeKeyEvent(VolumeKeyEvent keyEvent) {
-        DeviceManager.getInstance(this.mContext).setVolumeKeyEvent(keyEvent);
+    public boolean setVolumeKeyEvent(VolumeKeyEvent keyEvent) {
+        return DeviceManager.getInstance(this.mContext).setVolumeKeyEvent(keyEvent);
     }
 
-    public void setVolumeValues(int prevVolume, int currentVolume) {
-        int[] volumeArr = {prevVolume, currentVolume};
-        DeviceManager.getInstance(this.mContext).setVolumeKeyEvent(new VolumeKeyEvent(volumeArr));
+    public void setVolumeValue(int volumeDirection) {
+        DeviceManager.getInstance(this.mContext).setVolumeKeyEvent(new VolumeKeyEvent(volumeDirection));
     }
 
     private void setTimeout(int timeoutSec) {
@@ -117,6 +137,10 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
             }
             this.wakeLockTimer.start();
         }
+    }
+
+    public void setVolumeProvider(VolumeProviderCompat volumeProvider) {
+        this.mVolumeChangeProvider = volumeProvider;
     }
 
     private void releaseCounter() {
@@ -157,12 +181,12 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
     private void onScreenOff() {
         DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceType(VolumeKeyRocker.TYPE);
         if (SettingsUtils.isScreenOffEnabled(this.mContext)) {
-            WakeLockManager.getInstance().acquire(this.mContext);
+            WakeLockManager.getInstance().acquire(this.mContext, this.mVolumeChangeProvider);
             this.setTimeout(SettingsUtils.getScreenOffTimeoutSec(this.mContext));
             DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceEnabled(true);
         } else {
             if (this.getTorchStatus()) {
-                WakeLockManager.getInstance().acquire(this.mContext);
+                WakeLockManager.getInstance().acquire(this.mContext, this.mVolumeChangeProvider);
                 WakeLockManager.getInstance().setHeldOnDemand();
                 DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceEnabled(true);
             } else {
@@ -178,7 +202,7 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
         if (isLegacyDevice()) {
             DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceType(VolumeKeyRocker.TYPE);
             if (SettingsUtils.isScreenLockEnabled(this.mContext)) {
-                WakeLockManager.getInstance().acquire(this.mContext);
+                WakeLockManager.getInstance().acquire(this.mContext, this.mVolumeChangeProvider);
             }
         } else {
             DeviceManager.getInstance(this.mContext).setVolumeKeyDeviceType(VolumeKeyNative.TYPE);

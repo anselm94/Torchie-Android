@@ -1,4 +1,22 @@
 /*
+ *     Copyright (C) 2017 Merbin J Anselm <merbinjanselm@gmail.com>
+ *
+ *     This program is free software; you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation; either version 2 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License along
+ *     with this program; if not, write to the Free Software Foundation, Inc.,
+ *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+/*
  *     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
  *
  *     This program is free software; you can redistribute it and/or modify
@@ -23,10 +41,14 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
-import androidx.annotation.Nullable;
+import android.media.AudioManager;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.media.VolumeProviderCompat;
 
 import in.blogspot.anselmbros.torchie.main.ScreenState;
 import in.blogspot.anselmbros.torchie.main.TorchieManager;
@@ -54,11 +76,14 @@ public class TorchieQuick extends AccessibilityService implements TorchieManager
     }
 
     public void setScreenState(ScreenState currentScreenState) {
+        if (currentScreenState == ScreenState.SCREEN_OFF) {
+            TorchieManager.getInstance(this).setVolumeProvider(this.getVolumeChangeProvider());
+        }
         TorchieManager.getInstance(this).setScreenEvent(currentScreenState);
     }
 
-    public void setVolumeValues(int prevValue, int currentValue) {
-        TorchieManager.getInstance(this).setVolumeValues(prevValue, currentValue);
+    public void setVolumeValues(int volumeDirection) {
+        TorchieManager.getInstance(this).setVolumeValue(volumeDirection);
     }
 
     private void registerScreenStateReceiver() {
@@ -72,6 +97,14 @@ public class TorchieQuick extends AccessibilityService implements TorchieManager
 
     private void unregisterScreenStateReceiver() {
         unregisterReceiver(mScreenStateReceiver);
+    }
+
+    private VolumeChangeProvider getVolumeChangeProvider() {
+        AudioManager audio = (AudioManager) this.getSystemService(Context.AUDIO_SERVICE);
+        int STREAM_TYPE = AudioManager.STREAM_MUSIC;
+        int currentVolume = audio.getStreamVolume(STREAM_TYPE);
+        int maxVolume = audio.getStreamMaxVolume(STREAM_TYPE);
+        return new VolumeChangeProvider(VolumeProviderCompat.VOLUME_CONTROL_RELATIVE, maxVolume, currentVolume);
     }
 
     public void registerTorchieManagerListener(TorchieManagerListener listener) {
@@ -110,7 +143,7 @@ public class TorchieQuick extends AccessibilityService implements TorchieManager
     protected boolean onKeyEvent(KeyEvent event) {
         super.onKeyEvent(event);
         if ((event.getKeyCode() == KeyEvent.KEYCODE_VOLUME_DOWN) || (event.getKeyCode() == KeyEvent.KEYCODE_VOLUME_UP)) { //Filters ONLY the Volume Button key events
-            TorchieManager.getInstance(this).setVolumeKeyEvent(new VolumeKeyEvent(event));
+            return TorchieManager.getInstance(this).setVolumeKeyEvent(new VolumeKeyEvent(event));
         }
         return false;
     }
@@ -147,6 +180,29 @@ public class TorchieQuick extends AccessibilityService implements TorchieManager
                 currentScreenState = ScreenState.SCREEN_ON;
             }
             setScreenState(currentScreenState);
+        }
+    }
+
+    public class VolumeChangeProvider extends VolumeProviderCompat {
+
+        /**
+         * Create a new volume provider for handling volume events. You must specify
+         * the type of volume control and the maximum volume that can be used.
+         *
+         * @param volumeControl The method for controlling volume that is used by
+         *                      this provider.
+         * @param maxVolume     The maximum allowed volume.
+         * @param currentVolume The current volume.
+         */
+        public VolumeChangeProvider(int volumeControl, int maxVolume, int currentVolume) {
+            super(volumeControl, maxVolume, currentVolume);
+        }
+
+        @Override
+        public void onAdjustVolume(int direction) {
+            // Up = 1, Down = -1, Release = 0
+            setVolumeValues(direction);
+            Log.d("torchie", String.valueOf(direction));
         }
     }
 }
