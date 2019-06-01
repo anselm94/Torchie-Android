@@ -1,4 +1,22 @@
 /*
+ *     Copyright (C) 2017 Merbin J Anselm <merbinjanselm@gmail.com>
+ *
+ *     This program is free software; you can redistribute it and/or modify
+ *     it under the terms of the GNU General Public License as published by
+ *     the Free Software Foundation; either version 2 of the License, or
+ *     (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License along
+ *     with this program; if not, write to the Free Software Foundation, Inc.,
+ *     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+/*
  *     Copyright (C) 2016  Merbin J Anselm <merbinjanselm@gmail.com>
  *
  *     This program is free software; you can redistribute it and/or modify
@@ -18,9 +36,6 @@
 
 package in.blogspot.anselmbros.torchie.ui.fragment;
 
-import android.app.Activity;
-import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
@@ -32,12 +47,10 @@ import android.preference.PreferenceManager;
 import in.blogspot.anselmbros.torchie.R;
 import in.blogspot.anselmbros.torchie.main.manager.device.output.vibrator.Vibrator;
 import in.blogspot.anselmbros.torchie.service.TorchieQuick;
-import in.blogspot.anselmbros.torchie.ui.activity.MainActivity;
 import in.blogspot.anselmbros.torchie.ui.widget.settings.CheckBoxDialogPreference;
 import in.blogspot.anselmbros.torchie.utils.SettingsUtils;
 
 import static android.content.Context.SENSOR_SERVICE;
-import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
 /**
  * Created by Merbin J Anselm on 27-Jan-17.
@@ -75,16 +88,6 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
         }
     }
 
-    public void restartApp(Context context) {
-        Intent intent = new Intent(context, MainActivity.class);
-        intent.addFlags(FLAG_ACTIVITY_NEW_TASK);
-        context.startActivity(intent);
-        if (context instanceof Activity) {
-            ((Activity) context).finish();
-        }
-        Runtime.getRuntime().exit(0);
-    }
-
     private void ableSettings() {
         SensorManager mSensorManager = (SensorManager) this.getActivity().getSystemService(SENSOR_SERVICE);
         Sensor proximitySensor = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
@@ -99,7 +102,6 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
     }
 
     private void ableCheckboxPref(CheckBoxPreference checkBoxPreference, boolean enable) {
-        checkBoxPreference.setChecked(enable);
         checkBoxPreference.setEnabled(enable);
     }
 
