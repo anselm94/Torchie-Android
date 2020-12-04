@@ -74,6 +74,7 @@ package in.blogspot.anselmbros.torchie.main;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.media.AudioManager;
 import android.os.Build;
 import android.preference.PreferenceManager;
 
@@ -143,6 +144,9 @@ public class TorchieManager implements DeviceManagerListener, CountTimerListener
     }
 
     public void setVolumeValue(int volumeDirection) {
+        AudioManager audioManager = (AudioManager)mContext.getSystemService(Context.AUDIO_SERVICE);
+        int newVolume = audioManager.getStreamVolume(AudioManager.STREAM_MUSIC) + volumeDirection;
+        audioManager.setStreamVolume(AudioManager.STREAM_MUSIC, newVolume, 0);
         DeviceManager.getInstance(this.mContext).setVolumeKeyEvent(new VolumeKeyEvent(volumeDirection));
     }
 
